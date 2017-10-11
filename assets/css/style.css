@@ -1,0 +1,196 @@
+header:not(#link){
+  margin-top: 0;
+  background-image: url('../img/nuages.png');
+  text-align: center;
+}
+
+h1{
+  color: red;
+}
+
+#conteneur{
+  display:inline-block;
+}
+
+body{
+  margin: 0;
+}
+
+#contact{
+    text-align: left;
+    margin-left: auto;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#link{
+  background-color: black;
+  font-size: 20px;
+  align-items: center;
+}
+
+#linkhistory{
+  text-align: center;
+}
+
+#links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#tool{
+  margin-left: auto;
+  margin-right: 55px;
+  border: dotted;
+  float: right;
+  margin-bottom: 5px;
+  margin-top: 7px;
+}
+
+#Languages{
+  margin-left: auto;
+  border: 3px dashed;
+  text-align: left;
+  margin-top: 9px;
+}
+
+#OS{
+  box-shadow: 6px 6px 6px black;
+  margin-left: 55px;
+  margin-top: 5px;
+  float: left;
+}
+
+th{
+  color: white;
+  text-align: center;
+}
+
+h4{
+  text-decoration: underline;
+  font-family: 'Press Start 2P';
+}
+
+h3{
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Press Start 2P';
+  color: white;
+  font-size: 25px;
+}
+
+#history{
+  text-align: center;
+}
+
+#realisation{
+  text-align: center;
+}
+
+#instance{
+  background-image: url(../img/parcours.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: green;
+  font-size: 25px;
+}
+
+#hobbies{
+  text-align: center;
+  background-image: url("../img/pacman.png");
+  background-size: cover;
+}
+
+#hobbi{
+  color: white;
+  margin: auto;
+  text-align: left;
+}
+
+#play{
+  text-align: left;
+  margin: auto;
+}
+
+#expertize:not(h3){
+  background-image: url("../img/fondcompetence.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: blue;
+}
+
+.progressall{
+  position: relative;
+  display: inline-block;
+}
+/* Ajout couleur de la barre */
+  progress::-moz-progress-bar {
+      background-color: green;
+    }
+/* barre de progression + couleur de fond */
+progress{
+  width: 160px;
+  height: 15px;
+  background-color: red;
+  padding: 3px;
+  overflow: hidden;
+  border: red;
+}
+
+.progressvalue{
+  position: relative;
+  bottom: 22px;
+  text-align: center;
+  color: white;
+    -webkit-animation: progress-bar-stripes 2s linear infinite; /* ajout de l'animation */
+    -moz-animation: progress-bar-stripes 2s linear infinite;/* ajout de l'animation */
+    -o-animation: progress-bar-stripes 2s linear infinite;/* ajout de l'animation */
+    animation: progress-bar-stripes 2s linear infinite;/* ajout de l'animation */
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent); /* Ajout d'un dégradé */
+    background-image: -moz-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);/* Ajout d'un dégradé */
+    background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);/* Ajout d'un dégradé */
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);/* Ajout d'un dégradé */
+    background-size: 15px 15px; /* Ajout de la taille des bandes*/
+}
+/* animation */
+@keyframes progress-bar-stripes {
+   0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 0; /*déplacement de la barre*/
+    }
+}
+
+#contain{
+  display: flex;
+  flex-direction: column;
+}
+
+#expert{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 260px;
+}
+
+#expert:not(.progress)
+{
+
+}
+
+marquee{
+  height: 20px;
+  border:2px #008000;
+  text-align: center;
+  color:#e0fc0f ;
+  font-size:20px;
+  font-family: 'Press Start 2P';
+}
