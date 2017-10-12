@@ -43,6 +43,16 @@ a{
   text-align: center;
 }
 
+#linkrealisation{
+  display: flex;
+  flex-direction: row;
+}
+
+#linkexpertize{
+  display: flex;
+  flex-direction: row;
+}
+
 #tool{
   margin-left: auto;
   margin-right: 55px;
@@ -219,4 +229,8 @@ marquee{
   padding: 5px;
   text-align: center;
   margin-right: auto;
+}
+
+.real{
+  margin-top: 17px;
 }
