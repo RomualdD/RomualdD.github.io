@@ -126,9 +126,8 @@ h3{
   color: blue;
 }
 
-.progressall{
-/*  position: relative;
-  display: inline-block;*/
+.progressall:not(img){
+/*   display: inline-block;*/
   display: flex;
   justify-content: flex-end;
 }
@@ -165,7 +164,8 @@ h5{
 .progressvalue{
   position: relative;
   text-align: center;
-  top: 12px;
+  bottom: 3px;
+  right: 90px;
   color: white;
   font-size: 15px;
 }
@@ -205,4 +205,13 @@ marquee{
   color:#e0fc0f ;
   font-size:20px;
   font-family: 'Press Start 2P';
+}
+
+.logo{
+  margin-right: auto;
+}
+
+.nameexpert{
+  text-align: center;
+  margin-right: auto;
 }
