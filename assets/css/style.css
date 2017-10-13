@@ -31,6 +31,7 @@ a{
   color: white;
 }
 
+
 #link{
   background-color: black;
   font-size: 20px;
@@ -44,11 +45,15 @@ a{
 }
 
 #links{
-  display: flex;
+/*  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  text-align: center;
+  text-align: center;*/
 }
+/*
+#linkhobbi{
+  background-color: black;
+}*/
 
 #linkrealisation{
   display: flex;
@@ -125,10 +130,9 @@ h3{
   background-size: cover;
 }
 
-#hobbi{
+.hobbi{
   color: white;
   margin: auto;
-  text-align: left;
 }
 
 #play{
@@ -143,11 +147,11 @@ h3{
   color: #58FAD0;
 }
 
-.progressall:not(img){
-/*   display: inline-block;*/
+/*.progressall:not(img){
+/*   display: inline-block;
   display: flex;
   justify-content: flex-end;
-}
+}*/
 
 /* Ajout couleur de la barre */
 progress::-moz-progress-bar {
@@ -182,10 +186,17 @@ h5{
   color: #58FAD0;
 }
 
+.progress {
+  background: rgba(235, 14, 14, 1);
+  border: 0px solid rgba(245, 245, 245, 1);
+  border-radius: 25px;
+  height: 20px;
+}
+
 .progressvalue{
   position: relative;
   text-align: center;
-  top: 9px;
+  top: 7px;
   right: 90px;
   color: white;
   font-size: 15px;
@@ -210,7 +221,7 @@ h5{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
-    margin-top: 270px;
+    margin-top: 300px;
     font-size: 20px;
 }
 
@@ -229,15 +240,24 @@ marquee{
 }
 
 .logo{
+  position: relative;
+  top: 35px;
   margin-right: auto;
+  text-align: left;
 }
 
 .nameexpert{
-  padding: 5px;
+  /*padding: 5px;*/
+  font-size: 15px;
   text-align: center;
   margin-right: auto;
 }
 
 .real{
   margin-top: 17px;
+}
+
+.texthobbi{
+  margin-top: 70px;
+  font-size: 20px;
 }
