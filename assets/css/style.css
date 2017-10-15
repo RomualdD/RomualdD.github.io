@@ -239,12 +239,12 @@ marquee{
   font-family: 'Press Start 2P';
 }
 
-.logo{
+/*.logo{
   position: relative;
   top: 35px;
   margin-right: auto;
   text-align: left;
-}
+}*/
 
 .nameexpert{
   /*padding: 5px;*/
@@ -260,4 +260,10 @@ marquee{
 .texthobbi{
   margin-top: 70px;
   font-size: 20px;
+}
+
+@@media screen and (max-width: 7680px) {
+  #Languages{
+    margin-left: auto;
+  }
 }
