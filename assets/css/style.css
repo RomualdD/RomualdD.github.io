@@ -142,16 +142,11 @@ h3{
 
 #expertize:not(h3){
   background-image: url("../img/fondcompetence.png");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #58FAD0;
 }
-
-/*.progressall:not(img){
-/*   display: inline-block;
-  display: flex;
-  justify-content: flex-end;
-}*/
 
 /* Ajout couleur de la barre */
 progress::-moz-progress-bar {
@@ -225,10 +220,6 @@ h5{
     font-size: 20px;
 }
 
-#expert:not(.progress)
-{
-
-}
 
 marquee{
   height: 50px;
@@ -238,13 +229,6 @@ marquee{
   font-size:20px;
   font-family: 'Press Start 2P';
 }
-
-/*.logo{
-  position: relative;
-  top: 35px;
-  margin-right: auto;
-  text-align: left;
-}*/
 
 .nameexpert{
   /*padding: 5px;*/
