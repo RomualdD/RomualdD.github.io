@@ -56,23 +56,22 @@ a{
 
 #tool{
   border: dotted;
-  float: right;
   margin-bottom: 15px;
-  margin-top: 7px;
+  margin-top: 200px;
 }
 
 #Languages{
   border: 3px dashed;
   text-align: left;
   margin-top: 9px;
+  margin-top: 200px;
 }
 
 #OS{
   box-shadow: 6px 6px 6px black;
-  margin-left: 70px;
-  margin-top: 5px;
-  text-align: left;
-  float: left;
+  margin-left: 60px;
+  margin-top: 200px;
+
 }
 
 th{
@@ -118,7 +117,6 @@ h3{
 
 .hobbi{
   color: white;
-  margin: auto;
 }
 
 #play{
@@ -149,17 +147,16 @@ h4{
   height: 20px;
 }
 
+.progress .progressbar{
+  transition-duration: 3s;
+}
+
 #contain{
   display: flex;
   flex-direction: column;
 }
 
 #expert{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: baseline;
-    margin-top: 200px;
     font-size: 20px;
 }
 
@@ -174,7 +171,6 @@ marquee{
 }
 
 .nameexpert{
-  /*padding: 5px;*/
   font-size: 15px;
   text-align: center;
   margin-right: auto;
