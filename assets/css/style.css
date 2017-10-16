@@ -55,8 +55,6 @@ a{
 }
 
 #tool{
-  margin-left: auto;
-  margin-right: 55px;
   border: dotted;
   float: right;
   margin-bottom: 15px;
@@ -64,7 +62,6 @@ a{
 }
 
 #Languages{
-  margin-left: auto;
   border: 3px dashed;
   text-align: left;
   margin-top: 9px;
@@ -137,9 +134,10 @@ h3{
   color: #58FAD0;
 }
 
-h5{
+h4{
+  font-family: 'Halo';
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   text-decoration: underline;
   color: #58FAD0;
 }
