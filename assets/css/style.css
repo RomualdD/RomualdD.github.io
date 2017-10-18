@@ -125,7 +125,7 @@ h3{
   margin: auto;
 }
 
-#expertize:not(h3){
+#expertize{
   background-image: url("../img/fondcompetence.png");
   background-position: center;
   background-size: cover;
@@ -180,4 +180,60 @@ marquee{
 .texthobbi{
   margin-top: 70px;
   font-size: 20px;
+}
+
+.windows{
+   width: 25%;
+}
+
+.Linux{
+   width: 20%;
+}
+
+.c{
+  width: 50%;
+}
+
+.bootstrap{
+  width: 20%;
+}
+
+.sql{
+  width: 50%;
+}
+
+.php{
+  width: 30%;
+}
+
+.html{
+  width: 40%;
+}
+
+.command{
+  width: 25%;
+}
+
+.atom{
+   width: 50%;
+}
+
+.nano{
+   width: 60%;
+}
+
+.git{
+  width: 25%;
+}
+
+.github{
+   width: 25%;
+}
+
+.vhost{
+   width: 25%;
+}
+
+.builder{
+   width: 50%;
 }
