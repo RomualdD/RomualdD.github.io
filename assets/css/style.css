@@ -111,12 +111,14 @@ h3{
 
 #hobbies{
   text-align: center;
-  background-image: url("../img/pacman.png");
+  background-image: url("../img/pacman.jpeg");
   background-size: cover;
+  background-position: bottom;
 }
 
 .hobbi{
   color: white;
+  font-size: 20px;
   margin-top: 10px;
 }
 
@@ -157,6 +159,16 @@ h4{
     font-size: 20px;
 }
 
+.pictures-background{
+  background-image: url('../img/tv.png');
+  width: 750px;
+  height: 400px;
+  padding-top: 20px;
+  padding-left: 18px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 marquee{
   height: 50px;

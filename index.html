@@ -10,6 +10,7 @@
   </head>
   <body>
     <div id="contain">
+      <img src="assets/img/pacman.png" alt="pacman" height="30px" width="30px">
       <header>
         <marquee scrollamount="2" scrolldelay="50" direction="left"><img src="assets/img/startopposite.png" width="50" height="50"> Bienvenue sur mon cv <img src="assets/img/start.png" width="50" height="50"></marquee>
         <div id="conteneur">
@@ -188,25 +189,42 @@
         </section>
         <section id="hobbies">
           <h3><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i> Mes loisirs : </h3>
-            <div class="hobbi col-lg-12">
-              <div class="pictures col-lg-2 col-lg-offset-4"><img src="assets/img/gundam.jpg" alt="Figurine Gundam" title="Figurine gunpla" height="200px" width="200px"></div>
-              <div class="texthobbi col-lg-2">Faire des figurines gundam plastic. (gunpla)</div>
-            </div>
-            <div class="hobbi col-lg-12">
-              <div class="pictures col-lg-2 col-lg-offset-4"><img src="assets/img/Prophecy.jpg" alt="Mangas" title="Manga prophecy" height="200px" width="150px"></div>
-              <div class="texthobbi col-lg-2">Lire des mangas. (One Piece, One Punch Man, GTO, Shingeki no Kyojin, etc...)</div>
-            </div>
-            <div class="hobbi col-lg-12">
-              <div class="pictures  col-lg-2 col-lg-offset-4"><img src="assets/img/videogames.png" alt="Jeux vidéos" title="Smite et Battlefield" width="200px" height="150px"></div>
-              <div class="texthobbi col-lg-2">Jouer aux jeux vidéos.(Smite, Battlefield, etc...)</div>
-            </div>
-            <div class="hobbi col-lg-12">
-              <div class="pictures col-lg-2 col-lg-offset-4"><img src="assets/img/japon.png" alt="Drapeau du Japon" title="Drapeau du Japon" width="200px" height="150px"></div>
-              <div class="texthobbi col-lg-2">Découvrir toujours plus de la culture Japonaise.(j-music, culinaire)</div>
-            </div>
+          <p class="hobbi">Allumer la télévision et profiter du spectacle !</p>
+          <div class="hobbi col-lg-12">
+            <div class="pictures-background col-lg-2 col-lg-offset-2"><img src="assets/img/televiseur.png" title="Téléviseur" alt="téléviseur"id="televiseur"/></div>
+              <div class="pictures col-lg-2 col-lg-offset-2"><img src="assets/img/vide.png"><img src="assets/img/vide.png"><img src="assets/img/exit.png" onclick="fond(televiseur)"></div>
+              <div class="pictures col-lg-2 col-lg-offset-2"><img src="assets/img/un.png" onclick="changeImg(televiseur,'assets/img/gundam.png')"><img src="assets/img/deux.png" onclick="changeImg(televiseur,'assets/img/mangas.png')"><img src="assets/img/trois.png" onclick="changeImg(televiseur,'assets/img/jeuvideo.png')"></div>
+              <div class="pictures col-lg-2 col-lg-offset-2"><img src="assets/img/quatre.png" onclick="changeImg(televiseur,'assets/img/japan.png')"><img src="assets/img/cinq.png"><img src="assets/img/six.png"></div>
+              <div class="pictures col-lg-2 col-lg-offset-2"><img src="assets/img/sept.png"><img src="assets/img/huit.png"><img src="assets/img/neuf.png" onclick="changeImg(televiseur, 'assets/img/platjap.png')"></div>
+              <div class="pictures col-lg-2 col-lg-offset-2"><img src="assets/img/vide.png"><img src="assets/img/zero.png" onclick="changeImg(televiseur, 'assets/img/sommaire.png')"><img src="assets/img/vide.png"></div>
+          </div>
             <marquee scrollamount="2" scrolldelay="50" direction="left"><img src="assets/img/final.png" height="50" width="50"> Merci de votre visite <img src="assets/img/finalopposite.png" height="50" width="50"></marquee>
                 <!-- scrollamount = affiche de combien le texte avance // scrolldelay = défini le temps ou le texte reste dans la même position -->
         </section>
      </div>
+     <script>
+       function changeImg(picture, url)
+       {
+
+         pic = picture.src.substring(73,83);
+         if(pic != 'televiseur')
+          {
+            picture.setAttribute('src', url);
+          }
+       }
+       function fond(picture)
+        {
+          pic = picture.src.substring(73,83);
+          if(pic == 'televiseur')
+           {
+             picture.src = 'assets/img/sommaire1.png';
+           }
+           else {
+             picture.src = 'assets/img/televiseur.png';
+           }
+          console.log(pic);
+        }
+        var pacman = document.getElementById('pacman');
+     </script>
   </body>
 </html>
