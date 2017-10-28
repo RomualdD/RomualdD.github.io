@@ -212,9 +212,8 @@
        }
        function fond(picture)
         {
-          pic = picture.src.substring(73,83);
-          alert(picture.src);
-          if(pic == 'televiseur')
+          pic = document.getElementById('televiseur').src.indexOf("televiseur") > -1;
+          if(pic == true)
            {
              picture.src = 'assets/img/sommaire1.png';
            }
