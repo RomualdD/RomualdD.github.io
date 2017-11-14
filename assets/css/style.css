@@ -31,6 +31,9 @@ a{
   color: white;
 }
 
+li{
+  list-style: none;
+}
 
 #link{
   background-color: black;
@@ -101,7 +104,7 @@ h3{
 }
 
 #instance{
-  background-image: url(../img/parcours.jpg);
+  background-image: url('../img/parcours.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -255,18 +258,14 @@ marquee{
 }
 @media screen and (max-width:1280px){
   .pictures-background{
-    float: right;
-    background-image: url('../img/tv.png');
-    width: 300px;
-    height: 150px;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: none;
+    width: 100%;
   }
 
 #televiseur{
-    margin-right: 200px;
-    margin-bottom: 20px;
-    width: 300px;
-    height: 150px;
+  float: left;
+  margin: 0;
+  width: 250px;
+  height: 150px;
   }
 }
