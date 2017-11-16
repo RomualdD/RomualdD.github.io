@@ -222,7 +222,15 @@ marquee{
 }
 
 .html{
+  width: 60%;
+}
+
+.javascript{
   width: 40%;
+}
+
+.canvas{
+  width: 70%;
 }
 
 .command{
@@ -238,11 +246,11 @@ marquee{
 }
 
 .git{
-  width: 25%;
+  width: 45%;
 }
 
 .github{
-   width: 25%;
+   width: 45%;
 }
 
 .vhost{
