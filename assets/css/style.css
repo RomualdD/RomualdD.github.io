@@ -167,7 +167,6 @@ h4{
   width: 750px;
   height: 400px;
   padding-top: 20px;
-  padding-left: 18px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -267,7 +266,7 @@ marquee{
 @media screen and (max-width:1280px){
   .pictures-background{
     background-image: none;
-    width: 100%;
+    width: 70%;
   }
 
 #televiseur{
@@ -277,3 +276,10 @@ marquee{
   height: 150px;
   }
 }
+/*
+@media (max-width:1600px){
+  .pictures-background{
+    background-image: none;
+    width: 840px;
+  }
+}*/
