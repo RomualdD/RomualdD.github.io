@@ -1,0 +1,13 @@
+body{
+  margin: 0;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+#canvasdiv{
+   width: 1848px;
+   height: 959px;
+   overflow: hidden;
+}
