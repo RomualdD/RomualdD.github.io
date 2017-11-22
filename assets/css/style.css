@@ -263,6 +263,28 @@ marquee{
 #televiseur{
   float: none;
 }
+body{
+  margin: 0;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+#canvasdiv{
+   width: 1848px;
+   height: 959px;
+   overflow: hidden;
+}
+
+.modal-title{
+  color: black;
+  font-family: 'Press Start 2P';
+}
+
+.modal-dialog{
+  width:1500px;
+}
 @media screen and (max-width:1280px){
   .pictures-background{
     background-image: none;
@@ -276,10 +298,3 @@ marquee{
   height: 150px;
   }
 }
-/*
-@media (max-width:1600px){
-  .pictures-background{
-    background-image: none;
-    width: 840px;
-  }
-}*/

@@ -3,8 +3,9 @@ var joueur = new Personnage("drogon.png", 25, 28, DIRECTION.BAS);
 map.addPersonnage(joueur);
 
 window.onload = function() {
-	alert("Ce CV est en travaux !")
-	alert("Utilisez les touches du clavier pour vous déplacé \n Maintenez le clique et déplacer le curseur de votre souris si vous ne voulez pas suivre le personnage");
+	$("#myModal").modal('show') ;
+	//alert("Ce CV est en travaux !")
+	//alert("Utilisez les touches du clavier pour vous déplacé \n Maintenez le clique et déplacer le curseur de votre souris si vous ne voulez pas suivre le personnage");
 
 	var canvas = document.getElementById('canvas');
 	var ctx = canvas.getContext('2d');

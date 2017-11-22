@@ -2,10 +2,14 @@
 <html>
     <head>
       <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
       <!--[if lt IE 9]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
   		<script type="text/javascript" src="js/oXHR.js"></script>
       <script src="jquery-3.2.1.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="js/classes/text.js"></script>
       <script type="text/javascript" src="js/classes/personnages.js"></script>
       <script type="text/javascript" src="js/classes/Tileset.js"></script>
@@ -14,6 +18,38 @@
         <title>CV</title>
     </head>
     <body>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title"><i class="fa fa-info" aria-hidden="true"></i>Informations essentielles de ce CV numérique :</h3>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-offset-5">
+                <span><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+                <p>Ce CV est en cours de construction !</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-offset-4">
+                  <span><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+                  <p>Utilisez les touches du clavier pour vous déplacé. (gauche et droite)</p>
+                </div>
+                <div class="col-lg-offset-3">
+                <p>Maintenez le clique et déplacer le curseur de votre souris si vous ne voulez pas suivre le personnage !</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer <span class="glyphicon glyphicon-remove"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="canvasdiv">
       <canvas id="canvas"></canvas>
       </div>
