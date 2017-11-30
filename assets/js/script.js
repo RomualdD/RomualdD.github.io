@@ -2,7 +2,6 @@ $(function(){
   $(window).keydown(function(e){
     switch (e.keyCode) {
       case 89: //y
-        alert('ok');
         window.location.href = "#history";
         break;
       case 65: //a
