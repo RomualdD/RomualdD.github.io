@@ -16,35 +16,38 @@ $(function(){
         case 82: //r
         window.location.href = "cvnumerique.html";
           break;
+        case 27: //echap
+          $('#play').click();
+            break;
           case 96: //0
-          alert('buh');
+          $('#zero').click();
             break;
             case 97: //1
-            alert('buh');
+            $('#un').click();
               break;
           case 98: //2
-            alert('buh');
+          $('#deux').click();
               break;
           case 99: //3
-            alert('buh');
+          $('#trois').click();
               break;
           case 100: //4
-            alert('buh');
+          $('#quatre').click();
               break;
           case 101: //5
-            alert('buh');
+          $('#cinq').click();
               break;
           case 102: //6
-            alert('buh');
+          $('#six').click();
               break;
           case 103: //7
-              alert('buh');
+          $('#sept').click();
                 break;
           case 104: //8
-              alert('buh');
+          $('#huit').click();
                 break;
           case 105: //9
-              alert('buh');
+          $('#neuf').click();
                 break;
     }
   })
