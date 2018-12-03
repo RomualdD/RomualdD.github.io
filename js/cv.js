@@ -1,11 +1,10 @@
-var map = new Map("premiere");
-var joueur = new Personnage("drogon.png", 25, 28, DIRECTION.BAS);
+var map = new Map("seconde");
+var joueur = new Personnage("drogon.png", 20, 2, DIRECTION.BAS);
 map.addPersonnage(joueur);
+var nameMap = 'seconde';
 
 window.onload = function() {
 	$("#myModal").modal('show') ;
-	//alert("Ce CV est en travaux !")
-	//alert("Utilisez les touches du clavier pour vous d√©plac√© \n Maintenez le clique et d√©placer le curseur de votre souris si vous ne voulez pas suivre le personnage");
 
 	var canvas = document.getElementById('canvas');
 	var ctx = canvas.getContext('2d');
@@ -15,30 +14,8 @@ window.onload = function() {
 	var marginLeft = 0;
 	var left = 0;
 
-	canvas.width =	25000;
-	canvas.height = 960;
-
-	canvas.addEventListener('mousedown', function(e) {
-	    var evt = e || event;
-	    dragging = true;
-	    lastX = evt.clientX;
-	    e.preventDefault();
-	}, false);
-
-	window.addEventListener('mousemove', function(e) {
-	    var evt = e || event;
-	    if (dragging) {
-	        var delta = evt.clientX - lastX;
-	        lastX = evt.clientX;
-	        marginLeft += delta;
-	        canvas.style.marginLeft = marginLeft + "px";
-	    }
-	    e.preventDefault();
-	}, false);
-
-	window.addEventListener('mouseup', function() {
-	    dragging = false;
-	}, false);
+	canvas.width =	1534;
+	canvas.height = 744;
 
 	window.requestAnimFrame = (function(){
        return  window.requestAnimationFrame       ||
@@ -58,33 +35,53 @@ window.onload = function() {
 
 	// Gestion du clavier
 	window.onkeydown = function(event) {
-		// On r√©cup√®re le code de la touche
+		// On rÈcupËre le code de la touche
 		var e = event || window.event;
 		var key = e.which || e.keyCode;
-
-		switch(key) {
-			case 38 : // Fl√®che haut
-				joueur.deplacer(DIRECTION.HAUT, map);
-				break;
-			case 40 : // Fl√®che bas
-				joueur.deplacer(DIRECTION.BAS, map);
-				break;
-			case 37 : // Fl√®che gauche
-				left -= 9;
-				joueur.deplacer(DIRECTION.GAUCHE, map);
-				div.scrollLeft	=	left;
-				break;
-			case 39 : // Fl√®che droite
-				joueur.deplacer(DIRECTION.DROITE, map);
-				left += 9;
-				div.scrollLeft	=	left;
-				break;
-			default :
-				//alert(key);
-				// Si la touche ne nous sert pas, nous n'avons aucune raison de bloquer son comportement normal.
-				return true;
-		}
-
+                if(!document.getElementById('wizard')) {
+                    switch(key) {
+                            case 38 : // FlËche haut
+                                    joueur.deplacer(DIRECTION.HAUT, map);
+                                    break;
+                            case 40 : // FlËche bas
+                                    joueur.deplacer(DIRECTION.BAS, map);
+                                    break;
+                            case 37 : // FlËche gauche
+                                    left -= 9;
+                                    joueur.deplacer(DIRECTION.GAUCHE, map);
+                                    div.scrollLeft	=	left;
+                                    break;
+                            case 39 : // FlËche droite
+                                    joueur.deplacer(DIRECTION.DROITE, map);
+                                    left += 9;
+                                    div.scrollLeft	=	left;
+                                    break;
+                            default :
+                                    //alert(key);
+                                    // Si la touche ne nous sert pas, nous n'avons aucune raison de bloquer son comportement normal.
+                                    return true;
+                    }
+                }
+                console.log(nameMap);
+                console.log(joueur.y);
+                console.log('x :'+joueur.x);
+                if(joueur.x == 4 && joueur.y == 6) {
+                    map = new Map("troisieme");
+                    joueur = new Personnage("drogon.png", 23, 23, DIRECTION.HAUT); 
+                    var joueur1 = new Personnage("wiz.png", 23, 2, DIRECTION.BAS);
+                    map.addPersonnage(joueur);
+                    map.addPersonnage(joueur1);
+                    nameMap = 'troisieme';
+                } else if(joueur.x == 33 && joueur.y == 4) {
+                    map = new Map('quatrieme');
+                    joueur = new Personnage("drogon.png", 23, 23, DIRECTION.HAUT);
+                    var joueur1 = new Personnage("knight.png", 23, 2, DIRECTION.BAS);
+                    map.addPersonnage(joueur);
+                    map.addPersonnage(joueur1);  
+                    nameMap = 'quatrieme';
+                }
+                // personnage fait par Farheit / ftabah / 
 		return false;
 	}
+        
 }

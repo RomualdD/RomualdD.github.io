@@ -19,6 +19,7 @@ function Map(nom) {
 
 	// Liste des personnages présents sur le terrain.
 	this.personnages = new Array();
+        
 }
 
 // Pour récupérer la taille (en tiles) de la carte
