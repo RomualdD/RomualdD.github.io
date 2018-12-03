@@ -65,14 +65,14 @@ window.onload = function() {
                 console.log(nameMap);
                 console.log(joueur.y);
                 console.log('x :'+joueur.x);
-								if(joueur.x == 4 && joueur.y == 6 && nameMap == 'seconde') {
+								if(joueur.x == 4 && joueur.y == 6) {
                     map = new Map("troisieme");
                     joueur = new Personnage("drogon.png", 23, 21, DIRECTION.HAUT);
                     var joueur1 = new Personnage("wiz.png", 23, 2, DIRECTION.BAS);
                     map.addPersonnage(joueur);
                     map.addPersonnage(joueur1);
                     nameMap = 'troisieme';
-                } else if(joueur.x == 33 && joueur.y == 4 && nameMap == 'seconde') {
+                } else if(joueur.x == 33 && joueur.y == 4) {
                     map = new Map('quatrieme');
                     joueur = new Personnage("drogon.png", 23, 21, DIRECTION.HAUT);
                     var joueur1 = new Personnage("knight.png", 23, 2, DIRECTION.BAS);
