@@ -1,4 +1,4 @@
-var map = new Map("premiere");
+var map = new Map("seconde");
 var joueur = new Personnage("drogon.png", 20, 2, DIRECTION.BAS);
 map.addPersonnage(joueur);
 var nameMap = 'seconde';
