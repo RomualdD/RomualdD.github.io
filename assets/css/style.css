@@ -95,6 +95,10 @@ h3{
   font-size: 25px;
 }
 
+.marge {
+  margin: 0.75em;
+}
+
 #history{
   text-align: center;
 }
@@ -201,7 +205,11 @@ marquee{
 }
 
 .windows{
-   width: 25%;
+   width: 35%;
+}
+
+.angular{
+  width: 15%;
 }
 
 .Linux, .netbeans{
@@ -272,10 +280,9 @@ canvas {
 }
 
 #canvasdiv{
-   width: 1500px;
-   height: 750px;
-    position: relative;
-    display: inline-block;
+   width: 1848px;
+   height: 959px;
+   overflow: hidden;
 }
 
 .modal-title{
@@ -286,7 +293,6 @@ canvas {
 .modal-dialog{
   width:1500px;
 }
-
 @media screen and (max-width:1280px){
   .pictures-background{
     background-image: none;
