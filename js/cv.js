@@ -35,23 +35,23 @@ window.onload = function() {
 
 	// Gestion du clavier
 	window.onkeydown = function(event) {
-		// On rï¿½cupï¿½re le code de la touche
+		// On récupère le code de la touche
 		var e = event || window.event;
 		var key = e.which || e.keyCode;
                 if(!document.getElementById('wizard')) {
                     switch(key) {
-                            case 38 : // Flï¿½che haut
+                            case 38 : // Flèche haut
                                     joueur.deplacer(DIRECTION.HAUT, map);
                                     break;
-                            case 40 : // Flï¿½che bas
+                            case 40 : // Flèche bas
                                     joueur.deplacer(DIRECTION.BAS, map);
                                     break;
-                            case 37 : // Flï¿½che gauche
+                            case 37 : // Flèche gauche
                                     left -= 9;
                                     joueur.deplacer(DIRECTION.GAUCHE, map);
                                     div.scrollLeft	=	left;
                                     break;
-                            case 39 : // Flï¿½che droite
+                            case 39 : // Flèche droite
                                     joueur.deplacer(DIRECTION.DROITE, map);
                                     left += 9;
                                     div.scrollLeft	=	left;
@@ -67,7 +67,7 @@ window.onload = function() {
                 console.log('x :'+joueur.x);
                 if(joueur.x == 4 && joueur.y == 6) {
                     map = new Map("troisieme");
-                    joueur = new Personnage("drogon.png", 23, 23, DIRECTION.HAUT);
+                    joueur = new Personnage("drogon.png", 23, 23, DIRECTION.HAUT); 
                     var joueur1 = new Personnage("wiz.png", 23, 2, DIRECTION.BAS);
                     map.addPersonnage(joueur);
                     map.addPersonnage(joueur1);
@@ -77,11 +77,11 @@ window.onload = function() {
                     joueur = new Personnage("drogon.png", 23, 23, DIRECTION.HAUT);
                     var joueur1 = new Personnage("knight.png", 23, 2, DIRECTION.BAS);
                     map.addPersonnage(joueur);
-                    map.addPersonnage(joueur1);
+                    map.addPersonnage(joueur1);  
                     nameMap = 'quatrieme';
                 }
-                // personnage fait par Farheit / ftabah /
+                // personnage fait par Farheit / ftabah / 
 		return false;
 	}
-
+        
 }
