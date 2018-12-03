@@ -79,7 +79,19 @@ window.onload = function() {
                     map.addPersonnage(joueur);
                     map.addPersonnage(joueur1);
                     nameMap = 'quatrieme';
-                } 
+                } else if((joueur.x == 24 || joueur.x == 25 || joueur.x == 26) && joueur.y == 22  && nameMap != 'seconde') {
+									if(nameMap == 'troisieme') {
+	                  map = new Map('seconde');
+										joueur = new Personnage("drogon.png", 4, 6, DIRECTION.HAUT);
+                    map.addPersonnage(joueur);
+										nameMap = 'seconde';
+									} else if(nameMap == 'quatrieme') {
+	                  map = new Map('seconde');
+										joueur = new Personnage("drogon.png", 33, 4, DIRECTION.HAUT);
+                    map.addPersonnage(joueur);
+										nameMap = 'seconde';
+									}
+								}
                 // personnage fait par Farheit / ftabah /
 		return false;
 	}
