@@ -16,6 +16,9 @@ $(function(){
         case 82: //r
         window.location.href = "cvnumerique.html";
           break;
+        case 76: //r
+          window.location.href = "CV_Romuald_Ducrocq.pdf";
+        break;
         case 27: //echap
           $('#play').click();
             break;
