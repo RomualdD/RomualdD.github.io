@@ -263,7 +263,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												$('#canvasdiv').append('<div id="parcours"><img src="assets/img/lord_knight.png" id="knight" alt="photo knight" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mon parcours.</p>\n\
-												<p class="acquirment">Je suis actuellement en contrat de professionnalisation à La Manu et dans l\'entreprise "picardie-informatique" à Amiens, pour obtenir le titre RCP de Concepteur Développeur Informatique de niveau II.</p>\n\
+												<p class="acquirment">Je suis actuellement en contrat de professionnalisation à La Manu et dans l\'entreprise "picardie-informatique" à Amiens, pour obtenir le titre RNCP de Concepteur Développeur Informatique de niveau II.</p>\n\
 												<p>J\'ai toujours voulu faire un métier dans le rapport du numérique, plus spécifiquement dans le domaine du jeuxvidéo.</p>\n\
 												<p>C\'est pourquoi j\'ai réalisé mon cv numérique de cette façon, j\'ai eu l\'idée de faire un cv qui pouvait convenir à plusieurs de mes intérêts.</p>\n\
 												<p>Mon premier CV est en rapport avec ma passion des jeuxvidéo et ce CV en est la concrétisation.</p>\n\
@@ -282,7 +282,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">J\'ai obtenu un BTS systèmes numérique informatique et réseaux.</div>\n\
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
 															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
-															<div class="row">La formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RCP de Concepteur Développeur de niveau III.</div>\n\
+															<div class="row">La formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
 															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#parcours').remove();
@@ -307,7 +307,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												$('#canvasdiv').append('<div id="parcours"><img src="assets/img/lord_knight.png" id="knight" alt="photo knight" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mon parcours.</p>\n\
-												<p class="acquirment">Je suis actuellement en contrat de professionnalisation à La Manu et dans l\'entreprise "picardie-informatique" à Amiens, pour obtenir le titre RCP de Concepteur Développeur Informatique de niveau II.</p>\n\
+												<p class="acquirment">Je suis actuellement en contrat de professionnalisation à La Manu et dans l\'entreprise "picardie-informatique" à Amiens, pour obtenir le titre RNCP de Concepteur Développeur Informatique de niveau II.</p>\n\
 												<p>J\'ai toujours voulu faire un métier dans le rapport du numérique, plus spécifiquement dans le domaine du jeuxvidéo.</p>\n\
 												<p>C\'est pourquoi j\'ai réalisé mon cv numérique de cette façon, j\'ai eu l\'idée de faire un cv qui pouvait convenir à plusieurs de mes intérêts.</p>\n\
 												<p>Mon premier CV est en rapport avec ma passion des jeuxvidéo et ce CV en est la concrétisation.</p>\n\
@@ -326,7 +326,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">J\'ai obtenu un BTS systèmes numérique informatique et réseaux.</div>\n\
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
 															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
-															<div class="row">La formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RCP de Concepteur Développeur de niveau III.</div>\n\
+															<div class="row">La formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
 															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#parcours').remove();
