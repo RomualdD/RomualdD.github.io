@@ -79,6 +79,20 @@ window.onload = function() {
                     map.addPersonnage(joueur);
                     map.addPersonnage(joueur1);
                     nameMap = 'quatrieme';
+                } else if(joueur.x == 4 && joueur.y == 16 && nameMap == 'seconde') {
+                    map = new Map('cinquieme');
+                    joueur = new Personnage("drogon.png", 23, 21, DIRECTION.HAUT);
+                    var joueur1 = new Personnage("bard.png", 23, 2, DIRECTION.BAS);
+                    map.addPersonnage(joueur);
+                    map.addPersonnage(joueur1);
+                    nameMap = 'cinquieme';
+                } else if(joueur.x == 30 && joueur.y == 15 && nameMap == 'seconde') {
+                    map = new Map('sixieme');
+                    joueur = new Personnage("drogon.png", 23, 21, DIRECTION.HAUT);
+                    var joueur1 = new Personnage("blacksmith.png", 23, 2, DIRECTION.BAS);
+                    map.addPersonnage(joueur);
+                    map.addPersonnage(joueur1);
+                    nameMap = 'sixieme';
                 } else if((joueur.x == 23 || joueur.x == 24 || joueur.x == 22) && joueur.y == 22  && nameMap != 'seconde') {
 									if(nameMap == 'troisieme') {
 	                  map = new Map('seconde');
@@ -92,7 +106,7 @@ window.onload = function() {
 										nameMap = 'seconde';
 									}
 								}
-                // personnage fait par Farheit / ftabah /
+                // personnage fait par Farheit de deviantart / ftabah / josmiley
 		return false;
 	}
 
