@@ -104,6 +104,16 @@ window.onload = function() {
 										joueur = new Personnage("drogon.png", 33, 5, DIRECTION.HAUT);
                     map.addPersonnage(joueur);
 										nameMap = 'seconde';
+									} else if(nameMap == 'cinquieme') {
+	                  map = new Map('seconde');
+										joueur = new Personnage("drogon.png", 4, 17, DIRECTION.HAUT);
+                    map.addPersonnage(joueur);
+										nameMap = 'seconde';
+									} else if(nameMap == 'sixieme') {
+	                  map = new Map('seconde');
+										joueur = new Personnage("drogon.png", 30, 16, DIRECTION.HAUT);
+                    map.addPersonnage(joueur);
+										nameMap = 'seconde';
 									}
 								}
                 // personnage fait par Farheit de deviantart / ftabah / josmiley
