@@ -409,7 +409,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
 																<div class="acquirment" style="color: purple;">\n\
 																<div class="row" id="smite">Smite</div>\n\
-																<div class="row" id="happywars">Happy Wars :</div>\n\
+																<div class="row" id="happywars">Happy Wars</div>\n\
 																<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
 																$('.buttonClose').click(function() {
 																		$('#hobbies').remove();
