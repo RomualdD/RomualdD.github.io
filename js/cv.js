@@ -118,6 +118,7 @@ window.onload = function() {
 								}
                 // personnage fait par Farheit de deviantart / ftabah / josmiley
 								// image blacksmith réalisé par Creative Uncut
+								// tileset meuble pixana
 		return false;
 	}
 
