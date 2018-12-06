@@ -391,11 +391,12 @@ Personnage.prototype.deplacer = function(direction, map) {
 																<div class="acquirment" style="color: purple;">\n\
 																<p>Quelques mangas lu :</p>\n\
 																<div class="row">One piece :</div>\n\
-																<div class="row"><img id="gundam" src="assets/img/Prophecy.jpg" height="200px" width="100px"></div>\n\
-																</div>\n\
+																<div class="row"><img id="onepiece" src="assets/img/one_piece.jpg" height="200px" width="150px"></div>\n\
+																<div class="row">Gantz :</div>\n\
+																<div class="row"><img id="gantz" src="assets/img/gantz.jpg" height="200px" width="150px"></div>\n\
 																<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 																$('.buttonClose').click(function() {
-																		$('#competence').remove();
+																		$('#hobbies').remove();
 																		talkVersion = 1;
 																});
 															});
