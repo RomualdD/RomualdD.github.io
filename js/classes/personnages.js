@@ -731,7 +731,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 							this.y = prochaineCase.y;
 					}
 				} else if(nameMap == 'seconde') {
-					if(this.x == 17 && this.y == 3) {
+					if(this.x == 17 && this.y == 3 || this.x == 17 && this.y == 1) {
 						console.log('ca marche');
 						this.x = prochaineCase.x;
 						var down = false;
@@ -760,6 +760,32 @@ Personnage.prototype.deplacer = function(direction, map) {
 									$('#pancarte').attr({style: 'background-color: #7E5835; width: 1450px; display: inline-block;margin-left:40px; margin-top: 40px; position: relative; color: yellow; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });'});
 							}
 								},false);
+					} else if(this.x == 18 && this.y == 2 || this.y == 2 && this.x == 16) {
+							this.y = prochaineCase.y;
+							window.addEventListener('keypress', function(e){
+								if(e.keyCode == 13 && !document.getElementById('pancarte') && nameMap == 'seconde'){
+									$('#canvasdiv').append('<div id="pancarte"><div id="talk"><div id="welcome">\n\
+									<p>Bienvenue dans le village CV de Romuald DUCROCQ.</p>\n\
+									<p>Vous pourrez aller de maison en maison afin de découvrir qui je suis. Lorsque vous êtes près du personnage, appuyez sur la touche "entrée" afin d\'intéragir avec.</p>\n\
+									<p>Chaque maison correspond à une partie, les compétences en haut à gauche, les loisirs en bas à gauche, mon parcours en haut à droite et pour finir mes réalisations en bas à droite.</p>\n\
+									<p>Ce CV est l\'aboutissement d\'une idée. Il est encore en cours de réalisation et n\'est donc pas terminé.<p>\n\
+									<p>Pour informations, les tilesets utilisés ont était pris sur internet.</p></div>\n\
+									<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div>');
+										$('.buttonClose').click(function() {
+												$('#pancarte').remove();
+												talkVersion = 1;
+										});
+										$('.link').hover(function(){
+											$(this).css("color: white;");
+										})
+										$('.link').attr({style: "color: purple"});
+										$('#welcome').attr({style: "text-align: center;"});
+										$('.buttonTalk').attr({style : "color: black; margin-left: 40px;"});
+										$('#talk').attr({ style : "width: 1350px; display: inline-block; position: relative; background-color: #DEB887; color: yellow; padding-top: 1.0em; margin-left: 2.2em; padding-bottom: 1.0em;" });
+										$('#canvas').attr({ style : "position: absolute;" });
+										$('#pancarte').attr({style: 'background-color: #7E5835; width: 1450px; display: inline-block;margin-left:40px; margin-top: 40px; position: relative; color: yellow; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });'});
+								}
+							},false);
 					}  else {
             this.x = prochaineCase.x;
             this.y = prochaineCase.y;
