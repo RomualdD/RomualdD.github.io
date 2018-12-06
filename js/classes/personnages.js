@@ -400,6 +400,39 @@ Personnage.prototype.deplacer = function(direction, map) {
 																		talkVersion = 1;
 																});
 															});
+															$('.buttonSuivant').click(function() {
+																$('#'+talkVersion).remove();
+																talkVersion++;
+																$('#talk').append('<section" id="3">\n\
+																<p>Ma dernière passion est les jeuxivdéos</p>\n\
+																<p>Depuis tout petit, je joue aux jeuxvidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
+																<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
+																<div class="acquirment" style="color: purple;">\n\
+																<div class="row" id="smite">Smite</div>\n\
+																<div class="row" id="happywars">Happy Wars :</div>\n\
+																<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
+																$('.buttonClose').click(function() {
+																		$('#hobbies').remove();
+																		talkVersion = 1;
+																});
+																$('#smite').click(function() {
+																	if(!document.getElementById('smitegame')) {
+																		$(this).append('<div class="row"><img id="smitegame" src="assets/img/smite.gif" height="200px" width="350px"></div>');
+																	}
+																	if(document.getElementById('happywarsgame')) {
+																			$('#happywarsgame').remove();
+																	}
+																})
+																$('#happywars').click(function() {
+																	if(document.getElementById('smitegame')) {
+																		$('#smitegame').remove();
+
+																	}
+																	if(!document.getElementById('happywarsgame')) {
+																		$(this).append('<div class="row"><img id="happywarsgame" src="assets/img/happywars.gif" height="200px" width="350px"></div>')
+																	}
+																})
+															});
 													});
 													$('.buttonClose').click(function() {
 															$('#hobbies').remove();
