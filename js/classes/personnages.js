@@ -169,7 +169,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																			$('#competence').remove();
 																			talkVersion = 1;
 																	});
-															});
+																});
 															});
 														$('.buttonClose').click(function() {
 																$('#competence').remove();
@@ -349,7 +349,122 @@ Personnage.prototype.deplacer = function(direction, map) {
 							this.x = prochaineCase.x;
 							this.y = prochaineCase.y;
 					}
-				} else {
+				} else if(nameMap == 'cinquieme') {
+					if(this.x == 23 && this.y == 5 || this.x == 23 && this.y == 1) {
+							this.x = prochaineCase.x;
+							var down = false;
+							var talkVersion = 1;
+							window.addEventListener('keypress', function(e){
+											if(e.keyCode == 13 && !document.getElementById('bard') && nameMap == 'cinquieme'){
+												$('#canvasdiv').append('<div id="hobbies"><img src="assets/img/clown.png" id="bard" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
+												<section id="1">\n\
+												<p>Bonjour et Bienvenue dans la pr\351sentation de mes passions.</p>\n\
+												<p>Ici, je vais vous parler des activités que je fais hors de mon travail, ce qui me défini.</p>\n\
+												<div class="acquirment">\n\
+												<div class="row">Tout d\'abord, je vais vous présenter les maquettes "gunpla".</div>\n\
+												<div class="row">Pour commencer, précisons qu\'un gunpla et un gundam (des robots assez connus au Japon) en plastique.</div>\n\
+												<div class="row">Les pièces qui le constitues sont d\'une taille assez petites, il faut donc minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
+												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastiques. Voici un exemple lorque c\'est terminé :</div>\n\
+												<div class="row"><img id="gundam" src="assets/img/realgundam.jpg" height="200px" width="200px"></div>\n\
+												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+													$('.buttonSuivant').click(function() {
+														$('#'+talkVersion).remove();
+														talkVersion++;
+															$('#talk').append('<section" id="2">\n\
+															<p>Ma deuxième passion est le Japon, j\'aime lire des mangas, manger de la nourriture japonaise et écouter des chansons provenant de ce pays.</p>\n\
+															<div class="acquirment" style="color: purple;">\n\
+															<div class="row">Voici un exemple de nourriture japonaise.</div>\n\
+															<div class="row"><img id="gundam" src="assets/img/platjap.jpg" height="200px" width="300px"></div>\n\
+															<div class="row">Voici quelques liens de musique japonaise.</div>\n\
+															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=PDSkFeMVNFs" target="_blank">"Zen Zen Zen" de Radwimps</a></div>\n\
+															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=4-zXzhfP2YM" target="_blank">"Kurenaï" de X Japan</a></div>\n\
+															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=7Bgr76R0eeg" target="_blank">"Dance my generation" de Golden Bomber</a></div>\n\
+															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+															$('.buttonClose').click(function() {
+																	$('#hobbies').remove();
+																	talkVersion = 1;
+															});
+															$('.buttonSuivant').click(function() {
+																$('#'+talkVersion).remove();
+																talkVersion++;
+																$('#talk').append('<section" id="3">\n\
+																<div class="acquirment" style="color: purple;">\n\
+																<p>Quelques mangas lu :</p>\n\
+																<div class="row">One piece :</div>\n\
+																<div class="row"><img id="gundam" src="assets/img/Prophecy.jpg" height="200px" width="100px"></div>\n\
+																</div>\n\
+																<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+																$('.buttonClose').click(function() {
+																		$('#competence').remove();
+																		talkVersion = 1;
+																});
+															});
+													});
+													$('.buttonClose').click(function() {
+															$('#hobbies').remove();
+															talkVersion = 1;
+													});
+													$('.link').hover(function(){
+														$(this).css("color: white;");
+													})
+													$('.link').attr({style: "color: purple"});
+													$('.acquirment').attr({style: "color: purple;"});
+													$('.buttonTalk').attr({style : "color: black;"});
+													$('#bard').attr({ style : "display: block; position: relative; float: right;" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#canvas').attr({ style : "position: absolute;" });
+											}
+									},false);
+					} else if(this.x == 21 && this.y == 3 || this.x == 25 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 21 && this.y == 4 || this.x == 22 && this.y == 2 || this.x == 25 && this.y == 4 || this.x == 25 && this.y == 3 || this.x == 25 && this.y == 2) {
+							this.y = prochaineCase.y;
+							window.addEventListener('keypress', function(e){
+											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'quatrieme'){
+												$('#canvasdiv').append('<div id="parcours"><img src="assets/img/lord_knight.png" id="knight" alt="photo knight" height="725px" width="425px"/><div id="talk">\n\
+												<section id="1">\n\
+												<p>Bonjour et Bienvenue dans la pr\351sentation de mon parcours.</p>\n\
+												<p class="acquirment">Je suis actuellement en contrat de professionnalisation à La Manu et dans l\'entreprise "picardie-informatique" à Amiens, pour obtenir le titre RNCP de Concepteur Développeur Informatique de niveau II.</p>\n\
+												<p>J\'ai toujours voulu faire un métier dans le rapport du numérique, plus spécifiquement dans le domaine du jeuxvidéo.</p>\n\
+												<p>C\'est pourquoi j\'ai réalisé mon cv numérique de cette façon, j\'ai eu l\'idée de faire un cv qui pouvait convenir à plusieurs de mes intérêts.</p>\n\
+												<p>Mon premier CV est en rapport avec ma passion des jeuxvidéo et ce CV en est la concrétisation.</p>\n\
+												<p>Voici désormais mon parcours, je vais commencer à partir du début.</p>\n\
+												<div class="acquirment">\n\
+												<div class="row">En Juin 2011, à la fin de ma classe de 3ème j\'ai acquis le brevet des collèges.</div>\n\
+												<div class="row">Suite à mes études de collèges, je me suis isncrit au lycée Mireille Grenet, afin d\'étudier les options Sciences de l\'ingénieur.</div>\n\
+												<div class="row">Puis un bac Scientifique option Science de l\'ingénieur avec comme spécialité l\'ISN (science du numérique) que j\'ai obtenu en 2015.</div>\n\
+												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+													$('.buttonSuivant').click(function() {
+														$('#'+talkVersion).remove();
+														talkVersion++;
+															$('#talk').append('<section" id="2">\n\
+															<p>Puis après mon baccalauréat, je me suis orienté vers une spécialité en réseaux informatique.</p>\n\
+															<div class="acquirment" style="color: purple;">\n\
+															<div class="row">J\'ai obtenu un BTS systèmes numérique informatique et réseaux.</div>\n\
+															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
+															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
+															<div class="row">La formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
+															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></section>');
+															$('.buttonClose').click(function() {
+																	$('#parcours').remove();
+																	talkVersion = 1;
+															});
+													});
+													$('.buttonClose').click(function() {
+															$('#parcours').remove();
+															talkVersion = 1;
+													});
+													$('.acquirment').attr({style: "color: purple;"})
+													$('.buttonTalk').attr({style : "color: black;"})
+													$('#knight').attr({ style : "display: block; position: relative; float: right;" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#canvas').attr({ style : "position: absolute;" });
+											}
+									},false);
+					}
+					else {
+							this.x = prochaineCase.x;
+							this.y = prochaineCase.y;
+					}
+				}  else {
             this.x = prochaineCase.x;
             this.y = prochaineCase.y;
         }
