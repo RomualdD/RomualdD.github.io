@@ -423,12 +423,15 @@ Personnage.prototype.deplacer = function(direction, map) {
 																<p>Depuis tout petit, je joue aux jeuxvidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
 																<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
 																<div class="acquirment" style="color: purple; margin: 10px;">\n\
-																<div class="row" id="smite">Smite</div>\n\
-																<div class="row" id="happywars">Happy Wars</div>\n\
+																<div class="row videogame" id="smite">Smite (Cliquez ici)</div>\n\
+																<div class="row videogame" id="happywars">Happy Wars (Cliquez ici)</div>\n\
 																<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
 																$('.buttonClose').click(function() {
 																		$('#hobbies').remove();
 																		talkVersion = 1;
+																});
+																$('.videogame').hover(function() {
+																	$(this).css( 'cursor', 'pointer' );
 																});
 																$('#smite').click(function() {
 																	if(!document.getElementById('smitegame')) {
