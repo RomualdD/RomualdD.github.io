@@ -114,7 +114,10 @@ Personnage.prototype.deplacer = function(direction, map) {
 
 	// On effectue le d�placement
         if(nameMap == 'troisieme' ) {
-            if(this.x == 23 && this.y == 5 || this.x == 23 && this.y == 1) {
+            if(this.x == 23 && this.y == 4 || this.x == 23 && this.y == 1 || this.x == 24 && this.y == 4 || this.x == 22 && this.y == 4) {
+								if(prochaineCase.y == 5) {
+									this.y = prochaineCase.y;
+								}
                 this.x = prochaineCase.x;
                 var down = false;
 								var talkVersion = 1;
@@ -182,8 +185,11 @@ Personnage.prototype.deplacer = function(direction, map) {
                             $('#canvas').attr({ style : "position: absolute;" });
                         }
                     },false);
-            } else if(this.x == 21 && this.y == 3 || this.x == 25 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 21 && this.y == 4 || this.x == 22 && this.y == 2 || this.x == 25 && this.y == 4 || this.x == 25 && this.y == 3 || this.x == 25 && this.y == 2) {
-                this.y = prochaineCase.y;
+            } else if(this.x == 24 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 22 && this.y == 3 || this.x == 22 && this.y == 2 || this.x == 24 && this.y == 4 || this.x == 24 && this.y == 3 || this.x == 24 && this.y == 2) {
+								if(prochaineCase.x == 22 || prochaineCase.x == 25 || prochaineCase.x == 21) {
+									this.x = prochaineCase.x;
+								}
+								this.y = prochaineCase.y;
                 window.addEventListener('keypress', function(e){
                         if(e.keyCode == 13 && !document.getElementById('wizard') && nameMap == 'troisieme'){
 													$('#canvasdiv').append('<div id="competence"><img src="assets/img/wizard.png" id="wizard" alt="photo wizard" height="725px" width="425px"/><div id="talk">\n\
@@ -254,7 +260,10 @@ Personnage.prototype.deplacer = function(direction, map) {
                 this.y = prochaineCase.y;
             }
         } else if(nameMap == 'quatrieme') {
-					if(this.x == 23 && this.y == 5 || this.x == 23 && this.y == 1) {
+					if(this.x == 23 && this.y == 4 || this.x == 23 && this.y == 1 || this.x == 24 && this.y == 4 || this.x == 22 && this.y == 4) {
+							if(prochaineCase.y == 5) {
+								this.y = prochaineCase.y;
+							}
 							this.x = prochaineCase.x;
 							var down = false;
 							var talkVersion = 1;
@@ -300,7 +309,10 @@ Personnage.prototype.deplacer = function(direction, map) {
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
-					} else if(this.x == 21 && this.y == 3 || this.x == 25 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 21 && this.y == 4 || this.x == 22 && this.y == 2 || this.x == 25 && this.y == 4 || this.x == 25 && this.y == 3 || this.x == 25 && this.y == 2) {
+								} else if(this.x == 24 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 22 && this.y == 3 || this.x == 22 && this.y == 2 || this.x == 24 && this.y == 4 || this.x == 24 && this.y == 3 || this.x == 24 && this.y == 2) {
+										if(prochaineCase.x == 22 || prochaineCase.x == 25 || prochaineCase.x == 21) {
+											this.x = prochaineCase.x;
+										}
 							this.y = prochaineCase.y;
 							window.addEventListener('keypress', function(e){
 											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'quatrieme'){
@@ -350,7 +362,10 @@ Personnage.prototype.deplacer = function(direction, map) {
 							this.y = prochaineCase.y;
 					}
 				} else if(nameMap == 'cinquieme') {
-					if(this.x == 23 && this.y == 5 || this.x == 23 && this.y == 1) {
+					if(this.x == 23 && this.y == 4 || this.x == 23 && this.y == 1 || this.x == 24 && this.y == 4 || this.x == 22 && this.y == 4) {
+							if(prochaineCase.y == 5) {
+								this.y = prochaineCase.y;
+							}
 							this.x = prochaineCase.x;
 							var down = false;
 							var talkVersion = 1;
@@ -449,7 +464,10 @@ Personnage.prototype.deplacer = function(direction, map) {
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
-					} else if(this.x == 21 && this.y == 3 || this.x == 25 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 21 && this.y == 4 || this.x == 22 && this.y == 2 || this.x == 25 && this.y == 4 || this.x == 25 && this.y == 3 || this.x == 25 && this.y == 2) {
+								} else if(this.x == 24 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 22 && this.y == 3 || this.x == 22 && this.y == 2 || this.x == 24 && this.y == 4 || this.x == 24 && this.y == 3 || this.x == 24 && this.y == 2) {
+										if(prochaineCase.x == 22 || prochaineCase.x == 25 || prochaineCase.x == 21) {
+											this.x = prochaineCase.x;
+										}
 							this.y = prochaineCase.y;
 							window.addEventListener('keypress', function(e){
 											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'quatrieme'){
@@ -552,10 +570,94 @@ Personnage.prototype.deplacer = function(direction, map) {
 							this.y = prochaineCase.y;
 					}
 				} else if(nameMap == 'sixieme') {
-					if(this.x == 23 && this.y == 5 || this.x == 23 && this.y == 1) {
+					if(this.x == 23 && this.y == 5 || this.x == 23 && this.y == 1 || this.x == 22 && this.y == 4) {
+							if(prochaineCase.y == 4 || prochaineCase.y == 3) {
+								this.y = prochaineCase.y;
+							}
 							this.x = prochaineCase.x;
 							var down = false;
 							var talkVersion = 1;
+							window.addEventListener('keypress', function(e){
+											if(e.keyCode == 13 && !document.getElementById('blacksmith') && nameMap == 'sixieme'){
+												$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo bard" height="724px" width="425px"/><div id="talk">\n\
+												<section id="1">\n\
+												<p>Bienvenue dans mes projets.</p>\n\
+												<p>Je vais vous parler de mes projets que j\'ai réalisé seul ou en groupe lors de mes études.</p>\n\
+												<div class="acquirment">\n\
+												<div class="row">Lors de mon baccalauréat Scientifique j\'ai du réalisé un projet.</div>\n\
+												<div class="row">Nous étions un groupe de trois. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
+												<div class="row">Le choix du projet a était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
+												<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
+												<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
+												<div class="row">Nous avons fini second de notre région puis nous avons participer aux olympiades nationales.</div>\n\
+												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+													$('.buttonSuivant').click(function() {
+														$('#'+talkVersion).remove();
+														talkVersion++;
+															$('#talk').append('<section" id="2">\n\
+															<p>Je vais vous parler de mon second projet.</p>\n\
+															<div class="acquirment" style="color: purple; margin: 10px;">\n\
+															<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
+															<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
+															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et l\'arrêter en haut.</div>\n\
+															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminé ou le tapis pour démarrer</div>\n\
+															<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
+															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+															$('.buttonClose').click(function() {
+																	$('#creation').remove();
+																	talkVersion = 1;
+															});
+															$('.buttonSuivant').click(function() {
+																$('#'+talkVersion).remove();
+																talkVersion++;
+																$('#talk').append('<section" id="3">\n\
+																<p>Passons à la programmation depuis mon entré dans le monde du développement web.</p>\n\
+																<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets commun</p>\n\
+																<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
+																<div class="row">L\'un en JavaScript/jQuery.</div>\n\
+																<div class="row">Et un autre en angularJS</div>\n\
+																<div class="row">Cependant, j\'ai également réalisé des exercices en Canvas pour ma formation.</div>\n\
+																<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+																$('.buttonClose').click(function() {
+																		$('#creation').remove();
+																		talkVersion = 1;
+																});
+																$('.buttonSuivant').click(function() {
+																	$('#'+talkVersion).remove();
+																	talkVersion++;
+																	$('#talk').append('<section" id="4">\n\
+																	<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réalisé par moi-même intégralement un site.</p>\n\
+																	<p>Dernier projet en date :</p>\n\
+																	<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																	<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou sous anticoagulant.</div>\n\
+																	<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
+																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés qu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
+																	<div class="row">Les patients peut également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
+																	<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
+																	$('.buttonClose').click(function() {
+																			$('#creation').remove();
+																			talkVersion = 1;
+																	});
+																});
+															});
+													});
+													$('.buttonClose').click(function() {
+															$('#creation').remove();
+															talkVersion = 1;
+													});
+													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
+													$('.buttonTalk').attr({style : "color: black;"});
+													$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#canvas').attr({ style : "position: absolute;" });
+											}
+									},false);
+					} else if(this.x == 21 && this.y == 3 || this.x == 22 && this.y == 3 || this.x == 24 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 21 && this.y == 4 || this.x == 22 && this.y == 2 || this.x == 24 && this.y == 4 || this.x == 24 && this.y == 3 || this.x == 24 && this.y == 2) {
+							this.y = prochaineCase.y;
+							if(prochaineCase.x == 20 || prochaineCase.x == 25 || prochaineCase.x == 21) {
+								this.x = prochaineCase.x;
+							}
 							window.addEventListener('keypress', function(e){
 											if(e.keyCode == 13 && !document.getElementById('blacksmith') && nameMap == 'sixieme'){
 												$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
@@ -632,99 +734,6 @@ Personnage.prototype.deplacer = function(direction, map) {
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
-					} else if(this.x == 21 && this.y == 3 || this.x == 25 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 21 && this.y == 4 || this.x == 22 && this.y == 2 || this.x == 25 && this.y == 4 || this.x == 25 && this.y == 3 || this.x == 25 && this.y == 2) {
-							this.y = prochaineCase.y;
-							window.addEventListener('keypress', function(e){
-											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'sixieme'){
-												$('#canvasdiv').append('<div id="hobbies"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo blacksmith" height="725px" width="425px"/><div id="talk">\n\
-												<section id="1">\n\
-												<p>Bonjour et Bienvenue dans la pr\351sentation de mes passions.</p>\n\
-												<p>Ici, je vais vous parler des activités que je fais hors de mon travail, ce qui me défini.</p>\n\
-												<div class="acquirment">\n\
-												<div class="row">Tout d\'abord, je vais vous présenter les maquettes "gunpla".</div>\n\
-												<div class="row">Pour commencer, précisons qu\'un gunpla et un gundam (des robots assez connus au Japon) en plastique.</div>\n\
-												<div class="row">Les pièces qui le constitues sont d\'une taille assez petites, il faut donc minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
-												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastiques. Voici un exemple lorque c\'est terminé :</div>\n\
-												<div class="row"><img id="gundam" src="assets/img/realgundam.jpg" height="200px" width="200px"></div>\n\
-												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
-													$('.buttonSuivant').click(function() {
-														$('#'+talkVersion).remove();
-														talkVersion++;
-															$('#talk').append('<section" id="2">\n\
-															<p>Ma deuxième passion est le Japon, j\'aime lire des mangas, manger de la nourriture japonaise et écouter des chansons provenant de ce pays.</p>\n\
-															<div class="acquirment" style="color: purple;">\n\
-															<div class="row">Voici un exemple de nourriture japonaise.</div>\n\
-															<div class="row"><img id="gundam" src="assets/img/platjap.jpg" height="200px" width="300px"></div>\n\
-															<div class="row">Voici quelques liens de musique japonaise.</div>\n\
-															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=PDSkFeMVNFs" target="_blank">"Zen Zen Zen" de Radwimps</a></div>\n\
-															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=4-zXzhfP2YM" target="_blank">"Kurenaï" de X Japan</a></div>\n\
-															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=7Bgr76R0eeg" target="_blank">"Dance my generation" de Golden Bomber</a></div>\n\
-															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
-															$('.buttonClose').click(function() {
-																	$('#hobbies').remove();
-																	talkVersion = 1;
-															});
-															$('.buttonSuivant').click(function() {
-																$('#'+talkVersion).remove();
-																talkVersion++;
-																$('#talk').append('<section" id="3">\n\
-																<div class="acquirment" style="color: purple;">\n\
-																<p>Quelques mangas lu :</p>\n\
-																<div class="row">One piece :</div>\n\
-																<div class="row"><img id="onepiece" src="assets/img/one_piece.jpg" height="200px" width="150px"></div>\n\
-																<div class="row">Gantz :</div>\n\
-																<div class="row"><img id="gantz" src="assets/img/gantz.jpg" height="200px" width="150px"></div>\n\
-																<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
-																$('.buttonClose').click(function() {
-																		$('#hobbies').remove();
-																		talkVersion = 1;
-																});
-															});
-															$('.buttonSuivant').click(function() {
-																$('#'+talkVersion).remove();
-																talkVersion++;
-																$('#talk').append('<section" id="3">\n\
-																<p>Ma dernière passion est les jeuxivdéos</p>\n\
-																<p>Depuis tout petit, je joue aux jeuxvidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
-																<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
-																<div class="acquirment" style="color: purple;">\n\
-																<div class="row" id="smite">Smite</div>\n\
-																<div class="row" id="happywars">Happy Wars</div>\n\
-																<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
-																$('.buttonClose').click(function() {
-																		$('#hobbies').remove();
-																		talkVersion = 1;
-																});
-																$('#smite').click(function() {
-																	if(!document.getElementById('smitegame')) {
-																		$(this).append('<div class="row"><img id="smitegame" src="assets/img/smite.gif" height="200px" width="350px"></div>');
-																	}
-																	if(document.getElementById('happywarsgame')) {
-																			$('#happywarsgame').remove();
-																	}
-																})
-																$('#happywars').click(function() {
-																	if(document.getElementById('smitegame')) {
-																		$('#smitegame').remove();
-
-																	}
-																	if(!document.getElementById('happywarsgame')) {
-																		$(this).append('<div class="row"><img id="happywarsgame" src="assets/img/happywars.gif" height="200px" width="350px"></div>')
-																	}
-																})
-															});
-													});
-													$('.buttonClose').click(function() {
-															$('#hobbies').remove();
-															talkVersion = 1;
-													});
-													$('.acquirment').attr({style: "color: purple;"});
-													$('.buttonTalk').attr({style : "color: black;"});
-													$('#bard').attr({ style : "display: block; position: relative; float: right;" });
-													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
-													$('#canvas').attr({ style : "position: absolute;" });
-											}
-									},false);
 					}
 					else {
 							this.x = prochaineCase.x;
@@ -732,7 +741,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 					}
 				} else if(nameMap == 'seconde') {
 					if(this.x == 17 && this.y == 3 || this.x == 17 && this.y == 1) {
-						console.log('ca marche');
+						if(prochaineCase.y == 4) {
+							this.y = prochaineCase.y;
+						}
 						this.x = prochaineCase.x;
 						var down = false;
 						var talkVersion = 1;
@@ -761,6 +772,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 							}
 								},false);
 					} else if(this.x == 18 && this.y == 2 || this.y == 2 && this.x == 16) {
+							if(prochaineCase.x == 19 || prochaineCase.x == 15) {
+								this.x = prochaineCase.x;
+							}
 							this.y = prochaineCase.y;
 							window.addEventListener('keypress', function(e){
 								if(e.keyCode == 13 && !document.getElementById('pancarte') && nameMap == 'seconde'){
