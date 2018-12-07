@@ -279,7 +279,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<p>Voici désormais mon parcours, je vais commencer à partir du début.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">En Juin 2011, à la fin de ma classe de 3ème j\'ai acquis le brevet des collèges.</div>\n\
-												<div class="row">Suite à mes études de collèges, je me suis isncrit au lycée Mireille Grenet, afin d\'étudier les options Sciences de l\'ingénieur.</div>\n\
+												<div class="row">Suite à mes études de collèges, je me suis inscrit au lycée Mireille Grenet, afin d\'étudier les options Sciences de l\'ingénieur.</div>\n\
 												<div class="row">Puis un bac Scientifique option Science de l\'ingénieur avec comme spécialité l\'ISN (science du numérique) que j\'ai obtenu en 2015.</div>\n\
 												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
