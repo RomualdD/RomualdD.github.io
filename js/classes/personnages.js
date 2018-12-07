@@ -570,8 +570,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 							this.y = prochaineCase.y;
 					}
 				} else if(nameMap == 'sixieme') {
-					if(this.x == 23 && this.y == 5 || this.x == 23 && this.y == 1 || this.x == 22 && this.y == 4) {
-							if(prochaineCase.y == 4 || prochaineCase.y == 3) {
+					if(this.x == 23 && this.y == 4 || this.x == 23 && this.y == 1 || this.x == 24 && this.y == 4 || this.x == 22 && this.y == 4) {
+							if(prochaineCase.y == 5) {
 								this.y = prochaineCase.y;
 							}
 							this.x = prochaineCase.x;
@@ -653,11 +653,11 @@ Personnage.prototype.deplacer = function(direction, map) {
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
-					} else if(this.x == 21 && this.y == 3 || this.x == 22 && this.y == 3 || this.x == 24 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 21 && this.y == 4 || this.x == 22 && this.y == 2 || this.x == 24 && this.y == 4 || this.x == 24 && this.y == 3 || this.x == 24 && this.y == 2) {
-							this.y = prochaineCase.y;
-							if(prochaineCase.x == 20 || prochaineCase.x == 25 || prochaineCase.x == 21) {
-								this.x = prochaineCase.x;
-							}
+								} else if(this.x == 24 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 22 && this.y == 3 || this.x == 22 && this.y == 2 || this.x == 24 && this.y == 4 || this.x == 24 && this.y == 3 || this.x == 24 && this.y == 2) {
+										if(prochaineCase.x == 22 || prochaineCase.x == 25 || prochaineCase.x == 21) {
+											this.x = prochaineCase.x;
+										}
+										this.y = prochaineCase.y;
 							window.addEventListener('keypress', function(e){
 											if(e.keyCode == 13 && !document.getElementById('blacksmith') && nameMap == 'sixieme'){
 												$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
