@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Halo";
   src: url('Halo.ttf');
-  font-family: "consola";
-  src: url('consola.ttf');
 }
 
 header:not(#link){
@@ -212,6 +210,10 @@ marquee{
 
 .c{
   width: 50%;
+}
+
+.angular{
+  width: 15%;
 }
 
 .bootstrap{
