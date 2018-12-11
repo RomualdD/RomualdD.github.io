@@ -3,6 +3,11 @@
   src: url('Halo.ttf');
 }
 
+@font-face {
+  font-family: "Consola";
+  src: url('consola.ttf');
+}
+
 header:not(#link){
   margin-top: 0;
   background-image: url('../img/nuages.png');
