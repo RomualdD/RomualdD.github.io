@@ -391,9 +391,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">Voici un exemple de nourriture japonaise.</div>\n\
 															<div class="row"><img id="gundam" src="assets/img/platjap.jpg" height="200px" width="300px"></div>\n\
 															<div class="row">Voici quelques liens de musique japonaise.</div>\n\
-															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=PDSkFeMVNFs" target="_blank">"Zen Zen Zen" de Radwimps</a></div>\n\
-															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=4-zXzhfP2YM" target="_blank">"Kurenaï" de X Japan</a></div>\n\
-															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=7Bgr76R0eeg" target="_blank">"Dance my generation" de Golden Bomber</a></div>\n\
+															<div class="row"><a class="link" style="color: red" href="https://www.youtube.com/watch?v=PDSkFeMVNFs" target="_blank">"Zen Zen Zen" de Radwimps</a></div>\n\
+															<div class="row"><a class="link" style="color: red" href="https://www.youtube.com/watch?v=4-zXzhfP2YM" target="_blank">"Kurenaï" de X Japan</a></div>\n\
+															<div class="row"><a class="link" style="color: red" href="https://www.youtube.com/watch?v=7Bgr76R0eeg" target="_blank">"Dance my generation" de Golden Bomber</a></div>\n\
 															<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#hobbies').remove();
@@ -449,17 +449,19 @@ Personnage.prototype.deplacer = function(direction, map) {
 																			$(this).append('<div class="row"><img id="happywarsgame" src="assets/img/happywars.gif" height="200px" width="350px"></div>')
 																		}
 																	});
+
+																	$('.link').hover(function(){
+																		$(this).css("color: white;");
+																	})
+																	$('.link').attr({style: "color: red;"});
+																});
+
+																$('.buttonClose').click(function() {
+																		$('#hobbies').remove();
+																		talkVersion = 1;
 																});
 															});
 													});
-													$('.buttonClose').click(function() {
-															$('#hobbies').remove();
-															talkVersion = 1;
-													});
-													$('.link').hover(function(){
-														$(this).css("color: white;");
-													})
-													$('.link').attr({style: "color: red;"});
 													$('.acquirment').attr({style: "color: white; font-family: 'Consola'; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
 													$('#bard').attr({ style : "display: block; position: relative; float: right;" });
@@ -494,9 +496,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">Voici un exemple de nourriture japonaise.</div>\n\
 															<div class="row"><img id="gundam" src="assets/img/platjap.jpg" height="200px" width="300px"></div>\n\
 															<div class="row">Voici quelques liens de musique japonaise.</div>\n\
-															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=PDSkFeMVNFs" target="_blank">"Zen Zen Zen" de Radwimps</a></div>\n\
-															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=4-zXzhfP2YM" target="_blank">"Kurenaï" de X Japan</a></div>\n\
-															<div class="row"><a class="link" href="https://www.youtube.com/watch?v=7Bgr76R0eeg" target="_blank">"Dance my generation" de Golden Bomber</a></div>\n\
+															<div class="row"><a class="link" style="color: red" href="https://www.youtube.com/watch?v=PDSkFeMVNFs" target="_blank">"Zen Zen Zen" de Radwimps</a></div>\n\
+															<div class="row"><a class="link" style="color: red" href="https://www.youtube.com/watch?v=4-zXzhfP2YM" target="_blank">"Kurenaï" de X Japan</a></div>\n\
+															<div class="row"><a class="link" style="color: red" href="https://www.youtube.com/watch?v=7Bgr76R0eeg" target="_blank">"Dance my generation" de Golden Bomber</a></div>\n\
 															<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#hobbies').remove();
@@ -552,6 +554,11 @@ Personnage.prototype.deplacer = function(direction, map) {
 																			$(this).append('<div class="row"><img id="happywarsgame" src="assets/img/happywars.gif" height="200px" width="350px"></div>')
 																		}
 																	});
+
+																	$('.link').hover(function(){
+																		$(this).css("color: white;");
+																	})
+																	$('.link').attr({style: "color: red;"});
 																});
 															});
 													});
@@ -559,10 +566,6 @@ Personnage.prototype.deplacer = function(direction, map) {
 															$('#hobbies').remove();
 															talkVersion = 1;
 													});
-													$('.link').hover(function(){
-														$(this).css("color: white;");
-													})
-													$('.link').attr({style: "color: red;"});
 													$('.acquirment').attr({style: "color: white; font-family: 'Consola'; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
 													$('#bard').attr({ style : "display: block; position: relative; float: right;" });
