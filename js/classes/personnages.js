@@ -403,7 +403,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																$('#'+talkVersion).remove();
 																talkVersion++;
 																$('#talk').append('<section" id="3">\n\
-																<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																<div class="acquirment" style="color: white; font-style: "consola"; margin: 10px;">\n\
 																<p>Quelques mangas lu :</p>\n\
 																<div class="row">One piece :</div>\n\
 																<div class="row"><img id="onepiece" src="assets/img/one_piece.jpg" height="200px" width="150px"></div>\n\
@@ -414,42 +414,42 @@ Personnage.prototype.deplacer = function(direction, map) {
 																		$('#hobbies').remove();
 																		talkVersion = 1;
 																});
-															});
-															$('.buttonSuivant').click(function() {
-																$('#'+talkVersion).remove();
-																talkVersion++;
-																$('#talk').append('<section" id="3">\n\
-																<p>Ma dernière passion est les jeuxivdéos</p>\n\
-																<p>Depuis tout petit, je joue aux jeuxvidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
-																<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
-																<div class="acquirment" style="color: purple; margin: 10px;">\n\
-																<div class="row videogame" id="smite">Smite (Cliquez ici)</div>\n\
-																<div class="row videogame" id="happywars">Happy Wars (Cliquez ici)</div>\n\
-																<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
-																$('.buttonClose').click(function() {
-																		$('#hobbies').remove();
-																		talkVersion = 1;
-																});
-																$('.videogame').hover(function() {
-																	$(this).css( 'cursor', 'pointer' );
-																});
-																$('#smite').click(function() {
-																	if(!document.getElementById('smitegame')) {
-																		$(this).append('<div class="row"><img id="smitegame" src="assets/img/smite.gif" height="200px" width="350px"></div>');
-																	}
-																	if(document.getElementById('happywarsgame')) {
-																			$('#happywarsgame').remove();
-																	}
-																})
-																$('#happywars').click(function() {
-																	if(document.getElementById('smitegame')) {
-																		$('#smitegame').remove();
+																$('.buttonSuivant').click(function() {
+																	$('#'+talkVersion).remove();
+																	talkVersion++;
+																	$('#talk').append('<section" id="3">\n\
+																	<div class="acquirment" style="color: white;font-style: "consola"; margin: 10px;">\n\
+																	<p>Ma dernière passion est les jeuxivdéos</p>\n\
+																	<p>Depuis tout petit, je joue aux jeuxvidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
+																	<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
+																	<div class="row videogame" style="color: red" id="smite">Smite (Cliquez ici)</div>\n\
+																	<div class="row videogame" style="color: red" id="happywars">Happy Wars (Cliquez ici)</div>\n\
+																	<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
+																	$('.buttonClose').click(function() {
+																			$('#hobbies').remove();
+																			talkVersion = 1;
+																	});
+																	$('.videogame').hover(function() {
+																		$(this).css( 'cursor', 'pointer' );
+																	});
+																	$('#smite').click(function() {
+																		if(!document.getElementById('smitegame')) {
+																			$(this).append('<div class="row"><img id="smitegame" src="assets/img/smite.gif" height="200px" width="350px"></div>');
+																		}
+																		if(document.getElementById('happywarsgame')) {
+																				$('#happywarsgame').remove();
+																		}
+																	})
+																	$('#happywars').click(function() {
+																		if(document.getElementById('smitegame')) {
+																			$('#smitegame').remove();
 
-																	}
-																	if(!document.getElementById('happywarsgame')) {
-																		$(this).append('<div class="row"><img id="happywarsgame" src="assets/img/happywars.gif" height="200px" width="350px"></div>')
-																	}
-																})
+																		}
+																		if(!document.getElementById('happywarsgame')) {
+																			$(this).append('<div class="row"><img id="happywarsgame" src="assets/img/happywars.gif" height="200px" width="350px"></div>')
+																		}
+																	});
+																});
 															});
 													});
 													$('.buttonClose').click(function() {
@@ -457,13 +457,13 @@ Personnage.prototype.deplacer = function(direction, map) {
 															talkVersion = 1;
 													});
 													$('.link').hover(function(){
-														$(this).css("color: white;");
+														$(this).css("color: red;");
 													})
-													$('.link').attr({style: "color: purple"});
-													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
+													$('.link').attr({style: "color: white;"});
+													$('.acquirment').attr({style: "color: white; font-style: 'consola'; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
 													$('#bard').attr({ style : "display: block; position: relative; float: right;" });
-													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: black; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
@@ -516,40 +516,39 @@ Personnage.prototype.deplacer = function(direction, map) {
 																$('.buttonClose').click(function() {
 																		$('#hobbies').remove();
 																		talkVersion = 1;
-																});
-															});
-															$('.buttonSuivant').click(function() {
-																$('#'+talkVersion).remove();
-																talkVersion++;
-																$('#talk').append('<section" id="3">\n\
-																<p>Ma dernière passion est les jeuxivdéos</p>\n\
-																<p>Depuis tout petit, je joue aux jeuxvidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
-																<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
-																<div class="acquirment" style="color: purple; margin: 10px;">\n\
-																<div class="row" id="smite">Smite</div>\n\
-																<div class="row" id="happywars">Happy Wars</div>\n\
-																<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
-																$('.buttonClose').click(function() {
-																		$('#hobbies').remove();
-																		talkVersion = 1;
-																});
-																$('#smite').click(function() {
-																	if(!document.getElementById('smitegame')) {
-																		$(this).append('<div class="row"><img id="smitegame" src="assets/img/smite.gif" height="200px" width="350px"></div>');
-																	}
-																	if(document.getElementById('happywarsgame')) {
-																			$('#happywarsgame').remove();
-																	}
-																})
-																$('#happywars').click(function() {
-																	if(document.getElementById('smitegame')) {
-																		$('#smitegame').remove();
+																});$('.buttonSuivant').click(function() {
+																	$('#'+talkVersion).remove();
+																	talkVersion++;
+																	$('#talk').append('<section" id="3">\n\
+																	<p>Ma dernière passion est les jeuxivdéos</p>\n\
+																	<p>Depuis tout petit, je joue aux jeuxvidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
+																	<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
+																	<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																	<div class="row" id="smite">Smite</div>\n\
+																	<div class="row" id="happywars">Happy Wars</div>\n\
+																	<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
+																	$('.buttonClose').click(function() {
+																			$('#hobbies').remove();
+																			talkVersion = 1;
+																	});
+																	$('#smite').click(function() {
+																		if(!document.getElementById('smitegame')) {
+																			$(this).append('<div class="row"><img id="smitegame" src="assets/img/smite.gif" height="200px" width="350px"></div>');
+																		}
+																		if(document.getElementById('happywarsgame')) {
+																				$('#happywarsgame').remove();
+																		}
+																	})
+																	$('#happywars').click(function() {
+																		if(document.getElementById('smitegame')) {
+																			$('#smitegame').remove();
 
-																	}
-																	if(!document.getElementById('happywarsgame')) {
-																		$(this).append('<div class="row"><img id="happywarsgame" src="assets/img/happywars.gif" height="200px" width="350px"></div>')
-																	}
-																})
+																		}
+																		if(!document.getElementById('happywarsgame')) {
+																			$(this).append('<div class="row"><img id="happywarsgame" src="assets/img/happywars.gif" height="200px" width="350px"></div>')
+																		}
+																	})
+																});
 															});
 													});
 													$('.buttonClose').click(function() {
@@ -559,11 +558,11 @@ Personnage.prototype.deplacer = function(direction, map) {
 													$('.link').hover(function(){
 														$(this).css("color: white;");
 													})
-													$('.link').attr({style: "color: purple"});
+													$('.link').attr({style: "color: white; font-style: consola;"});
 													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
 													$('#bard').attr({ style : "display: block; position: relative; float: right;" });
-													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: black; color: yellow;  float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
@@ -652,7 +651,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
 													$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
-													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative;  background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
@@ -732,8 +731,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 													});
 													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
-													$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
-													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#blacksmith').attr({ style : "display: block; position: relative; float: right; background-color: #C0C0C0" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0 color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
@@ -807,6 +806,9 @@ Personnage.prototype.deplacer = function(direction, map) {
             this.x = prochaineCase.x;
             this.y = prochaineCase.y;
         }
+				if(this.x == 19 || this.x == 21 || this.y == 3 || this.y == 1) {
+					$('#touchehelp').remove();
+				}
 			}
 	return true;
 }

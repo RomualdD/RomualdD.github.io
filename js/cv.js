@@ -6,6 +6,10 @@ var nameMap = 'seconde';
 window.onload = function() {
 	$("#myModal").modal('show') ;
 
+		$('#canvasdiv').append('<div id="touchehelp"><img src="assets/img/touche.png" id="touche" alt="photo touche" height="725px" width="425px"/></div>');
+		$('#canvas').attr({ style : "position: absolute;" });
+		$('#touche').attr({ style : "display: block; position: relative; float: right;" });
+
 	var canvas = document.getElementById('canvas');
 	var ctx = canvas.getContext('2d');
 	var div = document.getElementById('canvasdiv');
@@ -47,15 +51,13 @@ window.onload = function() {
                                     joueur.deplacer(DIRECTION.BAS, map);
                                     break;
                             case 37 : // Fl�che gauche
-                                    left -= 9;
                                     joueur.deplacer(DIRECTION.GAUCHE, map);
-                                    div.scrollLeft	=	left;
                                     break;
                             case 39 : // Fl�che droite
                                     joueur.deplacer(DIRECTION.DROITE, map);
-                                    left += 9;
-                                    div.scrollLeft	=	left;
                                     break;
+														case 27 : document.location.href="https://romualdd.github.io/";
+																		break;
                             default :
                                     //alert(key);
                                     // Si la touche ne nous sert pas, nous n'avons aucune raison de bloquer son comportement normal.
