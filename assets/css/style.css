@@ -176,6 +176,14 @@ h4{
   background-repeat: no-repeat;
 }
 
+#loisirs {
+  margin: 0px;
+}
+
+.marginbottom {
+  margin-bottom: 5px;
+}
+
 marquee{
   height: 50px;
   border:2px #008000;
@@ -208,8 +216,12 @@ marquee{
    width: 40%;
 }
 
-.c{
+.c, .atom, .builder, .english{
   width: 50%;
+}
+
+.deutsch {
+  width: 35%;
 }
 
 .angular{
@@ -236,10 +248,6 @@ marquee{
   width: 25%;
 }
 
-.atom{
-   width: 50%;
-}
-
 .nano{
    width: 60%;
 }
@@ -258,10 +266,6 @@ marquee{
 
 .vhost{
    width: 25%;
-}
-
-.builder{
-   width: 50%;
 }
 
 #televiseur{
