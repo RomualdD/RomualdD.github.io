@@ -558,8 +558,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 													$('.link').hover(function(){
 														$(this).css("color: white;");
 													})
-													$('.link').attr({style: "color: white; font-style: consola;"});
-													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
+													$('.link').attr({style: "color: red; font-style: consola;"});
+													$('.acquirment').attr({style: "color: white; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
 													$('#bard').attr({ style : "display: block; position: relative; float: right;" });
 													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: black; color: yellow;  float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
