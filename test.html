@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+    <title>Exercice1</title>
+  </head>
+  <body ng-app>
+    <select ng-model="personnage">
+      <option value="dragon">dragon</option>
+      <option value="personnage">personnage</option>
+    </select>
+    <p>{{personnage}}</p>
+    <img src="sprites/{{personnage}}.png" id="personnageChoisi" alt="photo choisi" height="725px" width="425px"/>
+  </body>
+</html>

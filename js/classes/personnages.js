@@ -273,9 +273,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mon parcours.</p>\n\
 												<p class="acquirment">Je suis actuellement en contrat de professionnalisation à La Manu et dans l\'entreprise "picardie-informatique" à Amiens, pour obtenir le titre RNCP de Concepteur Développeur Informatique de niveau II.</p>\n\
-												<p>J\'ai toujours voulu faire un métier dans le rapport du numérique, plus spécifiquement dans le domaine du jeuxvidéo.</p>\n\
+												<p>J\'ai toujours voulu faire un métier dans le rapport du numérique, plus spécifiquement dans le domaine du jeu vidéo.</p>\n\
 												<p>C\'est pourquoi j\'ai réalisé mon cv numérique de cette façon, j\'ai eu l\'idée de faire un cv qui pouvait convenir à plusieurs de mes intérêts.</p>\n\
-												<p>Mon premier CV est en rapport avec ma passion des jeuxvidéo et ce CV en est la concrétisation.</p>\n\
+												<p>Mon premier CV est en rapport avec ma passion des jeux vidéos et ce CV en est la concrétisation.</p>\n\
 												<p>Voici désormais mon parcours, je vais commencer à partir du début.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">En Juin 2011, à la fin de ma classe de 3ème j\'ai acquis le brevet des collèges.</div>\n\
@@ -286,12 +286,12 @@ Personnage.prototype.deplacer = function(direction, map) {
 														$('#'+talkVersion).remove();
 														talkVersion++;
 															$('#talk').append('<section" id="2">\n\
-															<p>Puis après mon baccalauréat, je me suis orienté vers une spécialité en réseaux informatique.</p>\n\
+															<p>Puis après mon baccalauréat, je me suis orienté vers une spécialité en réseaux informatiques.</p>\n\
 															<div class="acquirment" style="color: purple; margin: 10px;">\n\
-															<div class="row">J\'ai obtenu un BTS systèmes numérique informatique et réseaux.</div>\n\
+															<div class="row">J\'ai obtenu un BTS systèmes numériques informatiques et réseaux.</div>\n\
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
 															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
-															<div class="row">La formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
+															<div class="row">Lors de la formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
 															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#parcours').remove();
@@ -320,25 +320,25 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mon parcours.</p>\n\
 												<p class="acquirment">Je suis actuellement en contrat de professionnalisation à La Manu et dans l\'entreprise "picardie-informatique" à Amiens, pour obtenir le titre RNCP de Concepteur Développeur Informatique de niveau II.</p>\n\
-												<p>J\'ai toujours voulu faire un métier dans le rapport du numérique, plus spécifiquement dans le domaine du jeuxvidéo.</p>\n\
+												<p>J\'ai toujours voulu faire un métier dans le rapport du numérique, plus spécifiquement dans le domaine du jeu vidéo.</p>\n\
 												<p>C\'est pourquoi j\'ai réalisé mon cv numérique de cette façon, j\'ai eu l\'idée de faire un cv qui pouvait convenir à plusieurs de mes intérêts.</p>\n\
-												<p>Mon premier CV est en rapport avec ma passion des jeuxvidéo et ce CV en est la concrétisation.</p>\n\
+												<p>Mon premier CV est en rapport avec ma passion des jeux vidéos et ce CV en est la concrétisation.</p>\n\
 												<p>Voici désormais mon parcours, je vais commencer à partir du début.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">En Juin 2011, à la fin de ma classe de 3ème j\'ai acquis le brevet des collèges.</div>\n\
-												<div class="row">Suite à mes études de collèges, je me suis isncrit au lycée Mireille Grenet, afin d\'étudier les options Sciences de l\'ingénieur.</div>\n\
+												<div class="row">Suite à mes études de collèges, je me suis inscrit au lycée Mireille Grenet, afin d\'étudier les options Sciences de l\'ingénieur.</div>\n\
 												<div class="row">Puis un bac Scientifique option Science de l\'ingénieur avec comme spécialité l\'ISN (science du numérique) que j\'ai obtenu en 2015.</div>\n\
 												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
 														$('#'+talkVersion).remove();
 														talkVersion++;
 															$('#talk').append('<section" id="2">\n\
-															<p>Puis après mon baccalauréat, je me suis orienté vers une spécialité en réseaux informatique.</p>\n\
+															<p>Puis après mon baccalauréat, je me suis orienté vers une spécialité en réseaux informatiques.</p>\n\
 															<div class="acquirment" style="color: purple; margin: 10px;">\n\
-															<div class="row">J\'ai obtenu un BTS systèmes numérique informatique et réseaux.</div>\n\
+															<div class="row">J\'ai obtenu un BTS systèmes numériques informatiques et réseaux.</div>\n\
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
 															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
-															<div class="row">La formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
+															<div class="row">Lors de la formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
 															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#parcours').remove();
@@ -377,9 +377,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<p>Ici, je vais vous parler des activités que je fais hors de mon travail, ce qui me défini.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">Tout d\'abord, je vais vous présenter les maquettes "gunpla".</div>\n\
-												<div class="row">Pour commencer, précisons qu\'un gunpla et un gundam (des robots assez connus au Japon) en plastique.</div>\n\
-												<div class="row">Les pièces qui le constitues sont d\'une taille assez petites, il faut donc minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
-												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastiques. Voici un exemple lorque c\'est terminé :</div>\n\
+												<div class="row">Pour commencer, précisons qu\'un gunpla est un gundam (des robots assez connus au Japon) en plastique.</div>\n\
+												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
+												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastique. Voici un exemple lorque c\'est terminé :</div>\n\
 												<div class="row"><img id="gundam" src="assets/img/realgundam.jpg" height="200px" width="200px"></div>\n\
 												<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
@@ -419,8 +419,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	talkVersion++;
 																	$('#talk').append('<section" id="3">\n\
 																	<div class="acquirment" style="color: white;font-family: "Consola"; margin: 10px;">\n\
-																	<p>Ma dernière passion est les jeuxivdéos</p>\n\
-																	<p>Depuis tout petit, je joue aux jeuxvidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
+																	<p>Ma dernière passion est les jeux vidéos</p>\n\
+																	<p>Depuis tout petit, je joue aux jeux vidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
 																	<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
 																	<div class="row videogame" style="color: red" id="smite">Smite (Cliquez ici)</div>\n\
 																	<div class="row videogame" style="color: red" id="happywars">Happy Wars (Cliquez ici)</div>\n\
@@ -482,9 +482,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<p>Ici, je vais vous parler des activités que je fais hors de mon travail, ce qui me défini.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">Tout d\'abord, je vais vous présenter les maquettes "gunpla".</div>\n\
-												<div class="row">Pour commencer, précisons qu\'un gunpla et un gundam (des robots assez connus au Japon) en plastique.</div>\n\
-												<div class="row">Les pièces qui le constitues sont d\'une taille assez petites, il faut donc minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
-												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastiques. Voici un exemple lorque c\'est terminé :</div>\n\
+												<div class="row">Pour commencer, précisons qu\'un gunpla est un gundam (des robots assez connus au Japon) en plastique.</div>\n\
+												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
+												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastique. Voici un exemple lorque c\'est terminé :</div>\n\
 												<div class="row"><img id="gundam" src="assets/img/realgundam.jpg" height="200px" width="200px"></div>\n\
 												<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
@@ -509,7 +509,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																talkVersion++;
 																$('#talk').append('<section" id="3">\n\
 																<div class="acquirment" style="color: white; font-family: "Consola"; margin: 10px;">\n\
-																<p>Quelques mangas lu :</p>\n\
+																<p>Quelques mangas lus :</p>\n\
 																<div class="row">One piece :</div>\n\
 																<div class="row"><img id="onepiece" src="assets/img/one_piece.jpg" height="200px" width="150px"></div>\n\
 																<div class="row">Gantz :</div>\n\
@@ -524,8 +524,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	talkVersion++;
 																	$('#talk').append('<section" id="3">\n\
 																	<div class="acquirment" style="color: white;font-family: "Consola"; margin: 10px;">\n\
-																	<p>Ma dernière passion est les jeuxivdéos</p>\n\
-																	<p>Depuis tout petit, je joue aux jeuxvidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
+																	<p>Ma dernière passion est les jeux vidéos</p>\n\
+																	<p>Depuis tout petit, je joue aux jeux vidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
 																	<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
 																	<div class="row videogame" style="color: red" id="smite">Smite (Cliquez ici)</div>\n\
 																	<div class="row videogame" style="color: red" id="happywars">Happy Wars (Cliquez ici)</div>\n\
@@ -588,17 +588,17 @@ Personnage.prototype.deplacer = function(direction, map) {
 							var talkVersion = 1;
 							window.addEventListener('keypress', function(e){
 											if(e.keyCode == 13 && !document.getElementById('blacksmith') && nameMap == 'sixieme'){
-												$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo bard" height="724px" width="425px"/><div id="talk">\n\
+												$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bienvenue dans mes projets.</p>\n\
 												<p>Je vais vous parler de mes projets que j\'ai réalisé seul ou en groupe lors de mes études.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">Lors de mon baccalauréat Scientifique j\'ai du réalisé un projet.</div>\n\
-												<div class="row">Nous étions un groupe de trois. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
-												<div class="row">Le choix du projet a était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
+												<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
+												<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
 												<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
 												<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
-												<div class="row">Nous avons fini second de notre région puis nous avons participer aux olympiades nationales.</div>\n\
+												<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place, aux olympiades nationales.</div>\n\
 												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
 														$('#'+talkVersion).remove();
@@ -608,10 +608,10 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="acquirment" style="color: purple; margin: 10px;">\n\
 															<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
 															<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
-															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et l\'arrêter en haut.</div>\n\
-															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminé ou le tapis pour démarrer</div>\n\
+															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
+															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
 															<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
-															<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
+															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#creation').remove();
 																	talkVersion = 1;
@@ -622,12 +622,12 @@ Personnage.prototype.deplacer = function(direction, map) {
 																$('#talk').append('<section" id="3">\n\
 																<p>Passons à la programmation depuis mon entré dans le monde du développement web.</p>\n\
 																<div class="acquirment" style="color: purple; margin: 10px;">\n\
-																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets commun</p>\n\
+																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
 																<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
 																<div class="row">L\'un en JavaScript/jQuery.</div>\n\
 																<div class="row">Et un autre en angularJS</div>\n\
 																<div class="row">Cependant, j\'ai également réalisé des exercices en Canvas pour ma formation.</div>\n\
-																<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" style="color: black;" name="suivant">Suivant</button></div></section>');
+																<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 																$('.buttonClose').click(function() {
 																		$('#creation').remove();
 																		talkVersion = 1;
@@ -636,14 +636,14 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	$('#'+talkVersion).remove();
 																	talkVersion++;
 																	$('#talk').append('<section" id="4">\n\
-																	<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réalisé par moi-même intégralement un site.</p>\n\
+																	<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réaliser  intégralement un site.</p>\n\
 																	<p>Dernier projet en date :</p>\n\
 																	<div class="acquirment" style="color: purple; margin: 10px;">\n\
-																	<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou sous anticoagulant.</div>\n\
+																	<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
 																	<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
-																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés qu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
-																	<div class="row">Les patients peut également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
-																	<div class="row"><button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></div></section>');
+																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
+																	<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
+																	<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
 																	$('.buttonClose').click(function() {
 																			$('#creation').remove();
 																			talkVersion = 1;
@@ -657,8 +657,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 													});
 													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
-													$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
-													$('#talk').attr({ style : "width: 500px; display: block; position: relative;  background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#blacksmith').attr({ style : "display: block; position: relative; float: right; background-color: #C0C0C0" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0 color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
@@ -675,11 +675,11 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<p>Je vais vous parler de mes projets que j\'ai réalisé seul ou en groupe lors de mes études.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">Lors de mon baccalauréat Scientifique j\'ai du réalisé un projet.</div>\n\
-												<div class="row">Nous étions un groupe de trois. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
-												<div class="row">Le choix du projet a était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
+												<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
+												<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
 												<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
 												<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
-												<div class="row">Nous avons fini second de notre région puis nous avons participer aux olympiades nationales.</div>\n\
+												<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place, aux olympiades nationales.</div>\n\
 												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
 														$('#'+talkVersion).remove();
@@ -689,8 +689,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="acquirment" style="color: purple; margin: 10px;">\n\
 															<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
 															<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
-															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et l\'arrêter en haut.</div>\n\
-															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminé ou le tapis pour démarrer</div>\n\
+															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
+															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
 															<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
 															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
@@ -703,7 +703,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																$('#talk').append('<section" id="3">\n\
 																<p>Passons à la programmation depuis mon entré dans le monde du développement web.</p>\n\
 																<div class="acquirment" style="color: purple; margin: 10px;">\n\
-																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets commun</p>\n\
+																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
 																<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
 																<div class="row">L\'un en JavaScript/jQuery.</div>\n\
 																<div class="row">Et un autre en angularJS</div>\n\
@@ -717,13 +717,13 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	$('#'+talkVersion).remove();
 																	talkVersion++;
 																	$('#talk').append('<section" id="4">\n\
-																	<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réalisé par moi-même intégralement un site.</p>\n\
+																	<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réaliser  intégralement un site.</p>\n\
 																	<p>Dernier projet en date :</p>\n\
 																	<div class="acquirment" style="color: purple; margin: 10px;">\n\
-																	<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou sous anticoagulant.</div>\n\
+																	<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
 																	<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
-																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés qu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
-																	<div class="row">Les patients peut également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
+																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
+																	<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
 																	<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
 																	$('.buttonClose').click(function() {
 																			$('#creation').remove();
