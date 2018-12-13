@@ -455,13 +455,12 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	})
 																	$('.link').attr({style: "color: red;"});
 																});
-
-																$('.buttonClose').click(function() {
-																		$('#hobbies').remove();
-																		talkVersion = 1;
-																});
-															});
 													});
+												});
+												$('.buttonClose').click(function() {
+														$('#hobbies').remove();
+														talkVersion = 1;
+												});
 													$('.acquirment').attr({style: "color: white; font-family: 'Consola'; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
 													$('#bard').attr({ style : "display: block; position: relative; float: right;" });
@@ -657,8 +656,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 													});
 													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
-													$('#blacksmith').attr({ style : "display: block; position: relative; float: right; background-color: #C0C0C0" });
-													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0 color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
@@ -738,8 +737,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 													});
 													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
-													$('#blacksmith').attr({ style : "display: block; position: relative; float: right; background-color: #C0C0C0" });
-													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0 color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+													$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
+													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 													$('#canvas').attr({ style : "position: absolute;" });
 											}
 									},false);
