@@ -5,6 +5,7 @@ var DIRECTION = {
 	"HAUT"   : 3
 }
 
+var verifdiscussion = false;
 var DUREE_ANIMATION = 4;
 var DUREE_DEPLACEMENT = 5;
 
@@ -75,6 +76,8 @@ Personnage.prototype.dessinerPersonnage = function(context) {
 }
 
 Personnage.prototype.getCoordonneesAdjacentes = function(direction) {
+	verifdiscussion = false;
+	console.log(verifdiscussion);
 	var coord = {'x' : this.x, 'y' : this.y};
 	switch(direction) {
 		case DIRECTION.BAS :
@@ -114,7 +117,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 
 	// On effectue le d�placement
         if(nameMap == 'troisieme' ) {
+						verifdiscussion = false;
             if(this.x == 23 && this.y == 4 || this.x == 23 && this.y == 1 || this.x == 24 && this.y == 4 || this.x == 22 && this.y == 4) {
+								verifdiscussion = true;
 								if(prochaineCase.y == 5) {
 									this.y = prochaineCase.y;
 								}
@@ -122,7 +127,7 @@ Personnage.prototype.deplacer = function(direction, map) {
                 var down = false;
 								var talkVersion = 1;
                 window.addEventListener('keypress', function(e){
-                        if(e.keyCode == 13 && !document.getElementById('wizard') && nameMap == 'troisieme'){
+                        if(e.keyCode == 13 && !document.getElementById('wizard') && nameMap == 'troisieme' && verifdiscussion == true){
                             $('#canvasdiv').append('<div id="competence"><img src="assets/img/wizard.png" id="wizard" alt="photo wizard" height="725px" width="425px"/><div id="talk">\n\
 														<section id="1">\n\
 														<p>Bonjour et Bienvenue dans la pr\351sentation de mes comp\351tences.</p>\n\
@@ -133,13 +138,13 @@ Personnage.prototype.deplacer = function(direction, map) {
                             <div class="acquirment"><p class="exploitation col-lg-offset-4">Syst\350me d\'exploitation :</p>\n\
               							<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/windows.png" alt="Logo windows" title="Logo Windows" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Windows</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active windows" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div></div></div></div>\n\
 														<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/linux.png" alt="logo linux" title="Logo Linux" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Linux</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active Linux" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div></div></div></div>\n\
-                            <button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+                            <button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 														$('.buttonSuivant').click(function() {
 															$('#'+talkVersion).remove();
 															talkVersion++;
 																$('#talk').append('<section" id="2">\n\
 																<p>Voici maintenant, les langages informatiques que j\'ai acquis au cours de ces quelques années d\'apprentissage.</p>\n\
-																<div class="acquirment" style="color: purple;"><p class="exploitation col-lg-offset-4">Langages :</p>\n\
+																<div class="acquirment" style="color: white;"><p class="exploitation col-lg-offset-4">Langages :</p>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/html_css.jpg" alt="logo html css" title="logo html et css" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">HTML / CSS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active html" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div></div></div></div>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/php.png" alt="logo php" title="Logo php" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">PHP</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active php" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >60%</div></div></div></div>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/mysql.png" alt="logo mysql" title="logo mysql" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">SQL</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active sql" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div></div></div></div>\n\
@@ -149,7 +154,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/jquery.png" alt="Logo jQuery" title="Logo jQuery" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">jQuery</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active javascript" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div></div></div></div>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/angular.png" alt="Logo Angular" title="Logo Angular" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Angular</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active angular" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div></div></div></div>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/canvas.png" alt="Logo Canvas" title="Logo Canvas" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Canvas</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active canvas" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div></div></div></div>\n\
-																<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+																<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 																$('.buttonClose').click(function() {
 																		$('#competence').remove();
 																		talkVersion = 1;
@@ -159,7 +164,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	talkVersion++;
 																	$('#talk').append('<section" id="3">\n\
 																	<p>Voici maintenant, les outils informatiques que j\'ai pu utiliser et maitriser.</p>\n\
-																	<div class="acquirment" style="color: purple;"><p class="exploitation col-lg-offset-4">Outils :</p>\n\
+																	<div class="acquirment" style="color: white;"><p class="exploitation col-lg-offset-4">Outils :</p>\n\
 																	<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/terminal-hi.png" alt="logo terminal" title="logo terminal" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Ligne de commande</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active command" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div></div></div></div>\n\
 																	<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/atom.png" alt="Logo Atom" title="Logo Atom" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Atom</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active atom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div></div></div></div>\n\
 																	<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/nano.png" alt="logo nano" title="logo nano" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Nano</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active nano" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div></div></div></div>\n\
@@ -167,7 +172,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/github.png" alt="logo github" title="logo github" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">GitHub :</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active github" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div></div></div></div>\n\
 																	<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/vhost.jpg" alt="logo vhost apache" title="logo vhost apache" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Vhost :</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active vhost" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div></div></div></div>\n\
 																	<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/builder.png" alt="logo builder" title="Logo builder" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">C++ Builder :</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active builder" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div></div></div></div>\n\
-																	<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></section>');
+																	<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button></div></section>');
 																	$('.buttonClose').click(function() {
 																			$('#competence').remove();
 																			talkVersion = 1;
@@ -178,8 +183,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 																$('#competence').remove();
 																talkVersion = 1;
 														});
-														$('.acquirment').attr({style: "color: purple;"})
-														$('.buttonTalk').attr({style : "color: black;"})
+														$('.acquirment').attr({style: "color: white;"});
+														$('.buttonTalk').attr({style : "color: black;"});
                             $('#wizard').attr({ style : "display: block; position: relative; float: right;" });
                             $('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
                             $('#canvas').attr({ style : "position: absolute;" });
@@ -189,9 +194,10 @@ Personnage.prototype.deplacer = function(direction, map) {
 								if(prochaineCase.x == 22 || prochaineCase.x == 25 || prochaineCase.x == 21) {
 									this.x = prochaineCase.x;
 								}
+								verifdiscussion = true;
 								this.y = prochaineCase.y;
                 window.addEventListener('keypress', function(e){
-                        if(e.keyCode == 13 && !document.getElementById('wizard') && nameMap == 'troisieme'){
+                        if(e.keyCode == 13 && !document.getElementById('wizard') && nameMap == 'troisieme' && verifdiscussion == true){
 													$('#canvasdiv').append('<div id="competence"><img src="assets/img/wizard.png" id="wizard" alt="photo wizard" height="725px" width="425px"/><div id="talk">\n\
 													<section id="1">\n\
 													<p>Bonjour et Bienvenue dans la pr\351sentation de mes comp\351tences.</p>\n\
@@ -202,13 +208,13 @@ Personnage.prototype.deplacer = function(direction, map) {
 													<div class="acquirment"><p class="exploitation col-lg-offset-4">Syst\350me d\'exploitation :</p>\n\
 													<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/windows.png" alt="Logo windows" title="Logo Windows" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Windows</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active windows" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div></div></div></div>\n\
 													<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/linux.png" alt="logo linux" title="Logo Linux" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Linux</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active Linux" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div></div></div></div>\n\
-													<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+													<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
 														$('#'+talkVersion).remove();
 														talkVersion++;
 															$('#talk').append('<section" id="2">\n\
 															<p>Voici maintenant, les langages informatiques que j\'ai acquis au cours de ces quelques années d\'apprentissage.</p>\n\
-															<div class="acquirment" style="color: purple;"><p class="exploitation col-lg-offset-4">Langages :</p>\n\
+															<div class="acquirment" style="color: white;"><p class="exploitation col-lg-offset-4">Langages :</p>\n\
 															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/html_css.jpg" alt="logo html css" title="logo html et css" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">HTML / CSS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active html" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div></div></div></div>\n\
 															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/php.png" alt="logo php" title="Logo php" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">PHP</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active php" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >60%</div></div></div></div>\n\
 															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/mysql.png" alt="logo mysql" title="logo mysql" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">SQL</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active sql" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div></div></div></div>\n\
@@ -216,9 +222,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/bootstrap.png" alt="Logo Bootstrap" title="Logo Bootstrap" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Bootstrap</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active bootstrap" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div></div></div></div>\n\
 															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/javascript.png" alt="Logo JavaScript" title="Logo Javascript" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">JavaScript</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active javascript" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div></div></div></div>\n\
 															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/jquery.png" alt="Logo jQuery" title="Logo jQuery" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">jQuery</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active javascript" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div></div></div></div>\n\
-															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/angular.png" alt="Logo Angular" title="Logo Angular" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Angular</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active javascript" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div></div></div></div>\n\
+															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/angular.png" alt="Logo Angular" title="Logo Angular" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Angular</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active angular" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div></div></div></div>\n\
 															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/canvas.png" alt="Logo Canvas" title="Logo Canvas" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Canvas</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active canvas" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div></div></div></div>\n\
-															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#competence').remove();
 																	talkVersion = 1;
@@ -228,7 +234,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																talkVersion++;
 																$('#talk').append('<section" id="3">\n\
 																<p>Voici maintenant, les outils informatiques que j\'ai pu utiliser et maitriser.</p>\n\
-																<div class="acquirment" style="color: purple;"><p class="exploitation col-lg-offset-4">Outils :</p>\n\
+																<div class="acquirment" style="color: white;"><p class="exploitation col-lg-offset-4">Outils :</p>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/terminal-hi.png" alt="logo terminal" title="logo terminal" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Ligne de commande</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active command" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div></div></div></div>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/atom.png" alt="Logo Atom" title="Logo Atom" height="25px" width="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Atom</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active atom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div></div></div></div>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/nano.png" alt="logo nano" title="logo nano" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Nano</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active nano" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div></div></div></div>\n\
@@ -236,19 +242,19 @@ Personnage.prototype.deplacer = function(direction, map) {
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/github.png" alt="logo github" title="logo github" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">GitHub :</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active github" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div></div></div></div>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/vhost.jpg" alt="logo vhost apache" title="logo vhost apache" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Vhost :</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active vhost" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div></div></div></div>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/builder.png" alt="logo builder" title="Logo builder" width="25px" height="25px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">C++ Builder :</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success progress-bar-striped active builder" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div></div></div></div>\n\
-																<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></section>');
+																<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button></div></section>');
 																$('.buttonClose').click(function() {
 																		$('#competence').remove();
 																		talkVersion = 1;
 																});
-														});
+															});
 														});
 													$('.buttonClose').click(function() {
 															$('#competence').remove();
 															talkVersion = 1;
 													});
-													$('.acquirment').attr({style: "color: purple;"})
-													$('.buttonTalk').attr({style : "color: black;"})
+													$('.acquirment').attr({style: "color: white;"});
+													$('.buttonTalk').attr({style : "color: black;"});
 													$('#wizard').attr({ style : "display: block; position: relative; float: right;" });
 													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 													$('#canvas').attr({ style : "position: absolute;" });
@@ -256,6 +262,7 @@ Personnage.prototype.deplacer = function(direction, map) {
                     },false);
             }
             else {
+							verifdiscussion = false;
                 this.x = prochaineCase.x;
                 this.y = prochaineCase.y;
             }
@@ -263,12 +270,14 @@ Personnage.prototype.deplacer = function(direction, map) {
 					if(this.x == 23 && this.y == 4 || this.x == 23 && this.y == 1 || this.x == 24 && this.y == 4 || this.x == 22 && this.y == 4) {
 							if(prochaineCase.y == 5) {
 								this.y = prochaineCase.y;
+								verifdiscussion = false;
 							}
+							verifdiscussion = true;
 							this.x = prochaineCase.x;
 							var down = false;
 							var talkVersion = 1;
 							window.addEventListener('keypress', function(e){
-											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'quatrieme'){
+											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'quatrieme' && verifdiscussion == true && verifdiscussion == true){
 												$('#canvasdiv').append('<div id="parcours"><img src="assets/img/lord_knight.png" id="knight" alt="photo knight" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mon parcours.</p>\n\
@@ -292,7 +301,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
 															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
 															<div class="row">Lors de la formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
-															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></section>');
+															<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#parcours').remove();
 																	talkVersion = 1;
@@ -313,9 +322,10 @@ Personnage.prototype.deplacer = function(direction, map) {
 										if(prochaineCase.x == 22 || prochaineCase.x == 25 || prochaineCase.x == 21) {
 											this.x = prochaineCase.x;
 										}
+										verifdiscussion = true;
 							this.y = prochaineCase.y;
 							window.addEventListener('keypress', function(e){
-											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'quatrieme'){
+											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'quatrieme' && verifdiscussion == true){
 												$('#canvasdiv').append('<div id="parcours"><img src="assets/img/lord_knight.png" id="knight" alt="photo knight" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mon parcours.</p>\n\
@@ -339,7 +349,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
 															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
 															<div class="row">Lors de la formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
-															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></section>');
+															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#parcours').remove();
 																	talkVersion = 1;
@@ -358,6 +368,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 									},false);
 					}
 					else {
+						verifdiscussion = false;
 							this.x = prochaineCase.x;
 							this.y = prochaineCase.y;
 					}
@@ -366,11 +377,12 @@ Personnage.prototype.deplacer = function(direction, map) {
 							if(prochaineCase.y == 5) {
 								this.y = prochaineCase.y;
 							}
+							verifdiscussion = true;
 							this.x = prochaineCase.x;
 							var down = false;
 							var talkVersion = 1;
 							window.addEventListener('keypress', function(e){
-											if(e.keyCode == 13 && !document.getElementById('bard') && nameMap == 'cinquieme'){
+											if(e.keyCode == 13 && !document.getElementById('bard') && nameMap == 'cinquieme' && verifdiscussion == true){
 												$('#canvasdiv').append('<div id="hobbies"><img src="assets/img/clown.png" id="bard" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mes passions.</p>\n\
@@ -473,8 +485,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 											this.x = prochaineCase.x;
 										}
 							this.y = prochaineCase.y;
+							verifdiscussion = true;
 							window.addEventListener('keypress', function(e){
-											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'quatrieme'){
+											if(e.keyCode == 13 && !document.getElementById('knight') && nameMap == 'quatrieme' && verifdiscussion == true){
 												$('#canvasdiv').append('<div id="hobbies"><img src="assets/img/clown.png" id="bard" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mes passions.</p>\n\
@@ -574,6 +587,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 									},false);
 					}
 					else {
+						verifdiscussion = false;
 							this.x = prochaineCase.x;
 							this.y = prochaineCase.y;
 					}
@@ -582,11 +596,12 @@ Personnage.prototype.deplacer = function(direction, map) {
 							if(prochaineCase.y == 5) {
 								this.y = prochaineCase.y;
 							}
+							verifdiscussion = true;
 							this.x = prochaineCase.x;
 							var down = false;
 							var talkVersion = 1;
 							window.addEventListener('keypress', function(e){
-											if(e.keyCode == 13 && !document.getElementById('blacksmith') && nameMap == 'sixieme'){
+											if(e.keyCode == 13 && !document.getElementById('blacksmith') && nameMap == 'sixieme' && verifdiscussion == true){
 												$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bienvenue dans mes projets.</p>\n\
@@ -610,7 +625,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
 															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
 															<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
-															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#creation').remove();
 																	talkVersion = 1;
@@ -626,7 +641,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																<div class="row">L\'un en JavaScript/jQuery.</div>\n\
 																<div class="row">Et un autre en angularJS</div>\n\
 																<div class="row">Cependant, j\'ai également réalisé des exercices en Canvas pour ma formation.</div>\n\
-																<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+																<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" style="color: black;" name="suivant">Suivant</button></div></section>');
 																$('.buttonClose').click(function() {
 																		$('#creation').remove();
 																		talkVersion = 1;
@@ -642,7 +657,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
 																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
 																	<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
-																	<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
+																	<div class="row"><button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></div></section>');
 																	$('.buttonClose').click(function() {
 																			$('#creation').remove();
 																			talkVersion = 1;
@@ -665,9 +680,10 @@ Personnage.prototype.deplacer = function(direction, map) {
 										if(prochaineCase.x == 22 || prochaineCase.x == 25 || prochaineCase.x == 21) {
 											this.x = prochaineCase.x;
 										}
+										verifdiscussion = true;
 										this.y = prochaineCase.y;
 							window.addEventListener('keypress', function(e){
-											if(e.keyCode == 13 && !document.getElementById('blacksmith') && nameMap == 'sixieme'){
+											if(e.keyCode == 13 && !document.getElementById('blacksmith') && nameMap == 'sixieme' && verifdiscussion == true){
 												$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bienvenue dans mes projets.</p>\n\
@@ -691,7 +707,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
 															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
 															<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
-															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style= "color: black;" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#creation').remove();
 																	talkVersion = 1;
@@ -707,7 +723,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																<div class="row">L\'un en JavaScript/jQuery.</div>\n\
 																<div class="row">Et un autre en angularJS</div>\n\
 																<div class="row">Cependant, j\'ai également réalisé des exercices en Canvas pour ma formation.</div>\n\
-																<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+																<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 																$('.buttonClose').click(function() {
 																		$('#creation').remove();
 																		talkVersion = 1;
@@ -723,7 +739,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
 																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
 																	<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
-																	<div class="row"><button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div></section>');
+																	<div class="row"><button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></div></section>');
 																	$('.buttonClose').click(function() {
 																			$('#creation').remove();
 																			talkVersion = 1;
@@ -744,6 +760,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 									},false);
 					}
 					else {
+							verifdiscussion = false;
 							this.x = prochaineCase.x;
 							this.y = prochaineCase.y;
 					}
@@ -755,8 +772,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 						this.x = prochaineCase.x;
 						var down = false;
 						var talkVersion = 1;
+						verifdiscussion = true;
 						window.addEventListener('keypress', function(e){
-							if(e.keyCode == 13 && !document.getElementById('pancarte') && nameMap == 'seconde'){
+							if(e.keyCode == 13 && !document.getElementById('pancarte') && nameMap == 'seconde' && verifdiscussion == true){
 								$('#canvasdiv').append('<div id="pancarte"><div id="talk"><div id="welcome">\n\
 								<p>Bienvenue dans le village CV de Romuald DUCROCQ.</p>\n\
 								<p>Vous pourrez aller de maison en maison afin de découvrir qui je suis. Lorsque vous êtes près du personnage, appuyez sur la touche "entrée" afin d\'intéragir avec.</p>\n\
@@ -784,15 +802,16 @@ Personnage.prototype.deplacer = function(direction, map) {
 								this.x = prochaineCase.x;
 							}
 							this.y = prochaineCase.y;
+							verifdiscussion = true;
 							window.addEventListener('keypress', function(e){
-								if(e.keyCode == 13 && !document.getElementById('pancarte') && nameMap == 'seconde'){
+								if(e.keyCode == 13 && !document.getElementById('pancarte') && nameMap == 'seconde' && verifdiscussion == true){
 									$('#canvasdiv').append('<div id="pancarte"><div id="talk"><div id="welcome">\n\
 									<p>Bienvenue dans le village CV de Romuald DUCROCQ.</p>\n\
 									<p>Vous pourrez aller de maison en maison afin de découvrir qui je suis. Lorsque vous êtes près du personnage, appuyez sur la touche "entrée" afin d\'intéragir avec.</p>\n\
 									<p>Chaque maison correspond à une partie, les compétences en haut à gauche, les loisirs en bas à gauche, mon parcours en haut à droite et pour finir mes réalisations en bas à droite.</p>\n\
 									<p>Ce CV est l\'aboutissement d\'une idée. Il est encore en cours de réalisation et n\'est donc pas terminé.<p>\n\
 									<p>Pour informations, les tilesets utilisés ont était pris sur internet.</p></div>\n\
-									<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></div></div>');
+									<button class="buttonTalk buttonClose" type="button"  name="close">Fermer</button></div></div>');
 										$('.buttonClose').click(function() {
 												$('#pancarte').remove();
 												talkVersion = 1;
@@ -809,9 +828,183 @@ Personnage.prototype.deplacer = function(direction, map) {
 								}
 							},false);
 					}  else {
+						verifdiscussion
             this.x = prochaineCase.x;
             this.y = prochaineCase.y;
         }
+			/*	if(this.x == 23 && this.y == 4 || this.x == 23 && this.y == 1 || this.x == 24 && this.y == 4 || this.x == 22 && this.y == 4) {
+						if(prochaineCase.y == 5) {
+							this.y = prochaineCase.y;
+						}
+						verifdiscussion = true;
+						this.x = prochaineCase.x;
+						var down = false;
+						var talkVersion = 1;
+						window.addEventListener('keypress', function(e){
+										if(e.keyCode == 13 && !document.getElementById('me') && nameMap == 'seconde' && verifdiscussion == true){
+											$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="me" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
+											<section id="1">\n\
+											<p>Bonjour.</p>\n\
+											<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
+											<p>Tout d\'abord, pourquoi ais-je fais ce CV? .</p>\n\
+											<div class="acquirment">\n\
+											<div class="row">Lors de mon baccalauréat Scientifique j\'ai du réalisé un projet.</div>\n\
+											<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
+											<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
+											<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
+											<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
+											<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place, aux olympiades nationales.</div>\n\
+											<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+												$('.buttonSuivant').click(function() {
+													$('#'+talkVersion).remove();
+													talkVersion++;
+														$('#talk').append('<section" id="2">\n\
+														<p>Je vais vous parler de mon second projet.</p>\n\
+														<div class="acquirment" style="color: purple; margin: 10px;">\n\
+														<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
+														<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
+														<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
+														<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
+														<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
+														<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
+														$('.buttonClose').click(function() {
+																$('#creation').remove();
+																talkVersion = 1;
+														});
+														$('.buttonSuivant').click(function() {
+															$('#'+talkVersion).remove();
+															talkVersion++;
+															$('#talk').append('<section" id="3">\n\
+															<p>Passons à la programmation depuis mon entré dans le monde du développement web.</p>\n\
+															<div class="acquirment" style="color: purple; margin: 10px;">\n\
+															<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
+															<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
+															<div class="row">L\'un en JavaScript/jQuery.</div>\n\
+															<div class="row">Et un autre en angularJS</div>\n\
+															<div class="row">Cependant, j\'ai également réalisé des exercices en Canvas pour ma formation.</div>\n\
+															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" style="color: black;" name="suivant">Suivant</button></div></section>');
+															$('.buttonClose').click(function() {
+																	$('#creation').remove();
+																	talkVersion = 1;
+															});
+															$('.buttonSuivant').click(function() {
+																$('#'+talkVersion).remove();
+																talkVersion++;
+																$('#talk').append('<section" id="4">\n\
+																<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réaliser  intégralement un site.</p>\n\
+																<p>Dernier projet en date :</p>\n\
+																<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
+																<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
+																<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
+																<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
+																<div class="row"><button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></div></section>');
+																$('.buttonClose').click(function() {
+																		$('#creation').remove();
+																		talkVersion = 1;
+																});
+															});
+														});
+												});
+												$('.buttonClose').click(function() {
+														$('#creation').remove();
+														talkVersion = 1;
+												});
+												$('.acquirment').attr({style: "color: purple; margin: 10px;"});
+												$('.buttonTalk').attr({style : "color: black;"});
+												$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
+												$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+												$('#canvas').attr({ style : "position: absolute;" });
+										}
+								},false);
+							} else if(this.x == 24 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 22 && this.y == 3 || this.x == 22 && this.y == 2 || this.x == 24 && this.y == 4 || this.x == 24 && this.y == 3 || this.x == 24 && this.y == 2) {
+									if(prochaineCase.x == 22 || prochaineCase.x == 25 || prochaineCase.x == 21) {
+										this.x = prochaineCase.x;
+									}
+									verifdiscussion = true;
+									this.y = prochaineCase.y;
+						window.addEventListener('keypress', function(e){
+										if(e.keyCode == 13 && !document.getElementById('me') && nameMap == 'seconde' && verifdiscussion == true){
+											$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="me" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
+											<section id="1">\n\
+											<p>Bienvenue dans mes projets.</p>\n\
+											<p>Je vais vous parler de mes projets que j\'ai réalisé seul ou en groupe lors de mes études.</p>\n\
+											<div class="acquirment">\n\
+											<div class="row">Lors de mon baccalauréat Scientifique j\'ai du réalisé un projet.</div>\n\
+											<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
+											<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
+											<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
+											<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
+											<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place, aux olympiades nationales.</div>\n\
+											<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
+												$('.buttonSuivant').click(function() {
+													$('#'+talkVersion).remove();
+													talkVersion++;
+														$('#talk').append('<section" id="2">\n\
+														<p>Je vais vous parler de mon second projet.</p>\n\
+														<div class="acquirment" style="color: purple; margin: 10px;">\n\
+														<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
+														<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
+														<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
+														<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
+														<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
+														<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style= "color: black;" type="button" name="suivant">Suivant</button></div></section>');
+														$('.buttonClose').click(function() {
+																$('#creation').remove();
+																talkVersion = 1;
+														});
+														$('.buttonSuivant').click(function() {
+															$('#'+talkVersion).remove();
+															talkVersion++;
+															$('#talk').append('<section" id="3">\n\
+															<p>Passons à la programmation depuis mon entré dans le monde du développement web.</p>\n\
+															<div class="acquirment" style="color: purple; margin: 10px;">\n\
+															<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
+															<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
+															<div class="row">L\'un en JavaScript/jQuery.</div>\n\
+															<div class="row">Et un autre en angularJS</div>\n\
+															<div class="row">Cependant, j\'ai également réalisé des exercices en Canvas pour ma formation.</div>\n\
+															<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
+															$('.buttonClose').click(function() {
+																	$('#creation').remove();
+																	talkVersion = 1;
+															});
+															$('.buttonSuivant').click(function() {
+																$('#'+talkVersion).remove();
+																talkVersion++;
+																$('#talk').append('<section" id="4">\n\
+																<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réaliser  intégralement un site.</p>\n\
+																<p>Dernier projet en date :</p>\n\
+																<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
+																<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
+																<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
+																<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
+																<div class="row"><button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></div></section>');
+																$('.buttonClose').click(function() {
+																		$('#creation').remove();
+																		talkVersion = 1;
+																});
+															});
+														});
+												});
+												$('.buttonClose').click(function() {
+														$('#creation').remove();
+														talkVersion = 1;
+												});
+												$('.acquirment').attr({style: "color: purple; margin: 10px;"});
+												$('.buttonTalk').attr({style : "color: black;"});
+												$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
+												$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+												$('#canvas').attr({ style : "position: absolute;" });
+										}
+								},false);
+				}
+				else {
+						verifdiscussion = false;
+						this.x = prochaineCase.x;
+						this.y = prochaineCase.y;
+				}*/
 				if(this.x == 19 || this.x == 21 || this.y == 3 || this.y == 1) {
 					$('#touchehelp').remove();
 				}
