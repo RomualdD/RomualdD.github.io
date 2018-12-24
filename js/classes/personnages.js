@@ -765,7 +765,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 							this.y = prochaineCase.y;
 					}
 				} else if(nameMap == 'seconde') {
-					if(this.x == 17 && this.y == 3 || this.x == 17 && this.y == 1) {
+					/*if(this.x == 17 && this.y == 3 || this.x == 17 && this.y == 1) {
+						console.log('ca marche');
 						if(prochaineCase.y == 4) {
 							this.y = prochaineCase.y;
 						}
@@ -828,12 +829,15 @@ Personnage.prototype.deplacer = function(direction, map) {
 								}
 							},false);
 					}  else {
-						verifdiscussion
+						verifdiscussion = false;
             this.x = prochaineCase.x;
             this.y = prochaineCase.y;
-        }
-			/*	if(this.x == 23 && this.y == 4 || this.x == 23 && this.y == 1 || this.x == 24 && this.y == 4 || this.x == 22 && this.y == 4) {
-						if(prochaineCase.y == 5) {
+        }*/
+				if(this.x == 19 || this.x == 21 || this.y == 3 || this.y == 1) {
+					$('#touchehelp').remove();
+				}
+				if(this.x == 18 && this.y == 11 || this.x == 19 && this.y == 11 || this.x == 17 && this.y == 11 || this.x == 17 && this.y == 13 || this.x == 19 && this.y == 13 || this.x == 18 && this.y == 13) {
+						if(prochaineCase.y == 10 || prochaineCase.y == 14) {
 							this.y = prochaineCase.y;
 						}
 						verifdiscussion = true;
@@ -842,31 +846,26 @@ Personnage.prototype.deplacer = function(direction, map) {
 						var talkVersion = 1;
 						window.addEventListener('keypress', function(e){
 										if(e.keyCode == 13 && !document.getElementById('me') && nameMap == 'seconde' && verifdiscussion == true){
-											$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="me" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
+											console.log('here');
+											$('#canvasdiv').append('<div id="personal"><img src="assets/img/blacksmith.png" id="me" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 											<section id="1">\n\
+											<div class="pictures col-lg-2 col-md-2 col-sm-1 col-xs-2"><img src="assets/img/romuald.jpg" alt="photo Romuald Ducrocq" height="120px" width="100px"/></div>\n\
 											<p>Bonjour.</p>\n\
 											<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
-											<p>Tout d\'abord, pourquoi ais-je fais ce CV? .</p>\n\
-											<div class="acquirment">\n\
-											<div class="row">Lors de mon baccalauréat Scientifique j\'ai du réalisé un projet.</div>\n\
-											<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
-											<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
-											<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
-											<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
-											<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place, aux olympiades nationales.</div>\n\
-											<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
-												$('.buttonSuivant').click(function() {
+											<p>Tout d\'abord, pourquoi ais-je fais ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencer par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
+											<p>Pour vous expliquer un peu le principe, il y\'a quatre maisons pour chacune des quatres grandes catégories que j\'ai choisi présenté: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
+											<div class="row speakme" id="me">Qui suis-je?</div>\n\
+											<div class="row speakme" id="contact">Comment me contacter?</div>\n\
+											<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></section>');
+												$('#me').click(function() {
 													$('#'+talkVersion).remove();
 													talkVersion++;
 														$('#talk').append('<section" id="2">\n\
-														<p>Je vais vous parler de mon second projet.</p>\n\
-														<div class="acquirment" style="color: purple; margin: 10px;">\n\
-														<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
-														<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
-														<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
-														<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
-														<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
-														<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
+														<p>Je m\'appelles Romuald DUCROCQ. J\'ai 22ans.</p>\n\
+														<p>Passionné par les jeux vidéos et les mangas depuis mon enfance, j\'ai fait de ma passion une force en m\'orientant vers l\'informatique.</p>\n\
+														<p>Je suis un déveleppeur web junior.</p>\n\
+														<p>Actuellement, je suis en formation à la manu et en alternance dans l\'entreprise picardie-informatique afin d\'être Concepteur Développeur Informatique de niveau bac+3/4.</p>\n\
+														<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Retour</button></div></section>');
 														$('.buttonClose').click(function() {
 																$('#creation').remove();
 																talkVersion = 1;
@@ -874,81 +873,100 @@ Personnage.prototype.deplacer = function(direction, map) {
 														$('.buttonSuivant').click(function() {
 															$('#'+talkVersion).remove();
 															talkVersion++;
-															$('#talk').append('<section" id="3">\n\
-															<p>Passons à la programmation depuis mon entré dans le monde du développement web.</p>\n\
-															<div class="acquirment" style="color: purple; margin: 10px;">\n\
-															<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
-															<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
-															<div class="row">L\'un en JavaScript/jQuery.</div>\n\
-															<div class="row">Et un autre en angularJS</div>\n\
-															<div class="row">Cependant, j\'ai également réalisé des exercices en Canvas pour ma formation.</div>\n\
-															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" style="color: black;" name="suivant">Suivant</button></div></section>');
+															$('#talk').append('<section id="1">\n\
+															<div class="pictures col-lg-2 col-md-2 col-sm-1 col-xs-2"><img src="assets/img/romuald.jpg" alt="photo Romuald Ducrocq" height="120px" width="100px"/></div>\n\
+															<p>Bonjour.</p>\n\
+															<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
+															<p>Tout d\'abord, pourquoi ais-je fais ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencer par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
+															<p>Pour vous expliquer un peu le principe, il y\'a quatre maisons pour chacune des quatres grandes catégories que j\'ai choisi présenté: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
+															<div class="row speakme" id="me">Qui suis-je?</div>\n\
+															<div class="row speakme" id="contact">Comment me contacter?</div>\n\
+															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></section>');
 															$('.buttonClose').click(function() {
 																	$('#creation').remove();
 																	talkVersion = 1;
 															});
-															$('.buttonSuivant').click(function() {
-																$('#'+talkVersion).remove();
-																talkVersion++;
-																$('#talk').append('<section" id="4">\n\
-																<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réaliser  intégralement un site.</p>\n\
-																<p>Dernier projet en date :</p>\n\
-																<div class="acquirment" style="color: purple; margin: 10px;">\n\
-																<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
-																<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
-																<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
-																<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
-																<div class="row"><button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></div></section>');
-																$('.buttonClose').click(function() {
-																		$('#creation').remove();
-																		talkVersion = 1;
-																});
+															$('.speakme').attr({style: "background-color: #F0FFFF; border-color: #87CEFA;"});
+															$('#personal').attr({ style : "display: block; position: relative; float: right;" });
+														});
+												});
+												$('#contact').click(function() {
+													$('#'+talkVersion).remove();
+													talkVersion++;
+														$('#talk').append('<section" id="2">\n\
+														<p>Mon adresse mail : romualdducrocq1@gmail.com</p>\n\
+														<p>Mon linkedin : www.linkedin.com/in/romuald-ducrocq</p>\n\
+														<p>Mon github: https://github.com/RomualdD</p>\n\
+														<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Retour</button></div></section>');
+														$('.buttonClose').click(function() {
+																$('#creation').remove();
+																talkVersion = 1;
+														});
+														$('.buttonSuivant').click(function() {
+															$('#'+talkVersion).remove();
+															talkVersion++;
+															$('#talk').append('<section id="1">\n\
+															<div class="pictures col-lg-2 col-md-2 col-sm-1 col-xs-2"><img src="assets/img/romuald.jpg" alt="photo Romuald Ducrocq" height="120px" width="100px"/></div>\n\
+															<p>Bonjour.</p>\n\
+															<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
+															<p>Tout d\'abord, pourquoi ais-je fais ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencer par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
+															<p>Pour vous expliquer un peu le principe, il y\'a quatre maisons pour chacune des quatres grandes catégories que j\'ai choisi présenté: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
+															<div class="row speakme" id="me">Qui suis-je?</div>\n\
+															<div class="row speakme" id="contact">Comment me contacter?</div>\n\
+															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></section>');
+															$('.buttonClose').click(function() {
+																	$('#creation').remove();
+																	talkVersion = 1;
 															});
+															$('.speakme').attr({style: "background-color: #F0FFFF; border-color: #87CEFA;"});
+															$('#me').attr({ style : "display: block; position: relative; float: right;" });
 														});
 												});
 												$('.buttonClose').click(function() {
 														$('#creation').remove();
 														talkVersion = 1;
 												});
-												$('.acquirment').attr({style: "color: purple; margin: 10px;"});
+												$('.speakme').hover(function(){
+													$(this).css("background-color: #87CEFA;");
+												});
+												$('.speakme').attr({style: "background-color: #F0FFFF; border-color: #87CEFA;"});
 												$('.buttonTalk').attr({style : "color: black;"});
-												$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
-												$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+												$('#me').attr({ style : "display: block; position: relative; float: right;" });
+												$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: green; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 												$('#canvas').attr({ style : "position: absolute;" });
 										}
 								},false);
-							} else if(this.x == 24 && this.y == 5 || this.x == 22 && this.y == 4 || this.x == 22 && this.y == 3 || this.x == 22 && this.y == 2 || this.x == 24 && this.y == 4 || this.x == 24 && this.y == 3 || this.x == 24 && this.y == 2) {
-									if(prochaineCase.x == 22 || prochaineCase.x == 25 || prochaineCase.x == 21) {
+							} else if(this.x == 17 && this.y == 12 || this.x == 17 && this.y == 13 || this.x == 17 && this.y == 11 || this.x == 19 && this.y == 12 || this.x == 19 && this.y == 13 || this.x == 19 && this.y == 11) {
+									if(prochaineCase.x == 18 || prochaineCase.x == 20) {
 										this.x = prochaineCase.x;
 									}
 									verifdiscussion = true;
 									this.y = prochaineCase.y;
-						window.addEventListener('keypress', function(e){
+									window.addEventListener('keypress', function(e){
 										if(e.keyCode == 13 && !document.getElementById('me') && nameMap == 'seconde' && verifdiscussion == true){
-											$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="me" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
+											$('#canvasdiv').append('<div id="personal"><img src="assets/img/blacksmith.png" id="me" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 											<section id="1">\n\
-											<p>Bienvenue dans mes projets.</p>\n\
-											<p>Je vais vous parler de mes projets que j\'ai réalisé seul ou en groupe lors de mes études.</p>\n\
-											<div class="acquirment">\n\
-											<div class="row">Lors de mon baccalauréat Scientifique j\'ai du réalisé un projet.</div>\n\
-											<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
-											<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
-											<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
-											<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
-											<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place, aux olympiades nationales.</div>\n\
-											<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
-												$('.buttonSuivant').click(function() {
+											<div class="pictures col-lg-2 col-md-2 col-sm-1 col-xs-2"><img src="assets/img/romuald.jpg" alt="photo Romuald Ducrocq" height="120px" width="100px"/></div>\n\
+											<p>Bonjour.</p>\n\
+											<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
+											<p>Tout d\'abord, pourquoi ais-je fais ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencer par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
+											<p>Pour vous expliquer un peu le principe, il y\'a quatre maisons pour chacune des quatres grandes catégories que j\'ai choisi présenté: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
+											<div class="row speakme" id="me">Qui suis-je?</div>\n\
+											<div class="row speakme" id="contact">Comment me contacter?</div>\n\
+											<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></section>');
+											$('.buttonClose').click(function() {
+													$('#creation').remove();
+													talkVersion = 1;
+											});
+												$('#me').click(function() {
 													$('#'+talkVersion).remove();
 													talkVersion++;
 														$('#talk').append('<section" id="2">\n\
-														<p>Je vais vous parler de mon second projet.</p>\n\
-														<div class="acquirment" style="color: purple; margin: 10px;">\n\
-														<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
-														<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
-														<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
-														<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
-														<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
-														<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style= "color: black;" type="button" name="suivant">Suivant</button></div></section>');
+														<p>Je m\'appelles Romuald DUCROCQ. J\'ai 22ans.</p>\n\
+														<p>Passionné par les jeux vidéos et les mangas depuis mon enfance, j\'ai fait de ma passion une force en m\'orientant vers l\'informatique.</p>\n\
+														<p>Je suis un déveleppeur web junior.</p>\n\
+														<p>Actuellement, je suis en formation à la manu et en alternance dans l\'entreprise picardie-informatique afin d\'être Concepteur Développeur Informatique de niveau bac+3/4.</p>\n\
+														<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Retour</button></div></section>');
 														$('.buttonClose').click(function() {
 																$('#creation').remove();
 																talkVersion = 1;
@@ -956,46 +974,62 @@ Personnage.prototype.deplacer = function(direction, map) {
 														$('.buttonSuivant').click(function() {
 															$('#'+talkVersion).remove();
 															talkVersion++;
-															$('#talk').append('<section" id="3">\n\
-															<p>Passons à la programmation depuis mon entré dans le monde du développement web.</p>\n\
-															<div class="acquirment" style="color: purple; margin: 10px;">\n\
-															<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
-															<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
-															<div class="row">L\'un en JavaScript/jQuery.</div>\n\
-															<div class="row">Et un autre en angularJS</div>\n\
-															<div class="row">Cependant, j\'ai également réalisé des exercices en Canvas pour ma formation.</div>\n\
-															<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
+															$('#talk').append('<section id="1">\n\
+															<div class="pictures col-lg-2 col-md-2 col-sm-1 col-xs-2"><img src="assets/img/romuald.jpg" alt="photo Romuald Ducrocq" height="120px" width="100px"/></div>\n\
+															<p>Bonjour.</p>\n\
+															<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
+															<p>Tout d\'abord, pourquoi ais-je fais ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencer par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
+															<p>Pour vous expliquer un peu le principe, il y\'a quatre maisons pour chacune des quatres grandes catégories que j\'ai choisi présenté: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
+															<div class="row speakme" id="me">Qui suis-je?</div>\n\
+															<div class="row speakme" id="contact">Comment me contacter?</div>\n\
+															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></section>');
 															$('.buttonClose').click(function() {
 																	$('#creation').remove();
 																	talkVersion = 1;
 															});
-															$('.buttonSuivant').click(function() {
-																$('#'+talkVersion).remove();
-																talkVersion++;
-																$('#talk').append('<section" id="4">\n\
-																<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réaliser  intégralement un site.</p>\n\
-																<p>Dernier projet en date :</p>\n\
-																<div class="acquirment" style="color: purple; margin: 10px;">\n\
-																<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
-																<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
-																<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
-																<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
-																<div class="row"><button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></div></section>');
-																$('.buttonClose').click(function() {
-																		$('#creation').remove();
-																		talkVersion = 1;
-																});
-															});
+															$('.speakme').attr({style: "background-color: #F0FFFF; border-color: #87CEFA;"});
+															$('#personal').attr({ style : "display: block; position: relative; float: right;" });
 														});
 												});
-												$('.buttonClose').click(function() {
-														$('#creation').remove();
-														talkVersion = 1;
+												$('#contact').click(function() {
+													$('#'+talkVersion).remove();
+													talkVersion++;
+														$('#talk').append('<section" id="2">\n\
+														<p>Mon adresse mail : romualdducrocq1@gmail.com</p>\n\
+														<p>Mon linkedin : www.linkedin.com/in/romuald-ducrocq</p>\n\
+														<p>Mon github: https://github.com/RomualdD</p>\n\
+														<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Retour</button></div></section>');
+														$('.buttonClose').click(function() {
+																$('#creation').remove();
+																talkVersion = 1;
+														});
+														$('.buttonSuivant').click(function() {
+															$('#'+talkVersion).remove();
+															talkVersion++;
+															$('#talk').append('<section id="1">\n\
+															<div class="pictures col-lg-2 col-md-2 col-sm-1 col-xs-2"><img src="assets/img/romuald.jpg" alt="photo Romuald Ducrocq" height="120px" width="100px"/></div>\n\
+															<p>Bonjour.</p>\n\
+															<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
+															<p>Tout d\'abord, pourquoi ais-je fais ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencer par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
+															<p>Pour vous expliquer un peu le principe, il y\'a quatre maisons pour chacune des quatres grandes catégories que j\'ai choisi présenté: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
+															<div class="row speakme" id="me">Qui suis-je?</div>\n\
+															<div class="row speakme" id="contact">Comment me contacter?</div>\n\
+															<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></section>');
+															$('.buttonClose').click(function() {
+																	$('#creation').remove();
+																	talkVersion = 1;
+															});
+															$('.speakme').attr({style: "background-color: #F0FFFF; border-color: #87CEFA;"});
+															$('#personal').attr({ style : "display: block; position: relative; float: right;" });
+														});
 												});
-												$('.acquirment').attr({style: "color: purple; margin: 10px;"});
+												$('.speakme').hover(function(){
+													$(this).css("background-color: #87CEFA;");
+												});
+												$('.speakme').attr({style: "background-color: #F0FFFF; border-color: #87CEFA;"});
 												$('.buttonTalk').attr({style : "color: black;"});
-												$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
-												$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
+												$('#personal').attr({ style : "display: block; position: relative; float: right;" });
+												$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: green; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 												$('#canvas').attr({ style : "position: absolute;" });
 										}
 								},false);
@@ -1004,9 +1038,6 @@ Personnage.prototype.deplacer = function(direction, map) {
 						verifdiscussion = false;
 						this.x = prochaineCase.x;
 						this.y = prochaineCase.y;
-				}*/
-				if(this.x == 19 || this.x == 21 || this.y == 3 || this.y == 1) {
-					$('#touchehelp').remove();
 				}
 			}
 	return true;

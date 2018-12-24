@@ -1,7 +1,7 @@
 var map = new Map("seconde");
 var joueur = new Personnage("drogon.png", 20, 2, DIRECTION.BAS);
-/*var joueur1 = new Personnage("nerd.png", 18, 12, DIRECTION.BAS);
-map.addPersonnage(joueur1);*/
+var joueur1 = new Personnage("nerd.png", 18, 12, DIRECTION.BAS);
+map.addPersonnage(joueur1);
 map.addPersonnage(joueur);
 var nameMap = 'seconde';
 
@@ -72,9 +72,9 @@ window.onload = function() {
                 if(joueur.x == 4 && joueur.y == 6 && nameMap == 'seconde') {
                     map = new Map("troisieme");
                     joueur = new Personnage("drogon.png", 23, 21, DIRECTION.HAUT);
-                //    var joueur1 = new Personnage("wiz.png", 23, 2, DIRECTION.BAS);
+                    var joueur1 = new Personnage("wiz.png", 23, 2, DIRECTION.BAS);
                     map.addPersonnage(joueur);
-                //    map.addPersonnage(joueur1);
+                    map.addPersonnage(joueur1);
                     nameMap = 'troisieme';
                 } else if(joueur.x == 33 && joueur.y == 4 && nameMap == 'seconde') {
                     map = new Map('quatrieme');
@@ -86,16 +86,16 @@ window.onload = function() {
                 } else if(joueur.x == 4 && joueur.y == 16 && nameMap == 'seconde') {
                     map = new Map('cinquieme');
                     joueur = new Personnage("drogon.png", 23, 21, DIRECTION.HAUT);
-                //    var joueur1 = new Personnage("bard.png", 23, 2, DIRECTION.BAS);
+                    var joueur1 = new Personnage("bard.png", 23, 2, DIRECTION.BAS);
                     map.addPersonnage(joueur);
-                //    map.addPersonnage(joueur1);
+                    map.addPersonnage(joueur1);
                     nameMap = 'cinquieme';
                 } else if(joueur.x == 30 && joueur.y == 15 && nameMap == 'seconde') {
                     map = new Map('sixieme');
                     joueur = new Personnage("drogon.png", 23, 21, DIRECTION.HAUT);
-                  //  var joueur1 = new Personnage("blacksmith.png", 23, 2, DIRECTION.BAS);
+                    var joueur1 = new Personnage("blacksmith.png", 23, 2, DIRECTION.BAS);
                     map.addPersonnage(joueur);
-                  //  map.addPersonnage(joueur1);
+                    map.addPersonnage(joueur1);
                     nameMap = 'sixieme';
                 } else if((joueur.x == 23 || joueur.x == 24 || joueur.x == 22) && joueur.y == 22  && nameMap != 'seconde') {
 									if(nameMap == 'troisieme') {
@@ -109,14 +109,14 @@ window.onload = function() {
 	                  map = new Map('seconde');
 										joueur = new Personnage("drogon.png", 33, 5, DIRECTION.HAUT);
                     map.addPersonnage(joueur);
-									/*	var joueur1 = new Personnage("nerd.png", 18, 12, DIRECTION.BAS);
+								/*		var joueur1 = new Personnage("nerd.png", 18, 12, DIRECTION.BAS);
 										map.addPersonnage(joueur1);*/
 										nameMap = 'seconde';
 									} else if(nameMap == 'cinquieme') {
 	                  map = new Map('seconde');
 										joueur = new Personnage("drogon.png", 4, 17, DIRECTION.HAUT);
                     map.addPersonnage(joueur);
-									/*	var joueur1 = new Personnage("nerd.png", 18, 12, DIRECTION.BAS);
+										/*var joueur1 = new Personnage("nerd.png", 18, 12, DIRECTION.BAS);
 										map.addPersonnage(joueur1);*/
 										nameMap = 'seconde';
 									} else if(nameMap == 'sixieme') {
