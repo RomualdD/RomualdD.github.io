@@ -846,7 +846,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 						var talkVersion = 1;
 						window.addEventListener('keypress', function(e){
 							if(e.keyCode == 13 && !document.getElementById('me') && nameMap == 'seconde' && verifdiscussion == true){
-								$('#canvasdiv').append('<div id="personal"><img src="assets/img/blacksmith.png" id="me" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
+								$('#canvasdiv').append('<div id="personal"><img src="assets/img/hiruma.png" id="me" alt="photo hiruma" height="725px" width="425px"/><div id="talk">\n\
 								<section id="1">\n\
 								<p>Bonjour.</p>\n\
 								<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
@@ -866,7 +866,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 											<p>Passionné par les jeux vidéos et les mangas depuis mon enfance, j\'ai fait de ma passion une force en m\'orientant vers l\'informatique.</p>\n\
 											<p>Je suis un déveleppeur web junior.</p>\n\
 											<p>Actuellement, je suis en formation à la manu et en alternance dans l\'entreprise picardie-informatique afin d\'être Concepteur Développeur Informatique de niveau bac+3/4.</p>\n\
-											<div class="row speakme" id="contact">Comment me contacter?</div>\n\
+											<div class="row speakme" id="contact" style="background-color: #F0FFFF; border-color: #87CEFA;">Comment me contacter?</div>\n\
 											<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button></div></section>');
 											$('.buttonClose').click(function() {
 													$('#personal').remove();
@@ -888,11 +888,9 @@ Personnage.prototype.deplacer = function(direction, map) {
 											$('#personal').attr({ style : "display: block; position: relative; float: right;" });
 										});
 									});
-									$('.speakme').hover(function(){
-										$(this).css("background-color: #87CEFA;");
-									});
 									$('.speakme').attr({style: "background-color: #F0FFFF; border-color: #87CEFA;"});
 									$('.buttonTalk').attr({style : "color: black;"});
+									$('#me').attr({ style : "display: block; position: relative; float: right;" });
 									$('#personal').attr({ style : "display: block; position: relative; float: right;" });
 									$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: green; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 									$('#canvas').attr({ style : "position: absolute;" });
@@ -906,7 +904,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 									this.y = prochaineCase.y;
 									window.addEventListener('keypress', function(e){
 										if(e.keyCode == 13 && !document.getElementById('me') && nameMap == 'seconde' && verifdiscussion == true){
-											$('#canvasdiv').append('<div id="personal"><img src="assets/img/blacksmith.png" id="me" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
+											$('#canvasdiv').append('<div id="personal"><img src="assets/img/hiruma.png" id="me" alt="photo hiruma" height="725px" width="425px"/><div id="talk">\n\
 											<section id="1">\n\
 											<p>Bonjour.</p>\n\
 											<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
@@ -926,7 +924,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 														<p>Passionné par les jeux vidéos et les mangas depuis mon enfance, j\'ai fait de ma passion une force en m\'orientant vers l\'informatique.</p>\n\
 														<p>Je suis un déveleppeur web junior.</p>\n\
 														<p>Actuellement, je suis en formation à la manu et en alternance dans l\'entreprise picardie-informatique afin d\'être Concepteur Développeur Informatique de niveau bac+3/4.</p>\n\
-														<div class="row speakme" id="contact">Comment me contacter?</div>\n\
+														<div class="row speakme" id="contact" style="background-color: #F0FFFF; border-color: #87CEFA;">Comment me contacter?</div>\n\
 														<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button></div></section>');
 														$('.buttonClose').click(function() {
 																$('#personal').remove();
@@ -953,6 +951,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												});
 												$('.speakme').attr({style: "background-color: #F0FFFF; border-color: #87CEFA;"});
 												$('.buttonTalk').attr({style : "color: black;"});
+												$('#me').attr({ style : "display: block; position: relative; float: right;" });
 												$('#personal').attr({ style : "display: block; position: relative; float: right;" });
 												$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: green; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
 												$('#canvas').attr({ style : "position: absolute;" });
