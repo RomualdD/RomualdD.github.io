@@ -390,7 +390,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<div class="acquirment">\n\
 												<div class="row">Tout d\'abord, je vais vous présenter les maquettes "gunpla".</div>\n\
 												<div class="row">Pour commencer, précisons qu\'un gunpla est un gundam (des robots assez connus au Japon) en plastique.</div>\n\
-												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
+												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc être minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
 												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastique. Voici un exemple lorque c\'est terminé :</div>\n\
 												<div class="row"><img id="gundam" src="assets/img/realgundam.jpg" height="200px" width="200px"></div>\n\
 												<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
@@ -495,7 +495,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<div class="acquirment">\n\
 												<div class="row">Tout d\'abord, je vais vous présenter les maquettes "gunpla".</div>\n\
 												<div class="row">Pour commencer, précisons qu\'un gunpla est un gundam (des robots assez connus au Japon) en plastique.</div>\n\
-												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
+												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc être minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
 												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastique. Voici un exemple lorque c\'est terminé :</div>\n\
 												<div class="row"><img id="gundam" src="assets/img/realgundam.jpg" height="200px" width="200px"></div>\n\
 												<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
@@ -634,7 +634,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																$('#'+talkVersion).remove();
 																talkVersion++;
 																$('#talk').append('<section" id="3">\n\
-																<p>Passons à la programmation depuis mon entré dans le monde du développement web.</p>\n\
+																<p>Passons à la programmation depuis mon entrée dans le monde du développement web.</p>\n\
 																<div class="acquirment" style="color: purple; margin: 10px;">\n\
 																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
 																<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
@@ -716,7 +716,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																$('#'+talkVersion).remove();
 																talkVersion++;
 																$('#talk').append('<section" id="3">\n\
-																<p>Passons à la programmation depuis mon entré dans le monde du développement web.</p>\n\
+																<p>Passons à la programmation depuis mon entrée dans le monde du développement web.</p>\n\
 																<div class="acquirment" style="color: purple; margin: 10px;">\n\
 																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
 																<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
