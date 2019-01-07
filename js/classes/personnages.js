@@ -416,7 +416,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																talkVersion++;
 																$('#talk').append('<section" id="3">\n\
 																<div class="acquirment" style="color: white; font-family: "Consola"; margin: 10px;">\n\
-																<p>Quelques mangas lu :</p>\n\
+																<p>Quelques mangas lus :</p>\n\
 																<div class="row">One piece :</div>\n\
 																<div class="row"><img id="onepiece" src="assets/img/one_piece.jpg" height="200px" width="150px"></div>\n\
 																<div class="row">Gantz :</div>\n\
