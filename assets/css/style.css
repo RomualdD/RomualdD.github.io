@@ -8,7 +8,7 @@
   src: url('consola.ttf');
 }
 
-header:not(#link){
+header{
   margin-top: 0;
   background-image: url('../img/nuages.png');
   text-align: center;
@@ -156,6 +156,7 @@ h4{
   border: 0px solid rgba(245, 245, 245, 1);
   border-radius: 25px;
   height: 20px;
+  margin-right: 5px;
 }
 
 #contain{
@@ -221,8 +222,20 @@ marquee{
    width: 40%;
 }
 
-.c, .atom, .builder, .english{
+.c, .builder, .english{
   width: 50%;
+}
+
+.atom {
+  width: 75%;
+}
+
+.angularjs {
+  width: 45%;
+}
+
+.nodejs {
+  width: 30%;
 }
 
 .deutsch {
@@ -234,7 +247,7 @@ marquee{
 }
 
 .bootstrap{
-  width: 60%;
+  width: 75%;
 }
 
 .sql,.php{
@@ -246,27 +259,27 @@ marquee{
 }
 
 .javascript{
-  width: 40%;
+  width: 65%;
 }
 
 .command{
-  width: 25%;
+  width: 50%;
 }
 
 .nano{
-   width: 60%;
+   width: 80%;
+}
+
+.talend {
+  width: 5%;
 }
 
 .git{
-  width: 45%;
+  width: 75%;
 }
 
 .canvas{
   width: 60%;
-}
-
-.github{
-   width: 45%;
 }
 
 .vhost{
