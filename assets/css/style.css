@@ -96,7 +96,7 @@ h3{
   text-align: center;
   text-decoration: underline;
   font-family: 'Press Start 2P';
-  color: white;
+  color: #24cce8;
   font-size: 25px;
 }
 
@@ -140,7 +140,7 @@ h3{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #58FAD0;
+  color: #0000ff;
 }
 
 h4{
@@ -148,15 +148,23 @@ h4{
   text-align: center;
   font-size: 35px;
   text-decoration: underline;
-  color: #58FAD0;
+  color: #26BB1F;
+}
+
+.progress-bar-success {
+  background-image: url('../img/ruby1.png')
 }
 
 .progress {
-  background: rgba(235, 14, 14, 1);
+  background-image: url('../img/pot.png');
   border: 0px solid rgba(245, 245, 245, 1);
   border-radius: 25px;
   height: 20px;
   margin-right: 5px;
+}
+
+.progress-bar {
+  font-weight: bold;
 }
 
 #contain{
