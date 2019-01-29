@@ -143,6 +143,16 @@ h3{
   color: #0000ff;
 }
 
+.link {
+  margin-top: -5px;
+}
+
+.skill_percent {
+    position: absolute;
+    right: 5%;
+    opacity: 0;
+}
+
 h4{
   font-family: 'Halo';
   text-align: center;
@@ -152,7 +162,7 @@ h4{
 }
 
 .progress-bar-success {
-  background-image: url('../img/ruby1.png')
+  background-image: url('../img/ruby1.png');
 }
 
 .progress {
@@ -161,9 +171,12 @@ h4{
   border-radius: 25px;
   height: 20px;
   margin-right: 5px;
+  text-transform: uppercase;
 }
 
 .progress-bar {
+  text-align: left;
+  transition-duration: 3s;
   font-weight: bold;
 }
 
@@ -223,7 +236,7 @@ marquee{
 }
 
 .windows{
-   width: 25%;
+   width: 35%;
 }
 
 .Linux, .netbeans{
