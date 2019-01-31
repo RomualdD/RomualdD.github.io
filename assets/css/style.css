@@ -102,19 +102,44 @@ h3{
 
 #history{
   text-align: center;
+    background-image: url('../img/parcours.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: green;
+    font-size: 25px;
 }
 
 #realisation{
   text-align: center;
+  background: #2f4357;
 }
 
-#instance{
-  background-image: url('../img/parcours.jpg');
+#medical {
+  background-image: url("../img/meidcals.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: green;
-  font-size: 25px;
+}
+
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item p{
+    margin: 0 auto; /* Align slide image horizontally center */
+    color: white;
+    text-align: center;
+}
+.bs-example{
+	margin: 20px;
+}
+
+.carouselClass {
+  padding-top:50px;
 }
 
 #hobbies{

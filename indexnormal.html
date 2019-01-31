@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets\css\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -73,7 +74,6 @@
           </div>
         </div>
       </section>
-      <section id="instance">
         <section id="history">
           <h3><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> Mon Parcours :</h3>
           <ul>
@@ -88,17 +88,81 @@
         </section>
         <section id="realisation">
           <h3><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i> Mes Réalisations / Projets :</h3>
-          <ul>
-            <li>Participation à la réalisation d'une application mobile et d'un site web dans le domaine médical.</li>
-            <li>Réalisation d’un site pour assister des personnes en situation de handicap<br/> (Diabétique et anticoagulant) (Projet final de la formation).</li>
-            <li>Réalisation d’exercice en Canvas pour la formation E2N.</li>
-            <li>Réalisation de plusieurs sites e-commerce. (JavaScript et AngularJS)</li>
-            <li>Développement d'un chronomètre et affichage du temps sur un panneau d'affichage.<br/> Enregistrement des données dans une base de données. (Projet fin BTS)</li>
-            <li>Développement d'un fauteuil roulant pour malvoyant. 2ème aux olympiades régionales </li>
-            <li>(Projet fin Science de l'ingénieur présenter aux olympiades)</li>
-          </ul>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel" data-slide-to="3"></li>
+                      <li data-target="#myCarousel" data-slide-to="4"></li>
+                      <li data-target="#myCarousel" data-slide-to="5"></li>
+                  </ol>
+                  <!-- Wrapper for carousel items -->
+                  <div class="carousel-inner">
+                      <div class="item active" id="medical">
+                        <div class="row carouselClass">
+                          <div class="col-lg-offset-2 col-lg-7">
+                            <p>Participation à la réalisation d'une application mobile et d'un site web dans le domaine médical à picardie-informatique.</p>
+                            <p>Programmation en Angular, AngularJS, JavaScript, Sequelize.</p>
+                            <p>Utilisation de nodeJS.</p>
+                            <p>Logiciels utilisés : Atom, WorkBench, PuTTY, Ligne de commande.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row carouselClass">
+                          <img class="col-md-offset-2 col-lg-2" style="height: 200px; width: 150px;" src="assets/img/coagucheck.png" alt="coagucheck">
+                          <p class="col-lg-5">Réalisation d’un site pour assister des personnes en situation de handicap<br/> (Diabétique et anticoagulant) (Projet final de la formation).</p>
+                          <p class="col-lg-5">Programmation en PHP, SQL.</p>
+                          <p class="col-lg-5">Logiciels utilisés : NetBeans, ligne de commande.</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row carouselClass">
+                          <img class="col-md-offset-2 col-lg-2" src="assets/img/e2n.jpg" alt="e2n">
+                          <p class="col-lg-5">Réalisation d’exercice en Canvas pour la formation E2N.</p>
+                          <p class="col-lg-5">Programmation en JavaScript, jQuery, Canvas.</p>
+                          <p class="col-lg-5">Logiciels utilisés : Atom</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row carouselClass">
+                          <img class="col-md-offset-2 col-lg-2" src="assets/img/ecommerce.jpg" alt="ecommer">
+                          <p class="col-lg-5">Réalisation de plusieurs sites e-commerce.</p>
+                          <p class="col-lg-5">Programmation en JavaScript, jQuery, AngularJS.</p>
+                          <p class="col-lg-5">Logiciels utilisés : Atom</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row">
+                          <img class="col-md-offset-5 col-lg-2" width="200px" height="150px" src="assets/img/panneau_affichage.png" alt="panneau">
+                        </div>
+                        <div class="row">
+                          <p>Développement d'un chronomètre et affichage du temps sur un panneau d'affichage.<br/> Enregistrement des données dans une base de données. (Projet fin BTS).</p>
+                          <p>Programmation en C++, SQL.</p>
+                          <p>Logiciels utilisés : c++ Builder, phpmyadmin.</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row carouselClass">
+                          <img class="col-lg-offset-2 col-lg-2" src="assets/img/fauteuil.png" alt="fauteuil">
+                          <p class="col-lg-5">Développement d'un fauteuil roulant pour malvoyant.</p>
+                          <p class="col-lg-5">Programmation en C++, carte Arduino.</p>
+                          <p class="col-lg-5">Logiciels utilisés : Arduino, solidworks.</p>
+                          <p class="col-lg-5"><span id="olympiade">Olympiade</span> : 2ème place au niveau régional. Participation au niveau national</p>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- Carousel controls -->
+                  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+              </div>
         </section>
-      </section>
       <section id="expertize">
           <h3><i class="fa fa-check-circle fa-2x" aria-hidden="true"></i> Mes compétences :</h3>
           <div id="expert row">
