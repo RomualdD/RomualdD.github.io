@@ -338,7 +338,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 														talkVersion++;
 															$('#talk').append('<section" id="2">\n\
 															<p>Puis après mon baccalauréat, je me suis orienté vers une spécialité en réseaux informatiques.</p>\n\
-															<div class="acquirment" style="color: purple; margin: 10px;">\n\
+															<div class="acquirment" style="color: white; margin: 10px;">\n\
 															<div class="row">J\'ai obtenu un BTS systèmes numériques informatiques et réseaux.</div>\n\
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
 															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
@@ -353,7 +353,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															$('#parcours').remove();
 															talkVersion = 1;
 													});
-													$('.acquirment').attr({style: "color: purple; margin: 10px;"})
+													$('.acquirment').attr({style: "color: white; margin: 10px;"})
 													$('.buttonTalk').attr({style : "color: black;"})
 													$('#knight').attr({ style : "display: block; position: relative; float: right;" });
 													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
@@ -386,7 +386,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 														talkVersion++;
 															$('#talk').append('<section" id="2">\n\
 															<p>Puis après mon baccalauréat, je me suis orienté vers une spécialité en réseaux informatiques.</p>\n\
-															<div class="acquirment" style="color: purple; margin: 10px;">\n\
+															<div class="acquirment" style="color: white; margin: 10px;">\n\
 															<div class="row">J\'ai obtenu un BTS systèmes numériques informatiques et réseaux.</div>\n\
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
 															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
@@ -401,7 +401,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															$('#parcours').remove();
 															talkVersion = 1;
 													});
-													$('.acquirment').attr({style: "color: purple; margin: 10px;"})
+													$('.acquirment').attr({style: "color: white; margin: 10px;"})
 													$('.buttonTalk').attr({style : "color: black;"})
 													$('#knight').attr({ style : "display: block; position: relative; float: right;" });
 													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: red; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
@@ -661,7 +661,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 														talkVersion++;
 															$('#talk').append('<section" id="2">\n\
 															<p>Je vais vous parler de mon second projet.</p>\n\
-															<div class="acquirment" style="color: purple; margin: 10px;">\n\
+															<div class="acquirment" style="color: white; margin: 10px;">\n\
 															<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
 															<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
 															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
@@ -677,7 +677,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																talkVersion++;
 																$('#talk').append('<section" id="3">\n\
 																<p>Passons à la programmation depuis mon entrée dans le monde du développement web.</p>\n\
-																<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																<div class="acquirment" style="color: white; margin: 10px;">\n\
 																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
 																<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
 																<div class="row">L\'un en JavaScript/jQuery.</div>\n\
@@ -694,7 +694,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	$('#talk').append('<section" id="4">\n\
 																	<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réaliser  intégralement un site.</p>\n\
 																	<p>Dernier projet en date :</p>\n\
-																	<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																	<div class="acquirment" style="color: white; margin: 10px;">\n\
 																	<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
 																	<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
 																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
@@ -711,7 +711,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															$('#creation').remove();
 															talkVersion = 1;
 													});
-													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
+													$('.acquirment').attr({style: "color: white; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
 													$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
 													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
@@ -743,7 +743,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 														talkVersion++;
 															$('#talk').append('<section" id="2">\n\
 															<p>Je vais vous parler de mon second projet.</p>\n\
-															<div class="acquirment" style="color: purple; margin: 10px;">\n\
+															<div class="acquirment" style="color: white; margin: 10px;">\n\
 															<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
 															<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
 															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
@@ -759,7 +759,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																talkVersion++;
 																$('#talk').append('<section" id="3">\n\
 																<p>Passons à la programmation depuis mon entrée dans le monde du développement web.</p>\n\
-																<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																<div class="acquirment" style="color: white; margin: 10px;">\n\
 																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
 																<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
 																<div class="row">L\'un en JavaScript/jQuery.</div>\n\
@@ -776,7 +776,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	$('#talk').append('<section" id="4">\n\
 																	<p>Afin d\'obtenir mon titre professionnel de Concepteur Développeur j\'ai dû réaliser  intégralement un site.</p>\n\
 																	<p>Dernier projet en date :</p>\n\
-																	<div class="acquirment" style="color: purple; margin: 10px;">\n\
+																	<div class="acquirment" style="color: white; margin: 10px;">\n\
 																	<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
 																	<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
 																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
@@ -793,7 +793,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															$('#creation').remove();
 															talkVersion = 1;
 													});
-													$('.acquirment').attr({style: "color: purple; margin: 10px;"});
+													$('.acquirment').attr({style: "color: white; margin: 10px;"});
 													$('.buttonTalk').attr({style : "color: black;"});
 													$('#blacksmith').attr({ style : "display: block; position: relative; float: right;" });
 													$('#talk').attr({ style : "width: 500px; display: block; position: relative; background-color: #C0C0C0; color: yellow; float: right; padding-top: 1.0em; padding-left: 1.0em; padding-right: 1.0em; padding-bottom: 1.0em;" });
