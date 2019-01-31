@@ -94,7 +94,7 @@
             <li>Réalisation d’exercice en Canvas pour la formation E2N.</li>
             <li>Réalisation de plusieurs sites e-commerce. (JavaScript et AngularJS)</li>
             <li>Développement d'un chronomètre et affichage du temps sur un panneau d'affichage.<br/> Enregistrement des données dans une base de données. (Projet fin BTS)</li>
-            <li>Développement d'un fauteuil roulant pour malvoyant. </li>
+            <li>Développement d'un fauteuil roulant pour malvoyant. 2ème aux olympiades régionales </li>
             <li>(Projet fin Science de l'ingénieur présenter aux olympiades)</li>
           </ul>
         </section>
@@ -107,9 +107,6 @@
                 <div class="row marginbottom">
                     <div class="logo col-lg-1"><img src="assets/img/windows.png" alt="Logo windows" title="Logo Windows" height="50px" width="50px"></div>
                     <div class="nameexpert col-lg-3 col-lg-offset-1">Windows</div>
-                    <!--<div class="progress col-lg-offset-5">
-                      <div class="progress-bar progress-bar-success windows" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">35%</span><img width="25px;" style="margin-left: 80%;" class="link" src="assets/img/link.gif" alt="Link"></div>
-                    </div>-->
                     <div class="progress col-lg-offset-5">
                       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
                           <span class="skill_percent" style="opacity: 1; padding-left:50%">35%</span><img width="25px;" style="margin-left: 80%;" class="link" src="assets/img/link.gif" alt="Link">
@@ -370,18 +367,18 @@
         }
 
 
-        // Check si l'element passé en param est affiché sur l'écran
+        /* Check si l'element passé en param est affiché sur l'écran*/
         function checkVisible(elm) {
           var rect = elm.getBoundingClientRect();
           var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
           return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
         }
 
-        //Regarde si la div competence est affichée toutes les 250ms puis désactive l'interval
+        /*Regarde si la div competence est affichée toutes les 250ms puis désactive l'interval*/
         var interval = setInterval(function() {
-            if ( checkVisible(document.getElementById('tool')))     {
+            if ( checkVisible(document.getElementById('Languages')))     {
                 BarAnimation();
-                clearInterval(interval); // Désactive le SetInterval
+                clearInterval(interval); /* Désactive le SetInterval*/
             }
         }, 250);
 
