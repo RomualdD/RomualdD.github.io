@@ -870,8 +870,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 									$('#canvas').attr({ style : "position: absolute;" });
 							}
 								},false);
-							} else if(this.x == 17 && this.y == 12 || this.x == 17 && this.y == 13 || this.x == 17 && this.y == 11 || this.x == 19 && this.y == 12 || this.x == 19 && this.y == 13 || this.x == 19 && this.y == 11) {
-									if(prochaineCase.x == 18 || prochaineCase.x == 20) {
+							} else if((this.x == 17 && this.y == 12) || (this.x == 17 && this.y == 13) || (this.x == 17 && this.y == 11) || (this.x == 19 && this.y == 12) || (this.x == 19 && this.y == 13) || (this.x == 19 && this.y == 11)) {
+									if(prochaineCase.x == 16 || prochaineCase.x == 20) {
 										this.x = prochaineCase.x;
 									}
 									verifdiscussion = true;
