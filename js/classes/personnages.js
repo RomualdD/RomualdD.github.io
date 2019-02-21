@@ -654,7 +654,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
 												<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
 												<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
-												<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place, aux olympiades nationales.</div>\n\
+												<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place,nous avons participé aux olympiades nationales.</div>\n\
 												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
 														$('#'+talkVersion).remove();
@@ -736,7 +736,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
 												<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
 												<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
-												<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place, aux olympiades nationales.</div>\n\
+												<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place,nous avons participé aux olympiades nationales.</div>\n\
 												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
 														$('#'+talkVersion).remove();
@@ -854,8 +854,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 												talkVersion++;
 													$('#talk').append('<section" id="2">\n\
 													<p>Mon adresse mail : romualdducrocq1@gmail.com</p>\n\
-													<p>Mon linkedin : www.linkedin.com/in/romuald-ducrocq</p>\n\
-													<p>Mon github: https://github.com/RomualdD</p>\n\
+													<p><a href="https://www.linkedin.com/in/romuald-ducrocq/" target="_blank">Mon linkedin</a></p>\n\
+													<p><a href="https://github.com/RomualdD" target="_blank">Mon github</a></p>\n\
 													<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button></div></section>');
 													$('.buttonClose').click(function() {
 															$('#personal').remove();
@@ -915,8 +915,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 															talkVersion++;
 																$('#talk').append('<section" id="2">\n\
 																<p>Mon adresse mail : romualdducrocq1@gmail.com</p>\n\
-																<p>Mon linkedin : www.linkedin.com/in/romuald-ducrocq</p>\n\
-																<p>Mon github: https://github.com/RomualdD</p>\n\
+																<p><a href="https://www.linkedin.com/in/romuald-ducrocq/" target="_blank">Mon linkedin</a></p>\n\
+																<p><a href="https://github.com/RomualdD" target="_blank">Mon github</a></p>\n\
 																<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button></div></section>');
 																$('.buttonClose').click(function() {
 																		$('#personal').remove();

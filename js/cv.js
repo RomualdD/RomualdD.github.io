@@ -6,11 +6,29 @@ map.addPersonnage(joueur);
 var nameMap = 'seconde';
 
 window.onload = function() {
-	$("#myModal").modal('show') ;
+	$("#myModal").modal('show');
 
 		$('#canvasdiv').append('<div id="touchehelp"><img src="assets/img/touche.png" id="touche" alt="photo touche" height="725px" width="425px"/></div>');
 		$('#canvas').attr({ style : "position: absolute;" });
 		$('#touche').attr({ style : "display: block; position: relative; float: right;" });
+
+	var mySound = document.getElementById('audio');
+	var soundGo = false;
+
+		audio.addEventListener("ended", function(){
+		     audio.currentTime = 0;
+				 mySound.play();
+		});
+
+	audio = function() {
+		if(soundGo == false) {
+			mySound.play();
+			soundGo = true;
+		} else {
+			mySound.pause();
+			soundGo = false;
+		}
+	}
 
 	var canvas = document.getElementById('canvas');
 	var ctx = canvas.getContext('2d');
@@ -60,6 +78,8 @@ window.onload = function() {
                                     break;
 														case 27 : document.location.href="https://romualdd.github.io/";
 																		break;
+														case 80 : audio();
+																			break;
                             default :
                                     //alert(key);
                                     // Si la touche ne nous sert pas, nous n'avons aucune raison de bloquer son comportement normal.
