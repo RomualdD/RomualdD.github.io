@@ -132,8 +132,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 														<section id="1">\n\
 														<p>Bonjour et Bienvenue dans la pr\351sentation de mes comp\351tences.</p>\n\
 														<p>Au cours de toutes ces années d\'apprentissage, de travail et d\'abnégation.</p>\n\
-														<p>J\'ai appris différent langages informatiques. Je me suis noté comme je pensais être en phase avec ceux-ci</p>\n\
-														<p>Je souhaite bien évidemment progresser dans plusieurs de ces langages et pourquoi pas en apprendre de nouveaux.</p>\n\
+														<p>J\'ai appris différents langages informatiques. Je me suis noté comme je pensais être en phase avec ceux-ci</p>\n\
+														<p>Je souhaite bien évidemment progresser dans plusieurs de ces langages et pourquoi pas ne pas en apprendre de nouveaux.</p>\n\
 														<p>Commençons par les systèmes d\'exploitation.</p>\n\
                             <div class="acquirment"><p class="exploitation col-lg-offset-4">Syst\350me d\'exploitation :</p>\n\
 														<div class="row"><div class="logo col-lg-1"><img src="assets/img/windows.png" alt="Logo windows" title="Logo Windows" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Windows</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:50%">35%</span><img width="25px;" style="margin-left: 80%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div>\n\
@@ -146,16 +146,16 @@ Personnage.prototype.deplacer = function(direction, map) {
 																<p>Voici maintenant, les langages informatiques que j\'ai acquis au cours de ces quelques années d\'apprentissage.</p>\n\
 																<div class="acquirment" style="color: #0000ff;"><p class="exploitation col-lg-offset-4">Langages :</p>\n\
 																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/html_css.jpg" alt="logo html css" title="logo html et css" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">HTML / CSS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">70%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
-																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/php.png" alt="logo php" title="Logo php" width="50px" height="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">PHP</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
-																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/mysql.png" alt="logo mysql" title="logo mysql" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">SQL</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
-																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/cpp_logo.png" alt="Logo C++" title="Logo C++" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">C++</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">50%</span><img width="25px;" style="margin-left: 85%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/bootstrap.png" alt="Logo Bootstrap" title="Logo Bootstrap" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Bootstrap</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">75%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
-																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/nodejs.png" alt="Logo NodeJS" title="Logo NodeJS" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">NodeJS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">30%</span><img width="25px;" style="margin-left: 80%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/javascript.png" alt="Logo JavaScript" title="Logo Javascript" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">JavaScript</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">65%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/jquery.png" alt="Logo jQuery" title="Logo jQuery" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">jQuery</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">65%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/angular.png" alt="Logo Angular" title="Logo Angular" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Angular</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">15%</span><img width="25px;" style="margin-left: 50%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/angularjs.png" alt="Logo AngularJS" title="Logo AngularJS" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">AngularJS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">45%</span><img width="25px;" style="margin-left: 85%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
+																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/nodejs.png" alt="Logo NodeJS" title="Logo NodeJS" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">NodeJS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">30%</span><img width="25px;" style="margin-left: 80%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
+																<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/php.png" alt="logo php" title="Logo php" width="50px" height="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">PHP</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
+																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/mysql.png" alt="logo mysql" title="logo mysql" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">SQL</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/canvas.png" alt="Logo Canvas" title="Logo Canvas" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Canvas</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 85%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
+																<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/cpp_logo.png" alt="Logo C++" title="Logo C++" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">C++</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">50%</span><img width="25px;" style="margin-left: 85%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 																<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 																$('.buttonClose').click(function() {
 																		$('#competence').remove();
@@ -223,8 +223,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 													<section id="1">\n\
 													<p>Bonjour et Bienvenue dans la pr\351sentation de mes comp\351tences.</p>\n\
 													<p>Au cours de toutes ces années d\'apprentissage, de travail et d\'abnégation.</p>\n\
-													<p>J\'ai appris différent langages informatiques. Je me suis noté comme je pensais être en phase avec ceux-ci</p>\n\
-													<p>Je souhaite bien évidemment progresser dans plusieurs de ces langages et pourquoi pas en apprendre de nouveaux.</p>\n\
+													<p>J\'ai appris différents langages informatiques. Je me suis noté comme je pensais être en phase avec ceux-ci</p>\n\
+													<p>Je souhaite bien évidemment progresser dans plusieurs de ces langages et pourquoi pas ne pas en apprendre de nouveaux.</p>\n\
 													<p>Commençons par les systèmes d\'exploitation.</p>\n\
 													<div class="acquirment"><p class="exploitation col-lg-offset-4">Syst\350me d\'exploitation :</p>\n\
 													<div class="row"><div class="logo col-lg-1"><img src="assets/img/windows.png" alt="Logo windows" title="Logo Windows" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Windows</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:50%">35%</span><img width="25px;" style="margin-left: 80%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div>\n\
@@ -237,16 +237,16 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<p>Voici maintenant, les langages informatiques que j\'ai acquis au cours de ces quelques années d\'apprentissage.</p>\n\
 															<div class="acquirment" style="color: #0000ff;"><p class="exploitation col-lg-offset-4">Langages :</p>\n\
 															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/html_css.jpg" alt="logo html css" title="logo html et css" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">HTML / CSS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">70%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
-															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/php.png" alt="logo php" title="Logo php" width="50px" height="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">PHP</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
-															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/mysql.png" alt="logo mysql" title="logo mysql" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">SQL</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
-															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/cpp_logo.png" alt="Logo C++" title="Logo C++" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">C++</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">50%</span><img width="25px;" style="margin-left: 85%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/bootstrap.png" alt="Logo Bootstrap" title="Logo Bootstrap" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Bootstrap</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">75%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
-															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/nodejs.png" alt="Logo NodeJS" title="Logo NodeJS" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">NodeJS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">30%</span><img width="25px;" style="margin-left: 80%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/javascript.png" alt="Logo JavaScript" title="Logo Javascript" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">JavaScript</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">65%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/jquery.png" alt="Logo jQuery" title="Logo jQuery" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">jQuery</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">65%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/angular.png" alt="Logo Angular" title="Logo Angular" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Angular</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">15%</span><img width="25px;" style="margin-left: 50%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/angularjs.png" alt="Logo AngularJS" title="Logo AngularJS" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">AngularJS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">45%</span><img width="25px;" style="margin-left: 85%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
+															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/nodejs.png" alt="Logo NodeJS" title="Logo NodeJS" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">NodeJS</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">30%</span><img width="25px;" style="margin-left: 80%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
+															<div class="row"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/php.png" alt="logo php" title="Logo php" width="50px" height="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">PHP</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
+															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/mysql.png" alt="logo mysql" title="logo mysql" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">SQL</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 90%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/canvas.png" alt="Logo Canvas" title="Logo Canvas" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">Canvas</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">60%</span><img width="25px;" style="margin-left: 85%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
+															<div class="row marginbottom"><div class="progressall marge"><div class="logo col-lg-1"><img src="assets/img/cpp_logo.png" alt="Logo C++" title="Logo C++" height="50px" width="50px"></div><div class="nameexpert col-lg-3 col-lg-offset-1">C++</div><div class="progress col-lg-offset-5"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="skill_percent" style="opacity: 1; padding-left:35%">50%</span><img width="25px;" style="margin-left: 85%;" class="link" src="assets/img/link.gif" alt="Link"></div></div></div></div>\n\
 															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
 																	$('#competence').remove();
@@ -324,7 +324,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mon parcours.</p>\n\
 												<p class="acquirment">Je suis actuellement en contrat de professionnalisation à La Manu et dans l\'entreprise "picardie-informatique" à Amiens, pour obtenir le titre RNCP de Concepteur Développeur Informatique de niveau II.</p>\n\
-												<p>J\'ai toujours voulu faire un métier dans le rapport du numérique, plus spécifiquement dans le domaine du jeu vidéo.</p>\n\
+												<p>J\'ai toujours voulu faire un métier en rapport avec le numérique, plus spécifiquement dans le domaine du jeu vidéo.</p>\n\
 												<p>C\'est pourquoi j\'ai réalisé mon cv numérique de cette façon, j\'ai eu l\'idée de faire un cv qui pouvait convenir à plusieurs de mes intérêts.</p>\n\
 												<p>Mon premier CV est en rapport avec ma passion des jeux vidéos et ce CV en est la concrétisation.</p>\n\
 												<p>Voici désormais mon parcours, je vais commencer à partir du début.</p>\n\
@@ -341,7 +341,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="acquirment" style="color: white; margin: 10px;">\n\
 															<div class="row">J\'ai obtenu un BTS systèmes numériques informatiques et réseaux.</div>\n\
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
-															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
+															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécié (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
 															<div class="row">Lors de la formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
 															<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></section>');
 															$('.buttonClose').click(function() {
@@ -372,7 +372,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mon parcours.</p>\n\
 												<p class="acquirment">Je suis actuellement en contrat de professionnalisation à La Manu et dans l\'entreprise "picardie-informatique" à Amiens, pour obtenir le titre RNCP de Concepteur Développeur Informatique de niveau II.</p>\n\
-												<p>J\'ai toujours voulu faire un métier dans le rapport du numérique, plus spécifiquement dans le domaine du jeu vidéo.</p>\n\
+												<p>J\'ai toujours voulu faire un métier en rapport avec le numérique, plus spécifiquement dans le domaine du jeu vidéo.</p>\n\
 												<p>C\'est pourquoi j\'ai réalisé mon cv numérique de cette façon, j\'ai eu l\'idée de faire un cv qui pouvait convenir à plusieurs de mes intérêts.</p>\n\
 												<p>Mon premier CV est en rapport avec ma passion des jeux vidéos et ce CV en est la concrétisation.</p>\n\
 												<p>Voici désormais mon parcours, je vais commencer à partir du début.</p>\n\
@@ -389,7 +389,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="acquirment" style="color: white; margin: 10px;">\n\
 															<div class="row">J\'ai obtenu un BTS systèmes numériques informatiques et réseaux.</div>\n\
 															<div class="row">Grâce à ce BTS, j\'ai pu apprendre quelques langages, dont un que j\'ai voulu perfectionner.</div>\n\
-															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécier (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
+															<div class="row">Afin de perfectionner le domaine auquel j\'ai le plus apprécié (le développement web), je me suis orienté vers celui-ci, grâce à une formation professionnelle.</div>\n\
 															<div class="row">Lors de la formation professionnelle E2N (maintenant appelé La Manu), j\'ai acquis le titre RNCP de Concepteur Développeur de niveau III.</div>\n\
 															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button></div></section>');
 															$('.buttonClose').click(function() {
@@ -428,11 +428,11 @@ Personnage.prototype.deplacer = function(direction, map) {
 												$('#canvasdiv').append('<div id="hobbies"><img src="assets/img/clown.png" id="bard" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mes passions.</p>\n\
-												<p>Ici, je vais vous parler des activités que je fais hors de mon travail, ce qui me défini.</p>\n\
+												<p>Ici, je vais vous parler des activités que je fais hors de mon travail, ce qui me définit.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">Tout d\'abord, je vais vous présenter les maquettes "gunpla".</div>\n\
 												<div class="row">Pour commencer, précisons qu\'un gunpla est un gundam (des robots assez connus au Japon) en plastique.</div>\n\
-												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc être minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
+												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc être minutieux et précis, le tout étant d\'avoir l\'équipement adéquat.</div>\n\
 												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastique. Voici un exemple lorque c\'est terminé :</div>\n\
 												<div class="row"><img id="gundam" src="assets/img/realgundam.jpg" height="200px" width="200px"></div>\n\
 												<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
@@ -474,7 +474,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	$('#talk').append('<section" id="3">\n\
 																	<div class="acquirment" style="color: white;font-family: "Consola"; margin: 10px;">\n\
 																	<p>Ma dernière passion est les jeux vidéos</p>\n\
-																	<p>Depuis tout petit, je joue aux jeux vidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
+																	<p>Depuis tout petit, je joue aux jeux vidéos. J\'ai commencé par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
 																	<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
 																	<div class="row videogame" style="color: red" id="smite">Smite (Cliquez ici)</div>\n\
 																	<div class="row videogame" style="color: red" id="happywars">Happy Wars (Cliquez ici)</div>\n\
@@ -533,11 +533,11 @@ Personnage.prototype.deplacer = function(direction, map) {
 												$('#canvasdiv').append('<div id="hobbies"><img src="assets/img/clown.png" id="bard" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bonjour et Bienvenue dans la pr\351sentation de mes passions.</p>\n\
-												<p>Ici, je vais vous parler des activités que je fais hors de mon travail, ce qui me défini.</p>\n\
+												<p>Ici, je vais vous parler des activités que je fais hors de mon travail, ce qui me définit.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">Tout d\'abord, je vais vous présenter les maquettes "gunpla".</div>\n\
 												<div class="row">Pour commencer, précisons qu\'un gunpla est un gundam (des robots assez connus au Japon) en plastique.</div>\n\
-												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc être minutieux et précis, le tout d\'avoir l\'équipement adéquat.</div>\n\
+												<div class="row">Les pièces qui le constituent sont d\'une taille assez petite, il faut donc être minutieux et précis, le tout étant d\'avoir l\'équipement adéquat.</div>\n\
 												<div class="row">C\'est à dire, une pince coupante permettant de couper les morceaux attachés à son plastique. Voici un exemple lorque c\'est terminé :</div>\n\
 												<div class="row"><img id="gundam" src="assets/img/realgundam.jpg" height="200px" width="200px"></div>\n\
 												<button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
@@ -579,7 +579,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	$('#talk').append('<section" id="3">\n\
 																	<div class="acquirment" style="color: white;font-family: "Consola"; margin: 10px;">\n\
 																	<p>Ma dernière passion est les jeux vidéos</p>\n\
-																	<p>Depuis tout petit, je joue aux jeux vidéos. J\'ai commencer par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
+																	<p>Depuis tout petit, je joue aux jeux vidéos. J\'ai commencé par Nintendo, puis je me suis rapproché des consoles Microsoft.</p>\n\
 																	<p>Voici quelques jeux auquel je joue, les vidéos sont de ma réalisation.</p>\n\
 																	<div class="row videogame" style="color: red" id="smite">Smite (Cliquez ici)</div>\n\
 																	<div class="row videogame" style="color: red" id="happywars">Happy Wars (Cliquez ici)</div>\n\
@@ -647,13 +647,13 @@ Personnage.prototype.deplacer = function(direction, map) {
 												$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bienvenue dans mes projets.</p>\n\
-												<p>Je vais vous parler de mes projets que j\'ai réalisé seul ou en groupe lors de mes études.</p>\n\
+												<p>Je vais vous parler de mes projets que j\'ai réalisés seul ou en groupe lors de mes études.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">Lors de mon baccalauréat Scientifique j\'ai du réalisé un projet.</div>\n\
-												<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
-												<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
+												<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchi à un moyen d\'aider des personnes possédant un handicap.</div>\n\
+												<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmé un fauteuil roulant.</div>\n\
 												<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
-												<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
+												<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participé aux olympiades (compétition où l\'on présente son projet).</div>\n\
 												<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place,nous avons participé aux olympiades nationales.</div>\n\
 												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
@@ -665,7 +665,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
 															<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
 															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
-															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
+															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyait sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
 															<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
 															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style="color: black;" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
@@ -678,7 +678,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																$('#talk').append('<section" id="3">\n\
 																<p>Passons à la programmation depuis mon entrée dans le monde du développement web.</p>\n\
 																<div class="acquirment" style="color: white; margin: 10px;">\n\
-																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
+																<p>Lors de ma formation, nous étions toujours en groupe de quatre pour réaliser nos projets communs</p>\n\
 																<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
 																<div class="row">L\'un en JavaScript/jQuery.</div>\n\
 																<div class="row">Et un autre en angularJS</div>\n\
@@ -698,7 +698,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
 																	<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
 																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
-																	<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
+																	<div class="row">Les patients peuvent également noter leurs rendez-vous et être suivi par leur médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
 																	<div class="row"><button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></div></section>');
 																	$('.buttonClose').click(function() {
 																			$('#creation').remove();
@@ -729,13 +729,13 @@ Personnage.prototype.deplacer = function(direction, map) {
 												$('#canvasdiv').append('<div id="creation"><img src="assets/img/blacksmith.png" id="blacksmith" alt="photo bard" height="725px" width="425px"/><div id="talk">\n\
 												<section id="1">\n\
 												<p>Bienvenue dans mes projets.</p>\n\
-												<p>Je vais vous parler de mes projets que j\'ai réalisé seul ou en groupe lors de mes études.</p>\n\
+												<p>Je vais vous parler de mes projets que j\'ai réalisés seul ou en groupe lors de mes études.</p>\n\
 												<div class="acquirment">\n\
 												<div class="row">Lors de mon baccalauréat Scientifique j\'ai du réalisé un projet.</div>\n\
-												<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchis à un moyen d\'aider des personnes possédant un handicap.</div>\n\
-												<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmer un fauteuil roulant.</div>\n\
+												<div class="row">Nous étions un groupe de trois étudiants. Nous avons réfléchi à un moyen d\'aider des personnes possédant un handicap.</div>\n\
+												<div class="row">Le choix du projet s\'était porté sur les malvoyants, nous avons programmé un fauteuil roulant.</div>\n\
 												<div class="row">Ce fauteuil roulant permettait à l\'utilisateur d\'aller d\'un point A à un point B.</div>\n\
-												<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participer aux olympiades (compétition où l\'on présente son projet).</div>\n\
+												<div class="row">La programmation était en C++ avec Arduino. Lors de ce projet, nous avons participé aux olympiades (compétition où l\'on présente son projet).</div>\n\
 												<div class="row">Nous avons fini second de notre région puis grâce à notre seconde place,nous avons participé aux olympiades nationales.</div>\n\
 												<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" type="button" name="suivant">Suivant</button></div></section>');
 													$('.buttonSuivant').click(function() {
@@ -747,7 +747,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 															<div class="row">En BTS, nous avions un projet à faire et à présenter à la fin de l\'année en groupe de trois.</div>\n\
 															<div class="row">Nous n\'avions pas eu le choix du projet qui était désigné par le professeur.</div>\n\
 															<div class="row">Le projet était dans le cadre de l\'escalade pour les professeurs de sport, le but étant de démarrer un chronomètre lors du top départ et de l\'arrêter en haut.</div>\n\
-															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyé sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
+															<div class="row">Notre projet était le développement d\'un chronomètre à afficher sur un panneau d\'affichage, lorsque l\'utilisateur appuyait sur le champignon pour terminer ou le tapis pour démarrer</div>\n\
 															<div class="row">Je me suis occupé de la partie affichage du chronomètre grâce à un thread en C++. Puis de la partie SQL, enregistrement des données des participants ainsi que leurs temps.</div>\n\
 															<button class="buttonTalk buttonClose" type="button" style="color: black;" name="close">Fermer</button><button class="col-lg-offset-8 buttonTalk buttonSuivant" style= "color: black;" type="button" name="suivant">Suivant</button></div></section>');
 															$('.buttonClose').click(function() {
@@ -760,7 +760,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																$('#talk').append('<section" id="3">\n\
 																<p>Passons à la programmation depuis mon entrée dans le monde du développement web.</p>\n\
 																<div class="acquirment" style="color: white; margin: 10px;">\n\
-																<p>Lors de ma formation, nous étions toujours en groupe de quatres pour réaliser nos projets communs</p>\n\
+																<p>Lors de ma formation, nous étions toujours en groupe de quatre pour réaliser nos projets communs</p>\n\
 																<div class="row">Nous avons réalisé deux sites e-commerce</div>\n\
 																<div class="row">L\'un en JavaScript/jQuery.</div>\n\
 																<div class="row">Et un autre en angularJS</div>\n\
@@ -780,7 +780,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 																	<div class="row">Le site que j\'ai réalisé, est un site dans le cadre d\'une aide médicale pour diabétique ou personnes sous anticoagulant.</div>\n\
 																	<div class="row">C\'est à dire que les personnes ayant ce genre de problème de santé doivent régulièrement faire des prises de sang et les noter dans un carnet</div>\n\
 																	<div class="row">Souvent des personnes oublient de faire cette prise, grâce à mon application, ils seraient informés lorsqu\'ils doivent la faire. Puis le carnet ne sera jamais à court de page et permettra de faire un suivi.</div>\n\
-																	<div class="row">Les patients peuvent également noter ces rendez-vous et être suivi par son médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
+																	<div class="row">Les patients peuvent également noter leurs rendez-vous et être suivi par leur médecin qui verra leurs évolutions si ils l\'acceptent.</div>\n\
 																	<div class="row"><button class="buttonTalk buttonClose" style="color: black;" type="button" name="close">Fermer</button></div></div></section>');
 																	$('.buttonClose').click(function() {
 																			$('#creation').remove();
@@ -824,8 +824,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 								<section id="1">\n\
 								<p>Bonjour.</p>\n\
 								<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
-								<p>Tout d\'abord, pourquoi ais-je fais ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencer par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
-								<p>Pour vous expliquer un peu le principe, il y\'a quatre maisons pour chacune des quatres grandes catégories que j\'ai choisi présenté: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
+								<p>Tout d\'abord, pourquoi ai-je fait ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencé par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
+								<p>Pour vous expliquer un peu le principe, il y a quatre maisons pour chacune des quatre grandes catégories que j\'ai choisies de présenter: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
 								<div class="row speakme" id="speakme">Qui suis-je?</div>\n\
 								<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></section>');
 								$('.buttonClose').click(function() {
@@ -836,7 +836,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 										$('#'+talkVersion).remove();
 										talkVersion++;
 											$('#talk').append('<section" id="2">\n\
-											<p>Je m\'appelles Romuald DUCROCQ. J\'ai 22ans.</p>\n\
+											<p>Je m\'appelle Romuald DUCROCQ. J\'ai 22ans.</p>\n\
 											<p>Passionné par les jeux vidéos et les mangas depuis mon enfance, j\'ai fait de ma passion une force en m\'orientant vers l\'informatique.</p>\n\
 											<p>Je suis un déveleppeur web junior.</p>\n\
 											<p>Actuellement, je suis en formation à la manu et en alternance dans l\'entreprise picardie-informatique afin d\'être Concepteur Développeur Informatique de niveau bac+3/4.</p>\n\
@@ -888,8 +888,8 @@ Personnage.prototype.deplacer = function(direction, map) {
 											<section id="1">\n\
 											<p>Bonjour.</p>\n\
 											<p>Je suis le créateur de ce mini-jeu et voici mon CV.</p>\n\
-											<p>Tout d\'abord, pourquoi ais-je fais ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencer par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
-											<p>Pour vous expliquer un peu le principe, il y\'a quatre maisons pour chacune des quatres grandes catégories que j\'ai choisi présenté: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
+											<p>Tout d\'abord, pourquoi ai-je fait ce CV? Lors de mon entrée en formation La Manu, un exercice était de faire un cv numérique, j\'ai commencé par le CV numérique de la page précédente puis je me suis lancé dans la construction de celui-ci.</p>\n\
+											<p>Pour vous expliquer un peu le principe, il y a quatre maisons pour chacune des quatre grandes catégories que j\'ai choisies de présenter: mes compétences, mes projets, ce qui touche au travail et mes passions.</p>\n\
 											<div class="row speakme" id="speakme">Qui suis-je?</div>\n\
 											<button class="buttonTalk buttonClose" type="button" name="close">Fermer</button></section>');
 											$('.buttonClose').click(function() {
@@ -900,7 +900,7 @@ Personnage.prototype.deplacer = function(direction, map) {
 													$('#'+talkVersion).remove();
 													talkVersion++;
 														$('#talk').append('<section" id="2">\n\
-														<p>Je m\'appelles Romuald DUCROCQ. J\'ai 22ans.</p>\n\
+														<p>Je m\'appelle Romuald DUCROCQ. J\'ai 22ans.</p>\n\
 														<p>Passionné par les jeux vidéos et les mangas depuis mon enfance, j\'ai fait de ma passion une force en m\'orientant vers l\'informatique.</p>\n\
 														<p>Je suis un déveleppeur web junior.</p>\n\
 														<p>Actuellement, je suis en formation à la manu et en alternance dans l\'entreprise picardie-informatique afin d\'être Concepteur Développeur Informatique de niveau bac+3/4.</p>\n\
