@@ -8,6 +8,11 @@
   src: url('consola.ttf');
 }
 
+@font-face {
+  font-family: "Lucida Console";
+  src: url('lucida-console.ttf');
+}
+
 header{
   margin-top: 0;
   background-image: url('../img/nuages.png');
