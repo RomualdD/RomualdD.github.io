@@ -402,13 +402,13 @@
             </div>
             <div class="pictures col-lg-10 col-xs-12"><img src="assets/img/vide.png"><img src="assets/img/zero.png" id="zero" alt="0" onclick="changeImg(televiseur, 'assets/img/sommaire.png')"><img src="assets/img/vide.png"></div>
           </div>
-          <div id="smite" title="smite">
+          <div id="smite" title="smite" style="visibility: hidden;">
             <p>Youtube officiel du jeu : <a href="https://www.youtube.com/user/smitegame" target="_blank">cliquez ici</a></p>
           </div>
-          <div id="wanima" title="wanima">
+          <div id="wanima" title="wanima" style="visibility: hidden;">
             <p>Le lien du clip : <a href="https://www.youtube.com/watch?v=Suoo0g0upGs" target="_blank">cliquez ici</a></p>
           </div>
-          <div id="floor" title="floor">
+          <div id="floor" title="floor" style="visibility: hidden;">
             <p>Le lien du clip : <a href="https://www.youtube.com/watch?v=F-LXk4M2a2w" target="_blank">cliquez ici</a></p>
           </div>
             <marquee scrollamount="2" scrolldelay="50" direction="left"><img src="assets/img/final.png" height="50" width="50"> Merci de votre visite <img src="assets/img/finalopposite.png" height="50" width="50"></marquee>
@@ -431,6 +431,7 @@
 
         function dialog(name) {
           console.log(name);
+          $('#'+name).css('visibility','visible');
           $('#'+name).dialog();
         }
 
