@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets\js\jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
     <script src="assets\css\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets\js\jquery-ui-1.12.1.custom\jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>CV Romuald Ducrocq</title>
   </head>
@@ -395,10 +397,19 @@
           <div class="hobbi col-lg-12">
             <div class="pictures col-lg-10 col-xs-12"><img src="assets/img/vide.png"><img src="assets/img/vide.png"><img id="play" src="assets/img/exit.png" alt="echap" onclick="fond(televiseur)" ></div>
             <div class="pictures col-lg-10 col-xs-12"><img src="assets/img/un.png" id="un" alt="1" onclick="changeImg(televiseur,'assets/img/gundam.png')"><img src="assets/img/deux.png" alt="2" id="deux" onclick="changeImg(televiseur,'assets/img/mangas.png')"><img src="assets/img/trois.png" id="trois" alt="3" onclick="changeImg(televiseur,'assets/img/jeuvideo.png')"></div>
-            <div class="pictures col-lg-10 col-xs-12"><img src="assets/img/quatre.png" id="quatre" alt="4" onclick="changeImg(televiseur,'assets/img/japan.png')"><img src="assets/img/cinq.png" id="cinq" alt="5" onclick="changeImg(televiseur, 'assets/img/smite.gif');" ondblclick="alert('Youtube officiel du jeu: /n https://www.youtube.com/user/smitegame')"><img src="assets/img/six.png" id="six" alt="6" onclick="changeImg(televiseur,'assets/img/happywars.gif')"></div>
-            <div class="pictures col-lg-10 col-xs-12"><img src="assets/img/sept.png" id="sept" alt="7" onclick="changeImg(televiseur,'assets/img/wanima1.gif');" ondblclick="alert('Le lien du clip est: \n https://www.youtube.com/watch?v=Suoo0g0upGs');"><img src="assets/img/huit.png" id="huit" alt="8" onclick="changeImg(televiseur, 'assets/img/the_floor.gif');" ondblclick="alert('Le lien du clip est: \n https://www.youtube.com/watch?v=F-LXk4M2a2w');"><img src="assets/img/neuf.png" id="neuf" alt="9" onclick="changeImg(televiseur, 'assets/img/platjap.png')">
+            <div class="pictures col-lg-10 col-xs-12"><img src="assets/img/quatre.png" id="quatre" alt="4" onclick="changeImg(televiseur,'assets/img/japan.png')"><img src="assets/img/cinq.png" id="cinq" alt="5" onclick="changeImg(televiseur, 'assets/img/smite.gif');" ondblclick="dialog('smite')"><img src="assets/img/six.png" id="six" alt="6" onclick="changeImg(televiseur,'assets/img/happywars.gif')"></div>
+            <div class="pictures col-lg-10 col-xs-12"><img src="assets/img/sept.png" id="sept" alt="7" onclick="changeImg(televiseur,'assets/img/wanima1.gif');" ondblclick="dialog('wanima')"><img src="assets/img/huit.png" id="huit" alt="8" onclick="changeImg(televiseur, 'assets/img/the_floor.gif');" ondblclick="dialog('floor')"><img src="assets/img/neuf.png" id="neuf" alt="9" onclick="changeImg(televiseur, 'assets/img/platjap.png')">
             </div>
             <div class="pictures col-lg-10 col-xs-12"><img src="assets/img/vide.png"><img src="assets/img/zero.png" id="zero" alt="0" onclick="changeImg(televiseur, 'assets/img/sommaire.png')"><img src="assets/img/vide.png"></div>
+          </div>
+          <div id="smite" title="smite">
+            <p>Youtube officiel du jeu : <a href="https://www.youtube.com/user/smitegame" target="_blank">cliquez ici</a></p>
+          </div>
+          <div id="wanima" title="wanima">
+            <p>Le lien du clip : <a href="https://www.youtube.com/watch?v=Suoo0g0upGs" target="_blank">cliquez ici</a></p>
+          </div>
+          <div id="floor" title="floor">
+            <p>Le lien du clip : <a href="https://www.youtube.com/watch?v=F-LXk4M2a2w" target="_blank">cliquez ici</a></p>
           </div>
             <marquee scrollamount="2" scrolldelay="50" direction="left"><img src="assets/img/final.png" height="50" width="50"> Merci de votre visite <img src="assets/img/finalopposite.png" height="50" width="50"></marquee>
                 <!-- scrollamount = affiche de combien le texte avance // scrolldelay = défini le temps ou le texte reste dans la même position -->
@@ -416,6 +427,11 @@
                picture.setAttribute('src', url);
              }
            }
+        }
+
+        function dialog(name) {
+          console.log(name);
+          $('#'+name).dialog();
         }
 
        function fond(picture)
