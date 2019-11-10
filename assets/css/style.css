@@ -1,355 +1,193 @@
-@font-face {
-  font-family: "Halo";
-  src: url('Halo.ttf');
+.maximum_size {
+    height: 100%;
 }
 
-@font-face {
-  font-family: "Consola";
-  src: url('consola.ttf');
-}
-
-@font-face {
-  font-family: "Lucida Console";
-  src: url('lucida-console.ttf');
-}
-
-header{
-  margin-top: 0;
-  background-image: url('../img/nuages.png');
+.center {
   text-align: center;
 }
 
-h1{
-  color: red;
-}
-
-#conteneur{
-  display:inline-block;
-}
-
-body{
-  margin: 0;
-}
-
-#contact{
-    text-align: left;
-    margin-left: auto;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-li{
-  list-style: none;
-}
-
-#link{
-  background-color: black;
-  font-size: 20px;
-  align-items: center;
-  font-family: 'Halo';
-  font-size: 30px;
-}
-
-#linkhistory, #linkhobbi{
-  text-align: center;
-}
-
-#linkrealisation{
-  display: flex;
-  flex-direction: row;
-}
-
-#linkexpertize{
-  display: flex;
-  flex-direction: row;
-}
-
-#tool{
-  border: dotted;
-  margin-bottom: 15px;
-  margin-top: 200px;
-}
-
-#Languages{
-  border: 3px dashed;
-  text-align: left;
-  margin-top: 9px;
-  margin-top: 200px;
-}
-
-#OS{
-  box-shadow: 6px 6px 6px black;
-  margin-left: 60px;
-  margin-top: 200px;
-
-}
-
-th{
-  color: white;
-  text-align: center;
-}
-
-.contact_name{
-  text-decoration: underline;
-  font-family: 'Press Start 2P';
-}
-
-h3{
-  text-align: center;
-  text-decoration: underline;
-  font-family: 'Press Start 2P';
-  color: #24cce8;
-  font-size: 25px;
-}
-
-#history{
-  text-align: center;
-    background-image: url('../img/parcours.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: green;
-    font-size: 25px;
-}
-
-#realisation{
-  text-align: center;
-  background: #2f4357;
-}
-
-#medical {
-  background-image: url("../img/meidcals.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.carousel{
-    background: #2f4357;
-    margin-top: 20px;
-}
-.carousel .item{
-    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-}
-.carousel .item p{
-    margin: 0 auto; /* Align slide image horizontally center */
-    color: white;
-    text-align: center;
-}
-.bs-example{
-	margin: 20px;
-}
-
-.carouselClass {
-  padding-top:50px;
-}
-
-.jeu:hover {
-  cursor: pointer;
+.progress {
+  height: 25px;
 }
 
 #olympiade {
   color: red;
 }
 
-#hobbies{
-  text-align: center;
-  background-image: url("../img/pacman.jpeg");
-  background-size: cover;
-  background-position: bottom;
+.bar-animation_cinq {
+  animation: cinq 7s forwards 1;
 }
 
-.hobbi{
-  color: white;
-  font-size: 20px;
-  margin-top: 10px;
+.bar-animation_vingt {
+  animation: vingt 7s forwards 1;
 }
 
-#play{
-  text-align: left;
-  margin: auto;
+.bar-animation_vingt_cinq {
+  animation: vingt 7s forwards 1;
 }
 
-#expertize{
-  background-image: url("../img/fondcompetence.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #0000ff;
+.bar-animation_trente {
+  animation: trente 7s forwards 1;
 }
 
-.link {
-  margin-top: -5px;
+.bar-animation_trente_cinq {
+  animation: trente_cinq 7s forwards 1;
 }
 
-.skill_percent {
-    position: absolute;
-    right: 5%;
-    opacity: 0;
+.bar-animation_quarante {
+  animation: quarante 7s forwards 1;
 }
 
-h4{
-  font-family: 'Halo';
-  text-align: center;
-  font-size: 35px;
-  text-decoration: underline;
-  color: #26BB1F;
+.bar-animation_cinquante {
+  animation: quarante 7s forwards 1;
 }
 
-.progress-bar-success {
-  background-image: url('../img/ruby1.png');
+.bar-animation_soixante {
+  animation: soixante 7s forwards 1;
 }
 
-.progress {
-  background-image: url('../img/pot.png');
-  border: 0px solid rgba(245, 245, 245, 1);
-  border-radius: 25px;
-  height: 20px;
-  margin-right: 5px;
-  text-transform: uppercase;
+.bar-animation_soixante_cinq {
+  animation: soixante_cinq 7s forwards 1;
 }
 
-.progress-bar {
-  text-align: left;
-  transition-duration: 3s;
-  font-weight: bold;
+.bar-animation_soixante_dix {
+  animation: soixante_dix 7s forwards 1;
 }
 
-#contain{
-  display: flex;
-  flex-direction: column;
+.bar-animation_soixante_quinze {
+  animation: soixante_quinze 7s forwards 1;
 }
 
-#expert{
-    font-size: 20px;
+.bar-animation_quatre_vingt {
+  animation: quatre_vingt 7s forwards 1;
 }
 
-#canvas{
-  background-color: grey;
+@keyframes cinq{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:5%;}
+    100%{width:5%;} /*fin*/
 }
 
-.pictures-background{
-  background-image: url('../img/tv.png');
-  width: 750px;
-  height: 400px;
-  padding-top: 20px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@keyframes vingt{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:20%;}
+    100%{width:20%;} /*fin*/
 }
 
-#loisirs {
-  margin: 0px;
+@keyframes vingt_cinq{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:25%;}
+    100%{width:25%;} /*fin*/
 }
 
-.marginbottom {
-  margin-bottom: 5px;
+@keyframes trente{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:30%;}
+    100%{width:30%;} /*fin*/
 }
 
-marquee{
-  height: 50px;
-  border:2px #008000;
-  text-align: center;
-  color:#e0fc0f ;
-  font-size:20px;
-  font-family: 'Press Start 2P';
+@keyframes trente_cinq{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:35%;}
+    100%{width:35%;} /*fin*/
 }
 
-.nameexpert{
-  font-size: 15px;
-  text-align: center;
-  margin-right: auto;
+@keyframes quarante{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:40%;}
+    100%{width:40%;} /*fin*/
 }
 
-.real{
-  margin-top: 17px;
+@keyframes cinquante{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:50%;}
+    100%{width:50%;} /*fin*/
 }
 
-.texthobbi{
-  margin-top: 70px;
-  font-size: 20px;
+@keyframes soixante{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:60%;}
+    100%{width:60%;} /*fin*/
 }
 
-.windows{
-   width: 35%;
+@keyframes soixante_cinq{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:65%;}
+    100%{width:65%;} /*fin*/
 }
 
-.Linux, .netbeans{
-   width: 40%;
+@keyframes soixante_dix{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:70%;}
+    100%{width:70%;} /*fin*/
 }
 
-.c, .builder, .english{
-  width: 50%;
+@keyframes soixante_quinze{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:75%;}
+    100%{width:75%;} /*fin*/
 }
 
-.atom {
-  width: 75%;
+@keyframes quatre_vingt{ /*temps*/
+    0%{width:0;} /*début*/
+    40%{width:80%;}
+    100%{width:80%;} /*fin*/
 }
 
-.angularjs {
-  width: 45%;
+#mobile-menu {
+  background-color: #acece6;
 }
 
-.nodejs {
-  width: 30%;
+.font-white {
+  color: white!important;
+  font-weight: bold!important;
 }
 
-.deutsch {
-  width: 35%;
+.padding-menu {
+  padding-right: 5px!important;
+  color: #77E1D6!important;
+  font-weight:600;
 }
 
-.angular{
-  width: 15%;
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+ background-color:rgba(172,236,230,0.4);
+ outline:none
 }
 
-.bootstrap{
-  width: 75%;
+.tabs .indicator {
+ position:absolute;
+ bottom:0;
+ height:2px;
+ background-color: #acece6;
+ will-change:left, right
 }
 
-.sql,.php{
-  width: 60%;
+.padding-tabs {
+  padding-left: 30%;
 }
 
-.html{
-  width: 70%;
+.title {
+  color: red;
 }
 
-.javascript{
-  width: 65%;
+.nav-wrapper {
+  background-color: #acece6;
 }
 
-.command{
-  width: 50%;
+.fond {
+  background-color: white;
+  opacity: 0.85;
 }
 
-.nano{
-   width: 80%;
+.img_border {
+  border: 1px solid black;
 }
 
-.talend {
-  width: 5%;
-}
-
-.git{
-  width: 75%;
-}
-
-.canvas{
-  width: 60%;
-}
-
-.vhost{
-   width: 25%;
-}
-
-#televiseur{
-  float: none;
-}
-body{
-  margin: 0;
+body:not(#cv_num){
+  background: url('../img/fond_zelda.jpg') no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
 }
 
 canvas {
@@ -372,16 +210,8 @@ canvas {
   width:1500px;
 }
 
-@media screen and (max-width:1280px){
-  .pictures-background{
-    background-image: none;
-    width: 70%;
-  }
-
-#televiseur{
-  float: left;
-  margin: 0;
-  width: 250px;
-  height: 150px;
-  }
+@media only screen and (max-width: 992px) {
+ nav .brand-logo {
+  font-size: 1.3em;
+ }
 }
