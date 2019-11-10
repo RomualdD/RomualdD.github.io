@@ -210,7 +210,7 @@ canvas {
   width:1500px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1280px) {
  nav .brand-logo {
   font-size: 1.3em;
  }
