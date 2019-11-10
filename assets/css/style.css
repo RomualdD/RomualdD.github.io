@@ -214,4 +214,12 @@ canvas {
  nav .brand-logo {
   font-size: 1.3em;
  }
+
+ p {
+   font-size: 1.2em;
+ }
+
+ .title {
+   font-size: 1.2em;
+ }
 }
