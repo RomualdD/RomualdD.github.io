@@ -27,7 +27,7 @@ html {
 }
 
 .bar-animation_vingt_cinq {
-  animation: vingt 7s forwards 1;
+  animation: vingt_cinq 7s forwards 1;
 }
 
 .bar-animation_trente {
@@ -43,7 +43,7 @@ html {
 }
 
 .bar-animation_cinquante {
-  animation: quarante 7s forwards 1;
+  animation: cinquante 7s forwards 1;
 }
 
 .bar-animation_soixante {
